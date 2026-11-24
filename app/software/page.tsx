@@ -1,0 +1,11 @@
+"use client";
+import { useState } from "react";
+import { software } from "../../content/data";
+
+export default function SoftwarePage() {
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("All");
+  const categories = ["All", ...Array.from(new Set(software.map((item) => item.category)))];
+  const visible = software.filter((item) => (category === "All" || item.category === category) && `${item.name} ${item.use} ${item.commands} ${item.notes}`.toLowerCase().includes(query.toLowerCase()));
+  return <div><div className="mb-6"><p className="label">Personal toolkit</p><h1 className="mt-1 text-3xl font-bold">Software &amp; Tools</h1></div><div className="mb-5 flex flex-col gap-3 sm:flex-row"><input className="input flex-1" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search tools, uses, or commands..."/><select className="input sm:w-44" value={category} onChange={(e) => setCategory(e.target.value)}>{categories.map((item) => <option key={item}>{item}</option>)}</select></div><div className="card overflow-hidden"><div className="overflow-x-auto"><table className="w-full text-left text-sm"><thead className="border-b border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/70"><tr><th className="px-5 py-3">Tool</th><th className="px-5 py-3">Category</th><th className="px-5 py-3">Primary use</th><th className="px-5 py-3">Commands / config</th><th className="px-5 py-3">Notes</th></tr></thead><tbody>{visible.map((item) => <tr key={item.name} className="border-b border-slate-100 last:border-0 dark:border-slate-800"><td className="whitespace-nowrap px-5 py-4 font-semibold">{item.name}</td><td className="px-5 py-4"><span className="whitespace-nowrap rounded-full bg-cyan-50 px-2.5 py-1 text-xs text-cyan-700 dark:bg-cyan-500/10 dark:text-cyan-300">{item.category}</span></td><td className="px-5 py-4 text-slate-600 dark:text-slate-300">{item.use}</td><td className="px-5 py-4"><code className="whitespace-nowrap text-xs text-cyan-700 dark:text-cyan-300">{item.commands}</code></td><td className="min-w-48 px-5 py-4 text-slate-500">{item.notes}</td></tr>)}</tbody></table></div></div>{!visible.length && <p className="card mt-4 p-8 text-center text-slate-500">No matching tools.</p>}</div>;
+}
