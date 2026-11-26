@@ -19,7 +19,9 @@ core-computing/
 └── dsa/
 ```
 
-## Example: quick TCP connection check
+## Example: initial connectivity and socket inspection
+
+These commands inspect different layers: ping tests ICMP reachability, traceroute investigates paths, and ss lists sockets. None alone proves an application-level TCP exchange succeeded.
 
 ```bash
 ping example.com

@@ -9,8 +9,7 @@
       ],
       "discipline": "Programming languages",
       "aliases": [
-        "JS",
-        "ECMAScript language"
+        "JS"
       ],
       "summary": "JavaScript is a programming language whose core semantics are standardized as ECMAScript; browsers and server runtimes supply additional APIs around that language.",
       "sources": [
@@ -28,7 +27,10 @@
         "status": "Needs review"
       },
       "kind": "concept",
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "ECMAScript language"
+      ]
     },
     {
       "id": "event-loop",
@@ -41,9 +43,7 @@
       "discipline": "Execution and scheduling",
       "level": "Intermediate",
       "aliases": [
-        "JavaScript event loop",
-        "microtask queue",
-        "task queue"
+        "JavaScript event loop"
       ],
       "summary": "An event loop coordinates scheduled work in a host environment. In a browser, it selects tasks, runs microtask checkpoints and participates in deciding when rendering can occur.",
       "sources": [
@@ -61,7 +61,11 @@
       "verification": {
         "status": "Needs review"
       },
-      "kind": "concept"
+      "kind": "concept",
+      "searchTerms": [
+        "microtask queue",
+        "task queue"
+      ]
     },
     {
       "id": "call-stack",
@@ -72,10 +76,7 @@
         "debugging-quality"
       ],
       "discipline": "Execution and scheduling",
-      "aliases": [
-        "stack trace",
-        "execution context"
-      ],
+      "aliases": [],
       "summary": "A call stack records active function invocations so execution can return to the caller when a function finishes.",
       "sources": [
         "mdn-execution"
@@ -91,7 +92,11 @@
         "status": "Needs review"
       },
       "kind": "concept",
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "stack trace",
+        "execution context"
+      ]
     },
     {
       "id": "web-workers",
@@ -134,9 +139,7 @@
       "level": "Intermediate",
       "aliases": [
         "Node",
-        "NodeJS",
-        "libuv",
-        "Worker Threads"
+        "NodeJS"
       ],
       "summary": "Node.js is a JavaScript runtime that combines a JavaScript engine with server and operating-system APIs, including asynchronous I/O and worker-thread facilities.",
       "sources": [
@@ -152,7 +155,11 @@
       "slug": "nodejs",
       "verification": {
         "status": "Needs review"
-      }
+      },
+      "searchTerms": [
+        "libuv",
+        "Worker Threads"
+      ]
     },
     {
       "id": "dom",
@@ -190,8 +197,7 @@
       ],
       "discipline": "Operating systems",
       "aliases": [
-        "process",
-        "address space"
+        "process"
       ],
       "summary": "A process is an operating-system execution environment that groups resources such as an address space, open handles and one or more threads.",
       "sources": [
@@ -208,7 +214,10 @@
         "status": "Needs review"
       },
       "kind": "concept",
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "address space"
+      ]
     },
     {
       "id": "threads",
@@ -346,8 +355,6 @@
       ],
       "discipline": "Addressing and routing",
       "aliases": [
-        "IPv4",
-        "IPv6",
         "IP addressing"
       ],
       "summary": "An IP address identifies an interface or a set of interfaces for Internet Protocol delivery within an addressing and routing context.",
@@ -370,7 +377,11 @@
         "status": "Needs review"
       },
       "kind": "concept",
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "IPv4",
+        "IPv6"
+      ]
     },
     {
       "id": "dns",
@@ -383,9 +394,7 @@
       ],
       "discipline": "Naming and resolution",
       "aliases": [
-        "DNS",
-        "name resolution",
-        "DNS resolver"
+        "DNS"
       ],
       "summary": "DNS is a distributed hierarchical naming system that publishes resource records under domain names, including records used to locate Internet services.",
       "sources": [
@@ -402,7 +411,11 @@
       "verification": {
         "status": "Needs review"
       },
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "name resolution",
+        "DNS resolver"
+      ]
     },
     {
       "id": "ports",
@@ -415,8 +428,7 @@
       "aliases": [
         "port",
         "TCP port",
-        "UDP port",
-        "socket"
+        "UDP port"
       ],
       "summary": "A transport port is a numbered identifier used with an address and transport protocol to distinguish communication endpoints; a socket is an operating-system or runtime abstraction for network communication.",
       "sources": [
@@ -434,7 +446,10 @@
         "status": "Needs review"
       },
       "kind": "concept",
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "socket"
+      ]
     },
     {
       "id": "tcp",
@@ -449,8 +464,7 @@
       "discipline": "Transport protocols",
       "level": "Intermediate",
       "aliases": [
-        "TCP",
-        "TCP/IP"
+        "TCP"
       ],
       "summary": "TCP provides a reliable, ordered byte-stream service between endpoints over IP, with connection management, retransmission, flow control and congestion control.",
       "sources": [
@@ -465,7 +479,10 @@
       "slug": "tcp",
       "verification": {
         "status": "Needs review"
-      }
+      },
+      "searchTerms": [
+        "TCP/IP"
+      ]
     },
     {
       "id": "http",
@@ -477,9 +494,7 @@
       ],
       "discipline": "Application protocols",
       "aliases": [
-        "HTTP",
-        "request",
-        "response"
+        "HTTP"
       ],
       "summary": "HTTP is an application-level protocol that defines request and response semantics for interacting with resources and exchanging representations.",
       "sources": [
@@ -500,7 +515,11 @@
       "verification": {
         "status": "Needs review"
       },
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "request",
+        "response"
+      ]
     },
     {
       "id": "https",
@@ -545,8 +564,7 @@
       "discipline": "Cryptographic protocols",
       "level": "Intermediate",
       "aliases": [
-        "TLS",
-        "SSL"
+        "TLS"
       ],
       "summary": "TLS is a cryptographic protocol family that establishes protected communication channels with confidentiality, integrity and peer authentication according to the selected configuration.",
       "sources": [
@@ -561,7 +579,10 @@
       "slug": "tls",
       "verification": {
         "status": "Needs review"
-      }
+      },
+      "searchTerms": [
+        "SSL"
+      ]
     },
     {
       "id": "usb",
@@ -616,10 +637,7 @@
       "discipline": "USB device classes",
       "aliases": [
         "HID",
-        "Human Interface Device",
-        "USB keyboard",
-        "HID report",
-        "keyboard emulation"
+        "Human Interface Device"
       ],
       "summary": "USB HID is a device class that describes human-interface data through reports and report descriptors, allowing compatible hosts to interpret input and other device data.",
       "sources": [
@@ -640,7 +658,12 @@
       "verification": {
         "status": "Needs review"
       },
-      "level": "Beginner"
+      "level": "Beginner",
+      "searchTerms": [
+        "USB keyboard",
+        "HID report",
+        "keyboard emulation"
+      ]
     },
     {
       "id": "usb-enumeration",
@@ -691,10 +714,7 @@
       "discipline": "Peripheral discovery",
       "level": "Intermediate",
       "aliases": [
-        "USB descriptor",
-        "device descriptor",
-        "configuration descriptor",
-        "report descriptor"
+        "USB descriptor"
       ],
       "summary": "USB descriptors are structured data returned by a device to describe its identity fields, configurations, interfaces, endpoints and class-specific capabilities.",
       "sources": [
@@ -720,7 +740,12 @@
       "verification": {
         "status": "Needs review"
       },
-      "kind": "concept"
+      "kind": "concept",
+      "searchTerms": [
+        "device descriptor",
+        "configuration descriptor",
+        "report descriptor"
+      ]
     },
     {
       "id": "device-driver",
@@ -844,12 +869,7 @@
       ],
       "discipline": "Peripheral security",
       "level": "Intermediate",
-      "aliases": [
-        "BadUSB",
-        "HID injection",
-        "USB device control",
-        "USB security testing"
-      ],
+      "aliases": [],
       "summary": "USB security concerns the trust, access and failure boundaries created when a host accepts communication, device classes and electrical connections from a peripheral.",
       "sources": [
         "usb-docs",
@@ -874,7 +894,13 @@
       "slug": "usb-security",
       "verification": {
         "status": "Needs review"
-      }
+      },
+      "searchTerms": [
+        "BadUSB",
+        "HID injection",
+        "USB device control",
+        "USB security testing"
+      ]
     },
     {
       "id": "hardware-security",
@@ -887,7 +913,6 @@
       "discipline": "Hardware assurance",
       "level": "Intermediate",
       "aliases": [
-        "embedded security",
         "hardware security research"
       ],
       "summary": "Hardware security examines how physical components, interfaces, firmware and manufacturing or deployment decisions protect a system's assets and trust boundaries.",
@@ -914,7 +939,748 @@
       "verification": {
         "status": "Needs review"
       },
-      "kind": "concept"
+      "kind": "concept",
+      "searchTerms": [
+        "embedded security"
+      ]
+    },
+    {
+      "id": "embedded-systems",
+      "slug": "embedded-systems",
+      "title": "Embedded systems",
+      "kind": "concept",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Embedded architecture",
+      "level": "Beginner",
+      "aliases": [
+        "Embedded computing"
+      ],
+      "summary": "An embedded system combines computing hardware and software within a product or process to perform defined functions, often under timing, power or resource constraints.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "pico-docs",
+        "esp-docs",
+        "freertos-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10080
+        }
+      ]
+    },
+    {
+      "id": "gpio",
+      "slug": "gpio",
+      "title": "General-purpose input/output",
+      "kind": "concept",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Digital interfaces",
+      "level": "Beginner",
+      "aliases": [
+        "General-purpose input/output"
+      ],
+      "summary": "GPIO provides programmable digital input and output signals through pins whose electrical characteristics and available functions are defined by the hardware.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10019
+        }
+      ]
+    },
+    {
+      "id": "uart",
+      "slug": "uart",
+      "title": "UART",
+      "kind": "concept",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Serial interfaces",
+      "level": "Intermediate",
+      "aliases": [
+        "Universal Asynchronous Receiver Transmitter"
+      ],
+      "summary": "A UART is a hardware function that transmits and receives asynchronously framed serial data without a shared clock signal between endpoints.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10019
+        }
+      ]
+    },
+    {
+      "id": "spi",
+      "slug": "spi",
+      "title": "Serial Peripheral Interface",
+      "kind": "protocol",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Serial interfaces",
+      "level": "Intermediate",
+      "aliases": [
+        "SPI",
+        "Serial Peripheral Interface"
+      ],
+      "summary": "SPI is a synchronous serial interface family in which a controller supplies a clock and selects peripherals for data exchange.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10019
+        }
+      ]
+    },
+    {
+      "id": "i2c",
+      "slug": "i2c",
+      "title": "Inter-Integrated Circuit",
+      "kind": "protocol",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Serial interfaces",
+      "level": "Intermediate",
+      "aliases": [
+        "I2C",
+        "I²C",
+        "IIC",
+        "Inter-Integrated Circuit"
+      ],
+      "summary": "I²C is an addressed serial bus that uses a data line and clock line, with defined signaling, acknowledgment and arbitration behavior.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "i2c-spec",
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10019
+        }
+      ]
+    },
+    {
+      "id": "rtos",
+      "slug": "rtos",
+      "title": "Real-time operating systems",
+      "kind": "concept",
+      "domains": [
+        "iot-embedded",
+        "core-computing"
+      ],
+      "discipline": "Real-time computing",
+      "level": "Intermediate",
+      "aliases": [
+        "RTOS",
+        "Real-Time Operating System"
+      ],
+      "summary": "An RTOS provides operating-system services designed to support predictable response to events and timing requirements; deadlines still depend on the complete application and hardware design.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "freertos-docs"
+      ],
+      "research": [
+        {
+          "start": 9815,
+          "end": 10019
+        }
+      ]
+    },
+    {
+      "id": "mqtt",
+      "slug": "mqtt",
+      "title": "MQTT",
+      "kind": "protocol",
+      "domains": [
+        "iot-embedded",
+        "networking"
+      ],
+      "discipline": "Messaging protocols",
+      "level": "Intermediate",
+      "aliases": [
+        "Message Queuing Telemetry Transport"
+      ],
+      "summary": "MQTT is a client-server publish/subscribe messaging protocol in which clients exchange application messages through a broker using topic names and subscriptions.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "mqtt-spec"
+      ],
+      "research": []
+    },
+    {
+      "id": "esp32",
+      "slug": "esp32",
+      "title": "ESP32 family",
+      "kind": "technology",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Development platforms",
+      "level": "Beginner",
+      "aliases": [
+        "ESP32",
+        "ESP32 microcontrollers"
+      ],
+      "summary": "ESP32 names a family of Espressif microcontrollers and related modules; processor cores, radios, USB support and peripheral capabilities vary by exact target.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 7495,
+          "end": 8651
+        }
+      ]
+    },
+    {
+      "id": "raspberry-pi-pico",
+      "slug": "raspberry-pi-pico",
+      "title": "Raspberry Pi Pico family",
+      "kind": "technology",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics"
+      ],
+      "discipline": "Development platforms",
+      "level": "Beginner",
+      "aliases": [
+        "Pico"
+      ],
+      "summary": "Raspberry Pi Pico boards are microcontroller development platforms; their processor, wireless features and board details depend on the selected Pico model.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "pico-docs"
+      ],
+      "research": [
+        {
+          "start": 7495,
+          "end": 8651
+        }
+      ],
+      "searchTerms": [
+        "RP2040 board"
+      ]
+    },
+    {
+      "id": "software-engineering",
+      "slug": "software-engineering",
+      "title": "Software engineering",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Engineering practice",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Software engineering applies systematic practices to specifying, designing, building, evaluating, operating and evolving software under real constraints.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "swebok",
+        "git-book"
+      ],
+      "research": [
+        {
+          "start": 1,
+          "end": 90
+        }
+      ],
+      "searchTerms": [
+        "Software Development Life Cycle",
+        "SDLC"
+      ]
+    },
+    {
+      "id": "input-validation",
+      "slug": "input-validation",
+      "title": "Input validation",
+      "kind": "concept",
+      "domains": [
+        "software-engineering",
+        "web-development",
+        "cybersecurity"
+      ],
+      "discipline": "Trust boundaries",
+      "level": "Intermediate",
+      "aliases": [
+        "Runtime Validation"
+      ],
+      "summary": "Input validation checks whether incoming data satisfies the structural and business constraints required at a system boundary before the system relies on it.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "owasp-validation",
+        "owasp-authz"
+      ],
+      "research": [
+        {
+          "start": 246,
+          "end": 570
+        }
+      ],
+      "searchTerms": [
+        "Frontend Validation",
+        "Backend Validation"
+      ]
+    },
+    {
+      "id": "authentication",
+      "slug": "authentication",
+      "title": "Authentication",
+      "kind": "concept",
+      "domains": [
+        "web-development",
+        "cybersecurity"
+      ],
+      "discipline": "Identity and access",
+      "level": "Intermediate",
+      "aliases": [
+        "AuthN",
+        "User Authentication"
+      ],
+      "summary": "Authentication establishes confidence in a claimed identity using credentials or other evidence; it does not itself decide which operations that identity may perform.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "owasp-authn"
+      ],
+      "research": [
+        {
+          "start": 246,
+          "end": 570
+        }
+      ]
+    },
+    {
+      "id": "authorization",
+      "slug": "authorization",
+      "title": "Authorization",
+      "kind": "concept",
+      "domains": [
+        "web-development",
+        "cybersecurity"
+      ],
+      "discipline": "Identity and access",
+      "level": "Intermediate",
+      "aliases": [
+        "AuthZ",
+        "Access Control"
+      ],
+      "summary": "Authorization determines whether a subject may perform a requested action on a resource under the current policy and context.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "owasp-authz"
+      ],
+      "research": [
+        {
+          "start": 13830,
+          "end": 14028
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "slug": "git",
+      "title": "Git",
+      "kind": "tool",
+      "domains": [
+        "software-engineering",
+        "devops"
+      ],
+      "discipline": "Version control",
+      "level": "Beginner",
+      "aliases": [
+        "Git version control"
+      ],
+      "summary": "Git is a distributed version-control system that records project snapshots and their history, supporting local work and collaboration through repositories and references.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "git-book"
+      ],
+      "research": []
+    },
+    {
+      "id": "testing",
+      "slug": "testing",
+      "title": "Software testing",
+      "kind": "technique",
+      "domains": [
+        "debugging-quality",
+        "software-engineering"
+      ],
+      "discipline": "Software quality",
+      "level": "Beginner",
+      "aliases": [
+        "Software Testing"
+      ],
+      "summary": "Software testing evaluates behavior using planned inputs, observations and expected outcomes to reveal defects and provide evidence about requirements.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "swebok",
+        "node-test"
+      ],
+      "research": [
+        {
+          "start": 1,
+          "end": 90
+        }
+      ]
+    },
+    {
+      "id": "debugging",
+      "slug": "debugging",
+      "title": "Debugging",
+      "kind": "technique",
+      "domains": [
+        "debugging-quality",
+        "software-engineering",
+        "iot-embedded"
+      ],
+      "discipline": "Failure investigation",
+      "level": "Beginner",
+      "aliases": [
+        "Debugging Fundamentals",
+        "Systems Debugging"
+      ],
+      "summary": "Debugging is the evidence-driven process of locating, explaining and correcting the causes of unexpected system behavior.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "chrome-devtools",
+        "swebok"
+      ],
+      "research": [
+        {
+          "start": 11529,
+          "end": 11654
+        }
+      ],
+      "searchTerms": [
+        "Root Cause Analysis"
+      ]
+    },
+    {
+      "id": "ci-cd",
+      "slug": "ci-cd",
+      "title": "Continuous integration and delivery",
+      "kind": "technique",
+      "domains": [
+        "devops",
+        "software-engineering"
+      ],
+      "discipline": "Software delivery",
+      "level": "Intermediate",
+      "aliases": [
+        "CI/CD"
+      ],
+      "summary": "Continuous integration frequently integrates changes with automated checks; continuous delivery keeps changes releasable, while continuous deployment automatically releases eligible changes under defined policy.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "github-actions",
+        "git-book"
+      ],
+      "research": [],
+      "searchTerms": [
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Continuous Deployment"
+      ]
+    },
+    {
+      "id": "observability",
+      "slug": "observability",
+      "title": "Observability",
+      "kind": "concept",
+      "domains": [
+        "devops",
+        "debugging-quality"
+      ],
+      "discipline": "Reliability engineering",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Observability is the ability to investigate a system's internal behavior through the evidence it exposes, commonly including logs, metrics and traces.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "otel"
+      ],
+      "research": [
+        {
+          "start": 1,
+          "end": 90
+        }
+      ],
+      "searchTerms": [
+        "Logs Metrics Traces",
+        "Monitoring"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "slug": "machine-learning",
+      "title": "Machine learning",
+      "kind": "concept",
+      "domains": [
+        "ai-ml",
+        "data-analytics"
+      ],
+      "discipline": "Machine learning foundations",
+      "level": "Beginner",
+      "aliases": [
+        "ML",
+        "Statistical Learning"
+      ],
+      "summary": "Machine learning develops models whose behavior is fitted from data rather than specified entirely as explicit rules. Learning a useful pattern is different from demonstrating that the pattern generalizes.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "sklearn",
+        "sklearn-pitfalls"
+      ],
+      "research": [
+        {
+          "start": 4967,
+          "end": 6614
+        }
+      ]
+    },
+    {
+      "id": "embeddings",
+      "slug": "embeddings",
+      "title": "Embeddings",
+      "kind": "concept",
+      "domains": [
+        "ai-ml",
+        "data-analytics"
+      ],
+      "discipline": "Representation learning",
+      "level": "Intermediate",
+      "aliases": [
+        "Embedding",
+        "Vector Representation"
+      ],
+      "summary": "An embedding represents an item as a vector in a space intended to preserve useful relationships for a task. Items may be words, passages, images, products, users, or other structured inputs.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "tf-retrieval"
+      ],
+      "research": [
+        {
+          "start": 4967,
+          "end": 6614
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "slug": "rag",
+      "title": "Retrieval-augmented generation",
+      "kind": "concept",
+      "domains": [
+        "ai-ml",
+        "data-analytics"
+      ],
+      "discipline": "Generative systems",
+      "level": "Advanced",
+      "aliases": [
+        "RAG",
+        "Retrieval Augmented Generation"
+      ],
+      "summary": "Retrieval-augmented generation (RAG) combines information retrieval with a generative model. A system retrieves material relevant to an input and makes that material available during answer generation.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "rag-paper",
+        "tf-retrieval"
+      ],
+      "research": []
+    },
+    {
+      "id": "data-engineering",
+      "slug": "data-engineering",
+      "title": "Data engineering",
+      "kind": "concept",
+      "domains": [
+        "data-analytics",
+        "devops"
+      ],
+      "discipline": "Data infrastructure",
+      "level": "Beginner",
+      "aliases": [
+        "Data Pipeline Engineering"
+      ],
+      "summary": "Data engineering designs and operates systems that collect, transform, store, and deliver data for dependable use. Its output is a usable data product with understood meaning, quality, ownership, and operational limits.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "postgres-docs"
+      ],
+      "research": [
+        {
+          "start": 4967,
+          "end": 6614
+        }
+      ]
+    },
+    {
+      "id": "etl",
+      "slug": "etl",
+      "title": "Extract, transform, load",
+      "kind": "technique",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Data integration",
+      "level": "Intermediate",
+      "aliases": [
+        "ETL",
+        "Extract Transform Load"
+      ],
+      "summary": "ETL is a data integration pattern in which data is extracted from sources, transformed into a usable representation, and loaded into a destination. ELT changes the order by loading before performing selected transformations in the destination system.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "postgres-docs"
+      ],
+      "research": [],
+      "searchTerms": [
+        "ELT"
+      ]
+    },
+    {
+      "id": "serialization",
+      "slug": "serialization",
+      "title": "Serialization and file formats",
+      "kind": "concept",
+      "domains": [
+        "core-computing",
+        "software-engineering",
+        "data-analytics"
+      ],
+      "discipline": "Data representation",
+      "level": "Beginner",
+      "aliases": [
+        "Serialization"
+      ],
+      "summary": "Serialization maps structured values into a representation that can be stored or transmitted. Deserialization interprets that representation to recover values according to a format and schema.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "python-json",
+        "python-struct"
+      ],
+      "research": [
+        {
+          "start": 6616,
+          "end": 7493
+        }
+      ],
+      "searchTerms": [
+        "Deserialization",
+        "DAT Files",
+        "File Formats"
+      ]
+    },
+    {
+      "id": "recommendation-systems",
+      "slug": "recommendation-systems",
+      "title": "Recommendation systems",
+      "kind": "concept",
+      "domains": [
+        "ai-ml",
+        "data-analytics"
+      ],
+      "discipline": "Applied machine learning",
+      "level": "Intermediate",
+      "aliases": [
+        "Recommender Systems"
+      ],
+      "summary": "A recommendation system selects and orders items for a user or context using an explicit objective and available evidence. Its behavior depends on data, candidate selection, scoring, constraints, and feedback.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "tf-retrieval",
+        "youtube-research",
+        "meta-system-card"
+      ],
+      "research": [
+        {
+          "start": 4967,
+          "end": 6614
+        }
+      ],
+      "searchTerms": [
+        "Recommendations",
+        "Ranking",
+        "Interest Graph"
+      ]
     }
   ],
   "relationships": [
@@ -949,10 +1715,10 @@
       "reason": "Independent worker computations can execute simultaneously when resources permit."
     },
     {
-      "source": "nodejs",
-      "target": "javascript",
-      "type": "built_with",
-      "reason": "Node.js exposes a runtime for programs written in JavaScript."
+      "source": "javascript",
+      "target": "nodejs",
+      "type": "used_by",
+      "reason": "Node.js provides a host runtime in which JavaScript programs execute."
     },
     {
       "source": "nodejs",
@@ -1022,9 +1788,9 @@
     },
     {
       "source": "http",
-      "target": "https",
+      "target": "tls",
       "type": "secured_by",
-      "reason": "HTTPS applies TLS protection to HTTP communication."
+      "reason": "TLS protects HTTP exchanges in HTTPS; the transport differs across HTTP versions."
     },
     {
       "source": "https",
@@ -1095,7 +1861,7 @@
     {
       "source": "usb-security",
       "target": "usb",
-      "type": "specialization_of",
+      "type": "related_to",
       "reason": "USB security examines the trust boundaries of USB interfaces and device behavior."
     },
     {
@@ -1127,6 +1893,246 @@
       "target": "threads",
       "type": "implemented_by",
       "reason": "Threads are one mechanism for organizing overlapping execution."
+    },
+    {
+      "source": "gpio",
+      "target": "microcontroller",
+      "type": "part_of",
+      "reason": "Microcontrollers expose configurable digital input and output peripherals."
+    },
+    {
+      "source": "firmware",
+      "target": "embedded-systems",
+      "type": "part_of",
+      "reason": "Embedded behavior is implemented in firmware coordinated with the hardware."
+    },
+    {
+      "source": "embedded-systems",
+      "target": "rtos",
+      "type": "commonly_used_with",
+      "reason": "Some embedded applications use an RTOS to coordinate deadlines and tasks."
+    },
+    {
+      "source": "concurrency",
+      "target": "rtos",
+      "type": "prerequisite_of",
+      "reason": "Scheduling and shared resources require reasoning about overlapping work."
+    },
+    {
+      "source": "uart",
+      "target": "embedded-systems",
+      "type": "used_by",
+      "reason": "Asynchronous serial links connect embedded devices and diagnostic consoles."
+    },
+    {
+      "source": "spi",
+      "target": "embedded-systems",
+      "type": "used_by",
+      "reason": "Controller-clocked transactions connect memory and peripheral devices."
+    },
+    {
+      "source": "i2c",
+      "target": "embedded-systems",
+      "type": "used_by",
+      "reason": "Addressed shared buses connect compatible sensors and controllers."
+    },
+    {
+      "source": "spi",
+      "target": "i2c",
+      "type": "contrasts_with",
+      "reason": "Chip selection and timing differ from I²C addressing and shared open-drain lines."
+    },
+    {
+      "source": "uart",
+      "target": "serialization",
+      "type": "commonly_used_with",
+      "reason": "A byte stream still requires an application message format."
+    },
+    {
+      "source": "mqtt",
+      "target": "embedded-systems",
+      "type": "used_by",
+      "reason": "Connected devices can publish readings through a broker."
+    },
+    {
+      "source": "esp32",
+      "target": "microcontroller",
+      "type": "specialization_of",
+      "reason": "ESP32 is a family of targets whose exact chip and board capabilities vary."
+    },
+    {
+      "source": "raspberry-pi-pico",
+      "target": "microcontroller",
+      "type": "built_with",
+      "reason": "Pico boards use a model-specific microcontroller and supporting hardware."
+    },
+    {
+      "source": "esp32",
+      "target": "mqtt",
+      "type": "commonly_used_with",
+      "reason": "A supported ESP32 networking stack can transport MQTT application messages."
+    },
+    {
+      "source": "raspberry-pi-pico",
+      "target": "usb-hid",
+      "type": "commonly_used_with",
+      "reason": "Compatible firmware can implement HID behavior on suitable Pico hardware."
+    },
+    {
+      "source": "software-engineering",
+      "target": "testing",
+      "type": "requires",
+      "reason": "Acceptance criteria need behavioral evidence throughout a system's lifecycle."
+    },
+    {
+      "source": "input-validation",
+      "target": "software-engineering",
+      "type": "used_by",
+      "reason": "Boundary contracts protect applications from structurally invalid data."
+    },
+    {
+      "source": "authentication",
+      "target": "authorization",
+      "type": "contrasts_with",
+      "reason": "Establishing identity differs from deciding permission for an operation."
+    },
+    {
+      "source": "input-validation",
+      "target": "authorization",
+      "type": "contrasts_with",
+      "reason": "A valid identifier does not establish permission to access its resource."
+    },
+    {
+      "source": "http",
+      "target": "authentication",
+      "type": "commonly_used_with",
+      "reason": "Web applications associate authenticated sessions with HTTP requests."
+    },
+    {
+      "source": "authentication",
+      "target": "https",
+      "type": "secured_by",
+      "reason": "HTTPS protects credentials and session traffic while in transit."
+    },
+    {
+      "source": "git",
+      "target": "ci-cd",
+      "type": "prerequisite_of",
+      "reason": "Source history identifies the revision checked and delivered by a pipeline."
+    },
+    {
+      "source": "testing",
+      "target": "ci-cd",
+      "type": "used_by",
+      "reason": "Automated checks provide explicit gates before delivery."
+    },
+    {
+      "source": "observability",
+      "target": "debugging",
+      "type": "used_by",
+      "reason": "Logs, metrics and traces provide evidence for failure hypotheses."
+    },
+    {
+      "source": "debugging",
+      "target": "testing",
+      "type": "commonly_used_with",
+      "reason": "A reproduced failure becomes a regression test for the correction."
+    },
+    {
+      "source": "call-stack",
+      "target": "debugging",
+      "type": "used_by",
+      "reason": "Call state helps explain which execution path led to a symptom."
+    },
+    {
+      "source": "observability",
+      "target": "software-engineering",
+      "type": "used_by",
+      "reason": "Production evidence informs operations and future engineering changes."
+    },
+    {
+      "source": "serialization",
+      "target": "input-validation",
+      "type": "prerequisite_of",
+      "reason": "Parsing recovers values; validation checks their application contract."
+    },
+    {
+      "source": "serialization",
+      "target": "mqtt",
+      "type": "used_by",
+      "reason": "MQTT transports application-defined payload representations."
+    },
+    {
+      "source": "etl",
+      "target": "data-engineering",
+      "type": "part_of",
+      "reason": "ETL is one pipeline organization within broader data infrastructure work."
+    },
+    {
+      "source": "input-validation",
+      "target": "etl",
+      "type": "used_by",
+      "reason": "Pipeline boundaries check types, units and supported source formats."
+    },
+    {
+      "source": "data-engineering",
+      "target": "machine-learning",
+      "type": "prerequisite_of",
+      "reason": "Reliable datasets and traceable transformations support training and evaluation."
+    },
+    {
+      "source": "embeddings",
+      "target": "machine-learning",
+      "type": "application_of",
+      "reason": "Learned representations encode relationships useful for a task."
+    },
+    {
+      "source": "embeddings",
+      "target": "rag",
+      "type": "commonly_used_with",
+      "reason": "Dense retrieval can select source passages for generation."
+    },
+    {
+      "source": "data-engineering",
+      "target": "rag",
+      "type": "used_by",
+      "reason": "Ingestion, provenance and index updates keep the retrieval corpus usable."
+    },
+    {
+      "source": "rag",
+      "target": "authorization",
+      "type": "secured_by",
+      "reason": "Retrieval must preserve access restrictions on documents and derived chunks."
+    },
+    {
+      "source": "recommendation-systems",
+      "target": "embeddings",
+      "type": "commonly_used_with",
+      "reason": "Query and item representations can support candidate retrieval."
+    },
+    {
+      "source": "recommendation-systems",
+      "target": "machine-learning",
+      "type": "application_of",
+      "reason": "Learned rankers are one approach alongside rule-based recommendation."
+    },
+    {
+      "source": "rag",
+      "target": "testing",
+      "type": "tested_by",
+      "reason": "Retrieval and generated answers require separate evaluation cases."
+    },
+    {
+      "source": "etl",
+      "target": "serialization",
+      "type": "depends_on",
+      "reason": "Extraction and loading must interpret source and destination representations."
+    },
+    {
+      "source": "threads",
+      "target": "parallelism",
+      "type": "commonly_used_with",
+      "reason": "Multiple threads may execute simultaneously when hardware resources permit."
     }
   ],
   "sources": [
@@ -1469,7 +2475,8 @@
       "claims": [
         "Combining retrieval with language generation"
       ],
-      "status": "Needs review"
+      "status": "Needs review",
+      "accessedAt": "2026-11-26"
     },
     {
       "id": "python-json",
@@ -1480,7 +2487,8 @@
       "claims": [
         "JSON serialization and deserialization"
       ],
-      "status": "Needs review"
+      "status": "Needs review",
+      "accessedAt": "2026-11-26"
     },
     {
       "id": "python-struct",
@@ -1556,6 +2564,63 @@
       "type": "Technical guidance",
       "claims": [
         "Bluetooth security mechanisms and deployment considerations"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "swebok",
+      "title": "Software Engineering Body of Knowledge",
+      "publisher": "IEEE Computer Society",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+      "type": "Technical institution",
+      "claims": [
+        "Software engineering knowledge areas and lifecycle practices."
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "node-test",
+      "title": "Node.js test runner",
+      "publisher": "Node.js",
+      "url": "https://nodejs.org/api/test.html",
+      "type": "Official documentation",
+      "claims": [
+        "Executable test organization and test-runner behavior in Node.js."
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "chrome-devtools",
+      "title": "Chrome DevTools documentation",
+      "publisher": "Chrome for Developers",
+      "url": "https://developer.chrome.com/docs/devtools/",
+      "type": "Official documentation",
+      "claims": [
+        "Browser inspection and debugging workflows."
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "sklearn-pitfalls",
+      "title": "Common pitfalls and recommended practices",
+      "publisher": "Scikit-learn",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "type": "Official documentation",
+      "accessedAt": "2026-11-26",
+      "claims": [
+        "Training and evaluation separation; avoiding preprocessing leakage."
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "tf-retrieval",
+      "title": "Recommending movies: retrieval",
+      "publisher": "TensorFlow",
+      "url": "https://www.tensorflow.org/recommenders/examples/basic_retrieval",
+      "type": "Official documentation",
+      "accessedAt": "2026-11-26",
+      "claims": [
+        "Separation of retrieval and ranking; query and candidate embeddings in a two-tower model."
       ],
       "status": "Needs review"
     }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getRole, roles, roleVariability, skillProfiles } from "../../../content/careers";
 import { ConceptLinks } from "../concept-links";
+export const dynamicParams = false;
 export function generateStaticParams() { return roles.map(role => ({ id: role.id })); }
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> { const role = getRole((await params).id); return { title: role ? `${role.title} | TechCodex` : "Role not found | TechCodex", description: role?.summary }; }
 const sections = [["work", "Responsibilities & daily work"], ["foundations", "Foundations & prerequisites"], ["skills", "Skill expectations"], ["toolkit", "Languages, technologies & tools"], ["context", "Engineering context"], ["roadmap", "Learning roadmap"], ["career", "Career progression"], ["practice", "Projects & interviews"], ["misconceptions", "Misconceptions"], ["references", "Further reading"]];

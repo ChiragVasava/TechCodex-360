@@ -7,6 +7,7 @@ import { domains as legacyDomains } from "../../../content/domains";
 import { DomainTree } from "../../../components/domain-tree";
 import { KnowledgeMarkdown } from "../../../components/knowledge-markdown";
 import { articles } from "../../../lib/knowledge";
+export const dynamicParams = false;
 export function generateStaticParams() { return [...new Set([...taxonomy.map(d => d.id), ...legacyDomains.map(d => d.slug)])].map(slug => ({slug})); }
 export default async function DomainPage({params}: {params: Promise<{slug:string}>}) {
  const {slug} = await params; const domain = taxonomy.find(d => d.id === slug); const legacy = legacyDomains.find(d => d.slug === slug); if (!domain && !legacy) notFound();

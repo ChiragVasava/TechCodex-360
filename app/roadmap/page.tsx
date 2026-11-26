@@ -12,7 +12,7 @@ export default function RoadmapPage() {
   const [filter, setFilter] = useState<"all" | Status>("all");
   return (
     <div>
-      <div className="mb-6"><p className="label">Career journey</p><h1 className="mt-1 text-3xl font-bold">End-to-End Roadmap</h1></div>
+      <div className="mb-6"><p className="label">Preserved original roadmap</p><h1 className="mt-1 text-3xl font-bold">End-to-End Roadmap</h1><p className="notice">These are the original seed statuses and percentages. They are preserved for reference and are separate from your saved learning progress. Use Career roadmaps for connected, editable learning paths.</p></div>
       <div className="mb-6 flex gap-2 overflow-x-auto pb-1">{tabs.map((tab) => <button key={tab.value} onClick={() => setFilter(tab.value)} className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium ${filter === tab.value ? "bg-cyan-500 text-white" : "border border-slate-200 bg-white text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"}`}>{tab.label}</button>)}</div>
       <div className="space-y-5">{roadmap.map((group) => {
         const visible = group.items.filter((item) => filter === "all" || item.status === filter);

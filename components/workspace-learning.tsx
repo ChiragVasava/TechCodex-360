@@ -79,7 +79,7 @@ export function WorkspaceSummary() {
   const active = Object.entries(data.learning).filter(([, value]) => ["Learning", "Practicing", "Revising"].includes(value.status));
   const bookmarks = Object.entries(data.learning).filter(([, value]) => value.bookmarked);
   return <section aria-labelledby="personal-workspace-summary" className="card p-5">
-    <div className="flex flex-wrap items-center justify-between gap-2"><h2 id="personal-workspace-summary" className="section-title">Continue learning</h2><Link href="/workspace" className="text-sm underline">Open workspace →</Link></div>
+    <div className="flex flex-wrap items-center justify-between gap-2"><h2 id="personal-workspace-summary" className="section-title">Continue learning</h2><Link href="/workspace" className="text-sm underline">Open workspace</Link></div>
     <WorkspaceStorageNotice />
     {ready && <div className="mt-4 grid gap-6 md:grid-cols-2">
       <div><h3 className="font-medium">Recently visited</h3>{recent.length ? <ul className="mt-2 space-y-2 text-sm">{recent.map(([id]) => <li key={id}><ConceptLabel id={id} /></li>)}</ul> : <p className="muted mt-2 text-sm">Open an article to begin your reading history.</p>}</div>

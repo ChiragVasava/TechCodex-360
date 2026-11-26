@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getSkill, roles, skillProfiles } from "../../../content/careers";
 import { SkillJournal } from "../skill-journal";
 import { ConceptLinks } from "../../roles/concept-links";
+export const dynamicParams = false;
 export function generateStaticParams() { return skillProfiles.map(skill => ({ id: skill.id })); }
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> { const skill = getSkill((await params).id); return { title: `${skill?.title ?? "Skill not found"} | TechCodex`, description: skill?.summary }; }
 export default async function SkillPage({ params }: { params: Promise<{ id: string }> }) {

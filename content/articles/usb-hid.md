@@ -1,6 +1,6 @@
 # USB Human Interface Device
 
-USB HID is a device class that describes human-interface data through reports and report descriptors, allowing compatible hosts to interpret input and other device data.
+USB HID is a [USB](/knowledge/usb) device class that describes human-interface data through reports and report descriptors, allowing compatible hosts to interpret input and other device data.
 
 ## Reports rather than typed text
 

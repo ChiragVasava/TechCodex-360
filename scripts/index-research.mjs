@@ -46,6 +46,7 @@ for (const section of sections) { if (section.start !== expectedStart || section
 if (expectedStart !== lines.length + 1) throw new Error("Research index does not cover every line.");
 const serialized = `${JSON.stringify(index, null, 2)}\n`;
 if (process.argv.includes("--check")) {
-  if (!fs.existsSync(outputPath) || fs.readFileSync(outputPath, "utf8") !== serialized) { console.error("Research index is stale or missing. Run node scripts/index-research.mjs, review changed ranges, and commit the new manifest."); process.exitCode = 1; }
+  let current; try { current = JSON.parse(fs.readFileSync(outputPath, "utf8")); } catch {}
+  if (JSON.stringify(current) !== JSON.stringify(index)) { console.error("Research index is stale or missing. Run node scripts/index-research.mjs, review changed ranges, and commit the new manifest."); process.exitCode = 1; }
   else console.log(`Research index valid: ${lines.length} lines, ${raw.byteLength} bytes, SHA-256 ${sha256}; contiguous coverage confirmed.`);
 } else { fs.mkdirSync(path.dirname(outputPath), { recursive: true }); fs.writeFileSync(outputPath, serialized); console.log(`Indexed all ${lines.length} source lines in ${sections.length} contiguous sections. Original research file unchanged.`); }
