@@ -82,7 +82,9 @@ The checks reject duplicate IDs/aliases, missing files, dangling relationships, 
 
 The complete original corpus was reviewed before architecture work. It contains repeated answers, contradictory claims, malformed exported code, uncertain device names, and unverified current-event/legal statements.
 
-The research viewer preserves every line and displays review flags. The checksum detects source changes. After intentional edits or additions, review affected line ranges before running `npm run content:index`; existing article ranges do not automatically relocate. Original quiz counters and purchase suggestions are never imported as actual personal progress or device ownership.
+The research viewer preserves every line and displays review flags. The schema-v2 manifest hashes UTF-8 text after only CRLF-to-LF normalization, so Windows and Linux/Vercel checkouts agree. Its byte count uses the same normalized text. All other characters, whitespace, and terminal newlines remain significant; the source file is never rewritten. The viewer also displays the current checkout's raw byte hash separately.
+
+After intentional edits or additions, review affected line ranges before running `npm run content:index`; existing article ranges do not automatically relocate. Commit the updated manifest with the source changes. Builds check the committed manifest rather than silently regenerating it. Original quiz counters and purchase suggestions are never imported as actual personal progress or device ownership.
 
 Full concept extraction is still ongoing. The preserved archive is not presented as fully verified or fully migrated content.
 

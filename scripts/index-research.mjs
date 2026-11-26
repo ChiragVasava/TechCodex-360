@@ -1,14 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { normalizeResearch, researchFingerprint } from "../lib/research-integrity.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcePath = path.join(root, "research", "research.md");
 const outputPath = path.join(root, "content", "research-index.json");
 const raw = fs.readFileSync(sourcePath);
-const lines = raw.toString("utf8").replace(/\r\n/g, "\n").split("\n");
-const sha256 = crypto.createHash("sha256").update(raw).digest("hex");
+const lines = normalizeResearch(raw).split("\n");
+const fingerprint = researchFingerprint(raw);
 
 // Broad contiguous review groupings, not asserted original Q&A boundaries.
 const sections = [
@@ -40,7 +40,7 @@ const reviewFlags = [
   { id: "runtime-specific-behavior", title: "Runtime and framework behavior must be qualified", ranges: [{ start: 10566, end: lines.length }], status: "Needs review", detail: "Distinguish hardware threads, operating-system threads and JavaScript agents. Validate event-loop and middleware behavior against the relevant runtime/framework version; avoid universal timing or browser-process claims." },
 ].map((flag) => ({ ...flag, ranges: flag.ranges.filter((range) => range.start <= lines.length).map((range) => ({ ...range, end: Math.min(range.end, lines.length) })) }));
 
-const index = { schemaVersion: 1, source: "research/research.md", sha256, bytes: raw.byteLength, lineCount: lines.length, lineConvention: "One-based lines after CRLF normalization; a terminal newline creates a final empty display line. Hash covers original bytes.", coverage: "Complete source coverage; thematic grouping only, not complete concept extraction or factual verification.", sections, reviewFlags };
+const index = { schemaVersion: 2, source: "research/research.md", ...fingerprint, lineConvention: "One-based lines after CRLF-to-LF normalization; a terminal newline creates a final empty display line. SHA-256 and byte count cover UTF-8 text after only CRLF-to-LF normalization. The source file is never rewritten.", coverage: "Complete source coverage; thematic grouping only, not complete concept extraction or factual verification.", sections, reviewFlags };
 let expectedStart = 1;
 for (const section of sections) { if (section.start !== expectedStart || section.end < section.start) throw new Error("Research coverage is not contiguous."); expectedStart = section.end + 1; }
 if (expectedStart !== lines.length + 1) throw new Error("Research index does not cover every line.");
@@ -48,5 +48,5 @@ const serialized = `${JSON.stringify(index, null, 2)}\n`;
 if (process.argv.includes("--check")) {
   let current; try { current = JSON.parse(fs.readFileSync(outputPath, "utf8")); } catch {}
   if (JSON.stringify(current) !== JSON.stringify(index)) { console.error("Research index is stale or missing. Run node scripts/index-research.mjs, review changed ranges, and commit the new manifest."); process.exitCode = 1; }
-  else console.log(`Research index valid: ${lines.length} lines, ${raw.byteLength} bytes, SHA-256 ${sha256}; contiguous coverage confirmed.`);
+  else console.log(`Research index valid: ${lines.length} lines, ${fingerprint.bytes} LF-normalized UTF-8 bytes, SHA-256 ${fingerprint.sha256}; contiguous coverage confirmed.`);
 } else { fs.mkdirSync(path.dirname(outputPath), { recursive: true }); fs.writeFileSync(outputPath, serialized); console.log(`Indexed all ${lines.length} source lines in ${sections.length} contiguous sections. Original research file unchanged.`); }

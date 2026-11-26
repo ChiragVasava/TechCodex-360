@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "source": "research/research.md",
-  "sha256": "f6dfced4a580b610dad7fa341ec370dab4f00027fbf072b87b6d872e4931f2db",
-  "bytes": 574696,
+  "sha256": "d8036c6e8400beb2b01beb8739930d3acb1c62ffb4ff70ba2bfe0f53f6a21c5b",
+  "bytes": 560024,
   "lineCount": 14673,
-  "lineConvention": "One-based lines after CRLF normalization; a terminal newline creates a final empty display line. Hash covers original bytes.",
+  "lineConvention": "One-based lines after CRLF-to-LF normalization; a terminal newline creates a final empty display line. SHA-256 and byte count cover UTF-8 text after only CRLF-to-LF normalization. The source file is never rewritten.",
   "coverage": "Complete source coverage; thematic grouping only, not complete concept extraction or factual verification.",
   "sections": [
     {

@@ -66,3 +66,13 @@ This session delivers a coherent working foundation, not a claim that the entire
 - The research source remains byte-identical: SHA-256 `f6dfced4a580b610dad7fa341ec370dab4f00027fbf072b87b6d872e4931f2db`, 574,696 bytes. The viewer counts the terminal empty display line, yielding 14,673 displayed lines.
 
 These checks establish the working foundation's behavior. They do not establish factual verification of the whole corpus, full research migration, browser eviction guarantees, or completion of the expansion backlog.
+
+## Deployment follow-up — portable research integrity
+
+Vercel's Linux checkout exposed a manifest mismatch: Git stores the research source with LF endings, while the original Windows checkout uses CRLF. Schema v1 compared raw bytes, incorrectly treating checkout conversion as a content edit.
+
+Schema v2 hashes UTF-8 text after only CRLF-to-LF normalization and records the corresponding byte count. The indexer and research viewer share the same implementation. Raw checkout hashes remain visible separately; the original source is not rewritten. Historical raw-byte values above describe the original Windows checkout, not a portable content identity.
+
+Regression checks cover LF and CRLF fixtures, the committed Git blob, unchanged source bytes after checking, and rejection of real content edits or stale section metadata. All 23 tests and TypeScript checks pass. Commit the regenerated manifest together with the shared integrity helper, viewer, and indexer changes; deployments continue to check rather than regenerate the manifest.
+
+The production build passes with schema v2. The production research route returns HTTP 200 and reports matching normalized integrity without a stale-manifest warning. A new Vercel deployment has not been triggered from this workspace.
