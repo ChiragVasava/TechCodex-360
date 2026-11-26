@@ -1,0 +1,3 @@
+import { GraphExplorer } from "../../components/graph-explorer";
+export const metadata={title:"Knowledge graph · TechCodex 360"};
+export default async function Page({searchParams}:{searchParams:Promise<{concept?:string}>}){const {concept}=await searchParams;return <div className="page-width wide"><p className="eyebrow">Explore the connections</p><h1 className="page-title">Knowledge graph</h1><p className="page-intro">Choose a concept, follow a relationship, and keep exploring. Arrows show the recorded direction; the list explains why each connection exists.</p><GraphExplorer initialId={concept}/></div>;}

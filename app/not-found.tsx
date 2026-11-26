@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <div className="page-width py-10"><p className="eyebrow">404 · Not in the codex</p><h1 className="page-title">This page does not exist.</h1><p className="page-intro">The topic may not be documented yet, or this address may be incorrect.</p><div className="link-strip"><Link href="/knowledge">Browse written articles</Link><Link href="/domains">Explore the coverage map</Link><Link href="/search">Search the codex</Link></div></div>;}

@@ -1,0 +1,10 @@
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { articles, levels, normalize } from "../lib/knowledge";
+import { taxonomy } from "../content/taxonomy";
+export function KnowledgeIndex() {
+  const [q,setQ]=useState(""); const [domain,setDomain]=useState(""); const [level,setLevel]=useState(""); const [status,setStatus]=useState("");
+  const visible=articles.filter(a=>(!domain||a.domains.includes(domain))&&(!level||a.level===level)&&(!status||a.verification.status===status)&&normalize(`${a.title} ${a.aliases.join(" ")} ${a.summary}`).includes(normalize(q)));
+  return <><div className="filter-bar"><label className="grow">Search articles<input className="input mt-1" value={q} onChange={e=>setQ(e.target.value)} placeholder="Title, synonym, or explanation"/></label><label>Domain<select className="input mt-1" value={domain} onChange={e=>setDomain(e.target.value)}><option value="">All domains</option>{taxonomy.map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label><label>Level<select className="input mt-1" value={level} onChange={e=>setLevel(e.target.value)}><option value="">All levels</option>{levels.map(l=><option key={l}>{l}</option>)}</select></label><label>Evidence<select className="input mt-1" value={status} onChange={e=>setStatus(e.target.value)}><option value="">All statuses</option>{[...new Set(articles.map(a=>a.verification.status))].map(s=><option key={s}>{s}</option>)}</select></label></div><p className="muted text-sm my-4" role="status">{visible.length} authored articles match your filters</p><div className="article-list">{visible.sort((a,b)=>a.title.localeCompare(b.title)).map(a=><Link href={`/knowledge/${a.id}`} key={a.id}><div className="flex justify-between gap-4"><strong>{a.title}</strong><span className="badge">{a.level}</span></div><p className="muted mt-1">{a.summary}</p><span className="text-xs muted">{a.kind} · {a.verification.status}</span></Link>)}</div>{!visible.length&&<p className="empty-state">No articles match. Explore the domain tree to see topics still awaiting documentation.</p>}</>;
+}

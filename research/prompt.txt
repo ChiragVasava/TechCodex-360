@@ -1,0 +1,2236 @@
+# MASTER BUILD PROMPT — My End-to-End Tech & Engineering Codex
+
+## 1. Your role
+
+Act as a **Principal Software Architect, Senior Full-Stack Engineer, Technical Documentation Architect, Knowledge-Graph Engineer, UX/UI Designer, and Engineering Education Specialist**.
+
+You are working inside my existing GitHub repository, which is already cloned and opened in VS Code.
+
+Your task is to transform the existing project into a comprehensive, interconnected engineering knowledge platform.
+
+Do not start by generating an entirely new project. First inspect the existing codebase, understand its architecture, identify what is already implemented, and then improve it.
+
+You must work with the actual files in the repository. Do not assume that the existing implementation, architecture, database, or design matches my requirements.
+
+---
+
+# 2. Project identity
+
+**Project name:** My End-to-End Tech & Engineering Codex
+
+**Project type:** Personal Engineering Encyclopedia, Knowledge Graph, Learning Management System, Career Roadmap, Technical Reference Library, and Engineering Inventory.
+
+### Main vision
+
+I want one centralized website where I can learn, explore, connect, organize, and track practically every major area of technology and engineering.
+
+The website should feel like a combination of:
+
+- Wikipedia — interconnected encyclopedia articles and references.
+- GeeksforGeeks — structured technical explanations, examples, tutorials, and learning paths.
+- MDN Web Docs — reliable technical documentation and detailed explanations.
+- Roadmap.sh — visual career and technology roadmaps.
+- Obsidian/Logseq — interconnected knowledge and backlinks.
+- GitBook — organized technical documentation.
+- Personal learning management system — progress tracking and personal notes.
+
+These are design and information-architecture inspirations, not websites to copy.
+
+I do NOT want a basic dashboard containing a few cards for Software Development, AI, Cloud, IoT, Cybersecurity, etc.
+
+I want a real knowledge system in which every important concept is an individually explorable entity connected to other relevant concepts.
+
+**The fundamental principle: Everything should connect to everything it is technically or conceptually related to, without creating meaningless relationships.**
+
+---
+
+# 3. First task: Audit the existing repository
+
+Before changing code, inspect the entire existing project.
+
+Examine:
+
+1. Root directory and project structure.
+2. README and existing documentation.
+3. package.json or equivalent dependency manifests.
+4. Frontend framework and routing architecture.
+5. Backend architecture, if present.
+6. Database schema and existing data.
+7. Existing domain, topic, skill, roadmap, and role definitions.
+8. Reusable components.
+9. Existing styles, layouts, and responsive behavior.
+10. Existing search functionality.
+11. Existing learning-progress functionality.
+12. Existing IoT inventory and troubleshooting functionality.
+13. Authentication and persistence, if implemented.
+14. The `research.md` file.
+15. Existing TODOs, unfinished pages, mock data, placeholder content, and broken functionality.
+
+Create an internal understanding of the architecture before implementing changes.
+
+### Important rules
+
+- Preserve useful existing functionality.
+- Do not delete working features simply to make implementation easier.
+- Do not replace the entire technology stack without a compelling technical reason.
+- Do not create duplicate pages or data structures for concepts that already exist.
+- Do not introduce unnecessary dependencies.
+- Do not hardcode large collections of knowledge directly inside UI components.
+- Do not use placeholder cards to pretend that a feature is implemented.
+- Do not stop after producing an audit report.
+
+After inspecting the project, create or update an implementation plan and start implementing it.
+
+---
+
+# 4. Most important instruction: Use research.md as the primary knowledge source
+
+I have created a file named:
+
+`research.md`
+
+It contains my research, questions, explanations, technical concepts, comparisons, learning discussions, career-related research, and other material gathered from previous learning sessions.
+
+**You MUST read the complete `research.md` before designing the knowledge architecture or migrating its content.**
+
+Do not read only its beginning or search for a few keywords and ignore the remaining content.
+
+Treat it as the initial knowledge corpus for the project.
+
+### How to process research.md
+
+For every meaningful topic:
+
+1. Identify the actual concept being discussed.
+2. Extract its definition and explanation.
+3. Identify its technical category.
+4. Identify prerequisites.
+5. Identify related concepts.
+6. Identify related technologies, tools, and protocols.
+7. Identify related engineering roles.
+8. Identify examples and practical applications.
+9. Identify any security implications.
+10. Identify questions that need further research.
+11. Preserve useful explanations and comparisons.
+12. Organize it into individual knowledge articles.
+
+For example, if the research contains a discussion about JavaScript threads, do not create only one article called `JavaScript Threads`.
+
+Separate and connect relevant concepts:
+
+- JavaScript execution model
+- Main thread
+- Call stack
+- Execution context
+- Event loop
+- Task queue
+- Microtask queue
+- Web APIs
+- Web Workers
+- Node.js Worker Threads
+- libuv
+- V8 engine
+- Garbage collection
+- Just-In-Time compilation
+- Browser rendering pipeline
+- DOM manipulation
+- Concurrency
+- Parallelism
+- Processes
+- Software threads
+- Hardware threads
+- CPU cores
+- Scheduling
+
+Create relationships between these concepts so that exploring one naturally leads to the others.
+
+Apply this extraction process to the entire research file.
+
+### Research preservation
+
+Do not silently discard material just because it does not fit the initial taxonomy.
+
+If a topic is incomplete, uncertain, outdated, duplicated, or requires verification:
+
+- Preserve the original material.
+- Mark its verification status.
+- Identify what needs improvement.
+- Connect it to the appropriate knowledge area.
+- Keep a reference to its original source or research entry.
+
+Avoid inventing missing technical details.
+
+---
+
+# 5. Fundamental information architecture
+
+The website must use a hierarchical but interconnected structure.
+
+Use these conceptual levels:
+
+```text
+TECH & ENGINEERING
+│
+├── Domains
+│   ├── Disciplines
+│   │   ├── Sub-disciplines
+│   │   │   ├── Topics
+│   │   │   │   ├── Concepts
+│   │   │   │   ├── Technologies
+│   │   │   │   ├── Protocols
+│   │   │   │   ├── Tools
+│   │   │   │   └── Techniques
+│
+├── Engineering Roles
+│   ├── Responsibilities
+│   ├── Required Knowledge
+│   ├── Skills
+│   ├── Technologies
+│   ├── Tools
+│   └── Career Roadmaps
+│
+├── Learning System
+│   ├── Beginner
+│   ├── Intermediate
+│   ├── Advanced
+│   ├── Expert
+│   └── Mastery
+│
+├── Knowledge Graph
+│   ├── Prerequisites
+│   ├── Related Concepts
+│   ├── Dependencies
+│   ├── Applications
+│   └── Cross-domain Connections
+│
+├── Personal Workspace
+│   ├── Notes
+│   ├── Bookmarks
+│   ├── Learning Progress
+│   ├── Projects
+│   ├── IoT Inventory
+│   └── Troubleshooting Logs
+│
+└── References
+    ├── Official Documentation
+    ├── Standards
+    ├── Research Papers
+    ├── Tutorials
+    └── External Resources
+```
+
+This is a starting structure, not a rigid limitation.
+
+A concept may belong to multiple domains without duplicating its article.
+
+For example:
+
+- TCP belongs to networking.
+- TCP is also important in backend development.
+- TCP is relevant to cloud infrastructure.
+- TCP is relevant to network security.
+- TCP is used in distributed systems.
+
+All these sections should point to the same canonical TCP article.
+
+---
+
+# 6. Build a comprehensive engineering domain taxonomy
+
+The website must cover the technology ecosystem from foundational computing to specialized engineering.
+
+Do not limit the platform to web development or conventional software engineering.
+
+Create the following initial top-level domains and expand them with meaningful subdomains.
+
+## A. Core Computing Foundations
+
+Include:
+
+- Computer Science fundamentals
+- Computer Engineering
+- Computer Architecture
+- Digital Logic Design
+- Operating Systems
+- Process Management
+- Threads and Concurrency
+- Memory Management
+- CPU and GPU Architecture
+- Computer Organization
+- Data Structures
+- Algorithms
+- Programming Fundamentals
+- Compiler Design
+- Programming Language Theory
+- Discrete Mathematics
+- Linear Algebra
+- Probability and Statistics
+- Automata Theory
+- Theory of Computation
+- Computer Networks
+- Distributed Systems
+- Database Fundamentals
+- Information Theory
+- Cryptography Fundamentals
+- File Systems
+- Virtualization
+
+## B. Software Engineering and Development
+
+Include:
+
+- Software Engineering
+- Software Development Life Cycle
+- Requirements Engineering
+- Software Architecture
+- Design Patterns
+- Clean Code
+- SOLID Principles
+- Domain-Driven Design
+- Test-Driven Development
+- Behavior-Driven Development
+- Code Review
+- Version Control
+- Git and GitHub
+- Build Systems
+- Package Management
+- Dependency Management
+- API Design
+- Documentation Engineering
+- Technical Debt
+- Performance Engineering
+- Software Maintenance
+- Refactoring
+- Release Engineering
+
+## C. Web Development
+
+Separate:
+
+### Frontend Engineering
+
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- DOM
+- Browser APIs
+- Accessibility
+- Responsive Design
+- Rendering
+- Browser Internals
+- React
+- Vue
+- Angular
+- Next.js
+- State Management
+- Frontend Testing
+- Web Performance
+- Web Components
+
+### Backend Engineering
+
+- HTTP
+- REST
+- GraphQL
+- WebSockets
+- Authentication
+- Authorization
+- Sessions
+- Databases
+- Caching
+- Queues
+- Background Jobs
+- Server Architecture
+- API Gateways
+- Rate Limiting
+- Backend Testing
+- Application Security
+
+### Full-Stack Engineering
+
+Connect frontend, backend, databases, authentication, deployment, architecture, and testing.
+
+## D. Mobile and Application Development
+
+Include:
+
+- Android Development
+- iOS Development
+- Cross-platform Development
+- Flutter
+- React Native
+- Kotlin
+- Swift
+- Mobile UI
+- Mobile Architecture
+- Mobile Databases
+- Push Notifications
+- App Security
+- Desktop Applications
+- Electron
+- .NET Desktop
+- Native Application Development
+
+## E. Cloud Computing
+
+Include:
+
+- Cloud Fundamentals
+- IaaS
+- PaaS
+- SaaS
+- Public Cloud
+- Private Cloud
+- Hybrid Cloud
+- AWS
+- Microsoft Azure
+- Google Cloud Platform
+- Compute
+- Storage
+- Networking
+- IAM
+- Serverless
+- Cloud Databases
+- Cloud Security
+- Cost Optimization
+- Infrastructure Architecture
+- Multi-cloud
+
+## F. DevOps, Platform Engineering and Reliability
+
+Include:
+
+- Linux Administration
+- Shell Scripting
+- CI/CD
+- GitHub Actions
+- Jenkins
+- Docker
+- Containers
+- Kubernetes
+- Infrastructure as Code
+- Terraform
+- Ansible
+- Configuration Management
+- Deployment Strategies
+- Observability
+- Logging
+- Metrics
+- Distributed Tracing
+- Monitoring
+- Incident Management
+- SRE
+- Platform Engineering
+- Site Reliability
+- Capacity Planning
+- Disaster Recovery
+
+## G. AI and Machine Learning
+
+Include:
+
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- Neural Networks
+- Natural Language Processing
+- Computer Vision
+- Reinforcement Learning
+- Generative AI
+- Large Language Models
+- Transformers
+- Embeddings
+- Vector Databases
+- Retrieval-Augmented Generation
+- AI Agents
+- Model Training
+- Model Evaluation
+- Fine-tuning
+- Model Deployment
+- MLOps
+- Responsible AI
+- AI Security
+
+## H. Data and Analytics
+
+Include:
+
+- Data Analytics
+- Data Science
+- Data Engineering
+- Business Intelligence
+- Statistics
+- Data Visualization
+- SQL
+- Data Warehousing
+- Data Lakes
+- ETL and ELT
+- Data Pipelines
+- Apache Spark
+- Apache Kafka
+- Stream Processing
+- Data Modeling
+- Data Governance
+- Data Quality
+- Predictive Analytics
+- Experimentation
+- A/B Testing
+
+## I. Cybersecurity and Ethical Hacking
+
+Include:
+
+- Cybersecurity Fundamentals
+- Network Security
+- Application Security
+- Web Security
+- API Security
+- Cloud Security
+- Endpoint Security
+- Identity and Access Management
+- Cryptography
+- Penetration Testing
+- Vulnerability Assessment
+- Threat Modeling
+- Digital Forensics
+- Malware Analysis
+- Reverse Engineering
+- Incident Response
+- Security Operations
+- SIEM
+- SOC
+- Wireless Security
+- Hardware Security
+- IoT Security
+- Firmware Security
+- Secure Development
+- Security Governance
+- Privacy Engineering
+
+All practical security material must be framed around authorized labs, defensive engineering, and legitimate testing.
+
+## J. IoT and Embedded Systems
+
+Include:
+
+- Embedded Systems
+- Microcontrollers
+- Microprocessors
+- Firmware Development
+- Embedded C
+- Embedded C++
+- MicroPython
+- Arduino
+- ESP32
+- Raspberry Pi
+- Raspberry Pi Pico
+- GPIO
+- Sensors
+- Actuators
+- ADC and DAC
+- UART
+- SPI
+- I²C
+- JTAG
+- SWD
+- USB
+- RTOS
+- FreeRTOS
+- Embedded Linux
+- Device Drivers
+- IoT Protocols
+- MQTT
+- CoAP
+- Zigbee
+- LoRaWAN
+- Bluetooth Low Energy
+- Device Management
+- OTA Updates
+- IoT Security
+
+## K. Hardware and Electronics Engineering
+
+Include:
+
+- Electrical Engineering Fundamentals
+- Electronics
+- Analog Electronics
+- Digital Electronics
+- Circuit Design
+- PCB Design
+- FPGA
+- ASIC
+- VLSI
+- Semiconductor Fundamentals
+- Logic Gates
+- Transistors
+- Power Electronics
+- Signal Processing
+- Digital Signal Processing
+- RF Engineering
+- Antenna Design
+- Communication Systems
+- Hardware Debugging
+- Logic Analyzers
+- Oscilloscopes
+- Hardware Testing
+- Hardware Reverse Engineering
+
+## L. Networking and Telecommunications
+
+Include:
+
+- OSI Model
+- TCP/IP
+- Ethernet
+- Routing
+- Switching
+- DNS
+- DHCP
+- NAT
+- VLAN
+- VPN
+- Firewalls
+- Wireless Networks
+- Wi-Fi
+- Bluetooth
+- Cellular Networks
+- 4G and 5G
+- Network Automation
+- Network Monitoring
+- Software-Defined Networking
+- Network Function Virtualization
+- Network Security
+
+## M. Debugging, Testing and Quality Engineering
+
+This must be a first-class domain, not a small subsection of software development.
+
+Include:
+
+- Debugging Fundamentals
+- Breakpoints
+- Call Stacks
+- Stack Traces
+- Memory Debugging
+- Performance Profiling
+- CPU Profiling
+- Memory Profiling
+- Network Debugging
+- Browser DevTools
+- Log Analysis
+- Distributed Tracing
+- Root Cause Analysis
+- Unit Testing
+- Integration Testing
+- End-to-End Testing
+- Regression Testing
+- Load Testing
+- Stress Testing
+- Security Testing
+- Fuzz Testing
+- Static Analysis
+- Dynamic Analysis
+- QA Automation
+- Test Strategy
+- Reliability Testing
+- Hardware Debugging
+
+## N. Additional Engineering Areas
+
+Do not stop at the domains above. Explore and support:
+
+- Game Development
+- Graphics Programming
+- Computer Graphics
+- AR and VR
+- Robotics
+- Automation Engineering
+- Control Systems
+- Mechatronics
+- Autonomous Systems
+- Blockchain and Distributed Ledger Technology
+- Quantum Computing
+- High Performance Computing
+- Scientific Computing
+- Bioinformatics
+- Computational Engineering
+- Human-Computer Interaction
+- UI/UX Engineering
+- Accessibility Engineering
+- Technical Writing
+- Engineering Management
+- Product Management
+- Systems Engineering
+- Research Engineering
+
+Make the architecture expandable so new domains can be added without changing the whole application.
+
+---
+
+# 7. Engineering roles and career positions
+
+One of the most important features is a comprehensive engineering role directory.
+
+I want to understand not only technologies but also the professional positions that use them.
+
+Build a dedicated **Career & Engineering Roles Encyclopedia**.
+
+Include roles such as:
+
+### Software Engineering
+
+- Software Engineer
+- Software Developer
+- Frontend Developer
+- Backend Developer
+- Full-Stack Developer
+- Web Developer
+- Mobile Developer
+- Android Developer
+- iOS Developer
+- Desktop Application Developer
+- Java Developer
+- Python Developer
+- .NET Developer
+- C++ Developer
+- Game Developer
+- Graphics Programmer
+
+### Infrastructure and Cloud
+
+- Cloud Engineer
+- Cloud Architect
+- DevOps Engineer
+- Platform Engineer
+- Site Reliability Engineer
+- Infrastructure Engineer
+- Linux System Administrator
+- Network Engineer
+- Network Architect
+- Database Administrator
+- Database Engineer
+- Systems Engineer
+- Release Engineer
+
+### AI and Data
+
+- Data Analyst
+- Business Intelligence Analyst
+- Data Scientist
+- Data Engineer
+- Analytics Engineer
+- Machine Learning Engineer
+- AI Engineer
+- Research Scientist
+- NLP Engineer
+- Computer Vision Engineer
+- MLOps Engineer
+- AI Infrastructure Engineer
+
+### Cybersecurity
+
+- Security Analyst
+- SOC Analyst
+- Security Engineer
+- Application Security Engineer
+- Cloud Security Engineer
+- Network Security Engineer
+- Penetration Tester
+- Red Team Operator
+- Blue Team Analyst
+- Digital Forensics Analyst
+- Malware Analyst
+- Security Researcher
+- Hardware Security Researcher
+- IoT Security Engineer
+- Product Security Engineer
+- Security Architect
+- Incident Response Engineer
+- GRC Analyst
+
+### Embedded, IoT and Hardware
+
+- Embedded Software Engineer
+- Firmware Engineer
+- Embedded Linux Engineer
+- IoT Developer
+- IoT Solutions Architect
+- Hardware Engineer
+- Electronics Engineer
+- PCB Design Engineer
+- FPGA Engineer
+- ASIC Design Engineer
+- VLSI Engineer
+- Robotics Engineer
+- Control Systems Engineer
+- RF Engineer
+- Signal Processing Engineer
+- Hardware Validation Engineer
+- Hardware Test Engineer
+- Semiconductor Engineer
+
+### Quality and Debugging
+
+- QA Engineer
+- QA Automation Engineer
+- Software Test Engineer
+- Performance Engineer
+- Test Architect
+- Reliability Engineer
+- Debugging Engineer
+- Systems Validation Engineer
+- Hardware Test Engineer
+
+### Product and Engineering Leadership
+
+- Technical Product Manager
+- Engineering Manager
+- Technical Lead
+- Software Architect
+- Solutions Architect
+- Systems Architect
+- Technical Program Manager
+- Engineering Director
+- CTO
+
+This is an initial list. Expand it with relevant specializations, emerging positions, and overlapping roles.
+
+Do not imply that every company uses identical job titles or that every role has one universal definition.
+
+## Required structure for every role article
+
+Every engineering role must have:
+
+1. Official/common role name.
+2. Alternative job titles.
+3. What the role actually does.
+4. Primary responsibilities.
+5. Typical daily activities.
+6. Problems the role solves.
+7. Required foundational knowledge.
+8. Required technical skills.
+9. Programming languages.
+10. Frameworks and technologies.
+11. Tools and software.
+12. Hardware knowledge, if applicable.
+13. Networking knowledge, if applicable.
+14. Security knowledge, if applicable.
+15. Databases and infrastructure knowledge.
+16. Required mathematics, if applicable.
+17. Beginner-to-advanced learning roadmap.
+18. Prerequisite concepts.
+19. Related roles.
+20. Career progression.
+21. Example projects.
+22. Interview topics.
+23. Common misconceptions.
+24. Further reading and official resources.
+
+Also distinguish:
+
+- Required skills
+- Commonly expected skills
+- Optional skills
+- Specialized skills
+- Skills that vary by employer
+
+---
+
+# 8. Skill and proficiency-level system
+
+I want every topic, technology, and skill to have a clear learning level.
+
+Use these five levels:
+
+| Level | Meaning |
+|---|---|
+| Beginner | Understand fundamental definitions and perform basic tasks |
+| Intermediate | Independently use the technology and solve ordinary problems |
+| Advanced | Design, optimize, troubleshoot, and handle complex scenarios |
+| Expert | Deep specialization, architecture, research, and complex problem-solving |
+| Mastery | Exceptional depth, original contributions, and the ability to advance the discipline |
+
+Do not assume that every skill has a perfectly linear path.
+
+Some skills have branches, specializations, or prerequisites that depend on the intended role.
+
+For every skill, show:
+
+- What I should know before starting.
+- What I should understand at this level.
+- What I should be able to build or perform.
+- What problems I should be able to solve.
+- Practical exercises.
+- Assessment criteria.
+- What comes next.
+- Related skills.
+
+For example:
+
+```text
+Networking
+│
+├── Beginner
+│   ├── IP addresses
+│   ├── MAC addresses
+│   ├── DNS
+│   ├── DHCP
+│   └── Basic routing
+│
+├── Intermediate
+│   ├── Subnetting
+│   ├── VLANs
+│   ├── TCP troubleshooting
+│   ├── Firewall configuration
+│   └── Packet analysis
+│
+├── Advanced
+│   ├── Network architecture
+│   ├── BGP
+│   ├── Network automation
+│   ├── Advanced troubleshooting
+│   └── Network security architecture
+│
+├── Expert
+│   ├── Large-scale network design
+│   ├── Advanced routing architecture
+│   └── Network performance engineering
+│
+└── Mastery
+    └── Original research and significant architectural contributions
+```
+
+The examples are illustrative. Validate prerequisites and learning outcomes for each subject.
+
+---
+
+# 9. The most important feature: Interconnected knowledge articles
+
+This is the heart of the entire website.
+
+Every concept should have its own canonical article page.
+
+For example, when I open:
+
+`/knowledge/usb`
+
+I want a proper technical encyclopedia article.
+
+It should contain:
+
+1. Definition.
+2. Introduction.
+3. Why it exists.
+4. Historical background, when relevant.
+5. How it works.
+6. Internal architecture.
+7. Important terminology.
+8. Technical specifications or standards.
+9. Protocols and mechanisms.
+10. Components and layers.
+11. Practical examples.
+12. Code examples where appropriate.
+13. Diagrams.
+14. Common implementations.
+15. Applications.
+16. Advantages and limitations.
+17. Security implications.
+18. Common problems.
+19. Debugging and troubleshooting.
+20. Related technologies.
+21. Prerequisites.
+22. What to learn next.
+23. Related engineering roles.
+24. Recommended resources.
+25. References and verification date.
+
+### Word-to-word and concept-to-concept connections
+
+Every meaningful technical term should be clickable when it refers to a known concept in the Codex.
+
+For example:
+
+USB is a communication standard used to connect peripherals to a host computer.
+
+Its article should link to:
+
+- Computer Architecture
+- Peripheral Devices
+- Serial Communication
+- USB Host
+- USB Device
+- USB Controller
+- USB Enumeration
+- USB Descriptor
+- USB Endpoint
+- USB HID
+- USB Mass Storage
+- Device Driver
+- Operating System
+- Firmware
+- Embedded Systems
+- Microcontroller
+- USB Security
+- BadUSB
+- Hardware Security
+- Embedded Security Engineer
+
+Similarly, an article about `USB HID` should link back to USB and forward to:
+
+- Human Interface Devices
+- Keyboard
+- Mouse
+- HID Report
+- Device Descriptor
+- USB Interrupt Transfer
+- Operating-System Input Subsystem
+- HID Emulation
+- Input Injection
+- USB Security Testing
+
+The connections must be meaningful and contextual.
+
+### Important linking behavior
+
+- Clicking a concept opens its canonical article.
+- Articles show backlinks: where the concept is used or mentioned.
+- Related concepts are displayed with a reason for the relationship.
+- Prerequisite concepts are clearly distinguished from merely related concepts.
+- Related concepts can be explored without returning to the main dashboard.
+- Missing articles should be identifiable and marked as not yet documented.
+- Avoid broken links and duplicate article pages.
+- Avoid turning every ordinary word into an unrelated link.
+
+The system should support bidirectional relationships.
+
+---
+
+# 10. Knowledge relationship engine
+
+Implement a proper relationship model rather than relying exclusively on manually written related-topic arrays.
+
+Support relationship types such as:
+
+- `prerequisite_of`
+- `depends_on`
+- `part_of`
+- `subtopic_of`
+- `related_to`
+- `used_by`
+- `implemented_by`
+- `built_with`
+- `alternative_to`
+- `specialization_of`
+- `application_of`
+- `contrasts_with`
+- `replaced_by`
+- `extends`
+- `requires`
+- `commonly_used_with`
+- `tested_by`
+- `secured_by`
+
+Example:
+
+```text
+JavaScript
+  ├── uses → ECMAScript
+  ├── executes_on → JavaScript Engine
+  ├── interacts_with → DOM
+  ├── uses → Event Loop
+  ├── supports → Web Workers
+  ├── used_in → Frontend Development
+  ├── used_in → Backend Development
+  └── requires_understanding_of → Programming Fundamentals
+```
+
+Another example:
+
+```text
+Embedded Systems
+  ├── uses → Microcontrollers
+  ├── uses → Firmware
+  ├── communicates_using → UART
+  ├── communicates_using → SPI
+  ├── communicates_using → I2C
+  ├── uses → GPIO
+  ├── may_use → RTOS
+  ├── related_to → IoT
+  └── career_path → Embedded Software Engineer
+```
+
+Create a knowledge graph view where users can explore these connections visually.
+
+The graph must be usable rather than decorative.
+
+Include:
+
+- Search within graph.
+- Zoom and pan.
+- Clickable nodes.
+- Relationship labels.
+- Highlighted paths.
+- Prerequisite exploration.
+- Domain filters.
+- Role filters.
+- Skill-level filters.
+- A way to return to the selected concept.
+
+For large graphs, use progressive loading and neighborhood exploration instead of rendering thousands of nodes simultaneously.
+
+---
+
+# 11. Standardized technical article quality
+
+I am confused by the fact that different websites explain the same concept differently.
+
+I want the Codex to establish a consistent documentation standard.
+
+For every technical article, follow this structure:
+
+## 1. Definition
+
+Provide a precise, technically correct definition.
+
+## 2. Simple explanation
+
+Explain it in beginner-friendly language.
+
+## 3. Why it exists
+
+Explain the problem it was created to solve.
+
+## 4. How it works
+
+Explain the internal mechanism step by step.
+
+## 5. Architecture and components
+
+Explain the parts and how they interact.
+
+## 6. Technical terminology
+
+Define important terms.
+
+## 7. Practical example
+
+Give a realistic example.
+
+## 8. Code or implementation
+
+Where applicable, show code, commands, configuration, or pseudocode.
+
+## 9. Diagram
+
+Show the architecture, workflow, lifecycle, or communication process.
+
+## 10. Applications
+
+Explain where it is used in real systems.
+
+## 11. Advantages and limitations
+
+Explain trade-offs and boundaries.
+
+## 12. Security and reliability
+
+Explain relevant risks and defensive considerations.
+
+## 13. Common problems
+
+Include errors, misconceptions, and troubleshooting.
+
+## 14. Related concepts
+
+Link to relevant Codex articles.
+
+## 15. Learning progression
+
+Explain prerequisites and the next concepts to study.
+
+## 16. Engineering roles
+
+Explain which professional roles use this knowledge.
+
+## 17. References
+
+Provide trustworthy resources and sources.
+
+Do not force irrelevant sections into every article. For example, a mathematical concept does not need a hardware security section.
+
+### Definition consistency
+
+When a concept has multiple accepted meanings:
+
+- Explain the context.
+- Distinguish different uses.
+- Mention important terminology differences.
+- Identify the standards or implementations that define its behavior.
+- Avoid presenting one vendor's definition as universal.
+
+Where relevant, distinguish:
+
+- Concept vs implementation.
+- Specification vs product.
+- Protocol vs application.
+- Programming language vs runtime.
+- Framework vs library.
+- Tool vs technology.
+- Job title vs professional specialization.
+
+---
+
+# 12. Research quality and source management
+
+The Codex must not become a collection of unverified AI-generated definitions.
+
+Build a source and verification system.
+
+Prioritize sources in this order where appropriate:
+
+1. Official standards and specifications.
+2. Official product documentation.
+3. Official language and framework documentation.
+4. Government and recognized technical institutions.
+5. Peer-reviewed research papers.
+6. Reputable technical textbooks.
+7. Well-established educational references.
+8. Community explanations and discussions.
+
+Examples include:
+
+- IEEE standards.
+- RFC documents.
+- W3C.
+- WHATWG.
+- ISO/IEC.
+- NIST.
+- OWASP.
+- MDN.
+- Linux documentation.
+- Microsoft Learn.
+- AWS documentation.
+- Google Cloud documentation.
+- Official GitHub repositories.
+- Official hardware manufacturer documentation.
+
+Each article should support:
+
+- Source title.
+- Publisher.
+- URL.
+- Source type.
+- Date accessed or verified.
+- Relevant claims supported by the source.
+- Current verification status.
+
+Use a verification status such as:
+
+- Verified
+- Needs review
+- Outdated
+- Conflicting sources
+- Incomplete
+- Personal notes
+
+For fast-changing areas such as AI, cloud platforms, cybersecurity, and software frameworks, display a last-verified date.
+
+Never invent citations, specifications, versions, or official standards.
+
+When sources disagree, explain the disagreement instead of silently choosing one.
+
+---
+
+# 13. Website pages and navigation
+
+Create a comprehensive navigation system.
+
+## Main navigation
+
+1. Home
+2. Explore Domains
+3. Knowledge Encyclopedia
+4. Engineering Roles
+5. Career Roadmaps
+6. Skills & Technologies
+7. Knowledge Graph
+8. Learning Workspace
+9. Projects
+10. IoT Inventory
+11. Troubleshooting
+12. References
+13. About / Settings
+
+Use a responsive sidebar on desktop and a suitable mobile navigation pattern.
+
+The website must be fully usable on desktop, tablet, and mobile.
+
+## Home page
+
+The home page should act as a starting point for exploration.
+
+Include:
+
+- Global search.
+- Continue learning.
+- Recently visited articles.
+- My learning progress.
+- Domains overview.
+- Recommended next topics.
+- Saved articles.
+- Active learning paths.
+- Recently updated knowledge.
+- Quick access to inventory and troubleshooting.
+- Knowledge graph entry point.
+
+Avoid making the homepage a collection of meaningless statistics and decorative cards.
+
+## Domain exploration page
+
+Show a structured hierarchy:
+
+```text
+Domain
+  → Discipline
+    → Sub-discipline
+      → Topics
+        → Concepts
+```
+
+Support:
+
+- Tree navigation.
+- Search.
+- Filters.
+- Domain descriptions.
+- Related domains.
+- Skill-level indicators.
+- Learning progress.
+
+## Article page
+
+Create an encyclopedia-style reading experience.
+
+Suggested layout:
+
+- Left: collapsible table of contents.
+- Center: main article.
+- Right: related concepts, prerequisites, and references.
+
+For smaller screens, convert side panels into collapsible sections.
+
+The reading experience should prioritize clarity, typography, code readability, diagrams, and navigation.
+
+---
+
+# 14. Global search
+
+Search is a core feature.
+
+I want to search for any:
+
+- Domain
+- Discipline
+- Topic
+- Concept
+- Technical term
+- Technology
+- Protocol
+- Tool
+- Engineering role
+- Skill
+- Standard
+- Troubleshooting issue
+- Project
+- Reference
+
+Search should understand relationships and synonyms.
+
+For example, searching `HID` should find:
+
+- Human Interface Device
+- USB HID
+- HID report
+- Keyboard emulation
+- USB keyboard
+- BadUSB
+
+Searching `SRE` should find:
+
+- Site Reliability Engineering
+- Site Reliability Engineer
+- Reliability Engineering
+- Observability
+- Incident Management
+- Monitoring
+- Service-Level Objectives
+
+Support:
+
+- Instant suggestions.
+- Search history.
+- Recent searches.
+- Filters.
+- Exact matches.
+- Synonyms.
+- Alternative terminology.
+- Related concepts.
+- Keyboard navigation.
+
+If practical, implement a command-palette-style search interface.
+
+---
+
+# 15. Personal learning and progress management
+
+I want to track everything I have learned, am learning, or plan to learn.
+
+Every topic, skill, technology, and article should support personal learning status.
+
+Use statuses:
+
+- Not Started
+- Planned
+- Learning
+- Practicing
+- Revising
+- Completed
+- Mastered
+- Needs Revision
+
+Also track proficiency level separately:
+
+- Beginner
+- Intermediate
+- Advanced
+- Expert
+- Mastery
+
+Do not confuse progress status with proficiency.
+
+For example:
+
+```text
+Topic: TCP/IP
+
+Learning Status: Practicing
+Current Level: Beginner
+
+Prerequisites:
+  ✓ Basic Networking
+  ✓ IP Addressing
+  ✓ MAC Addresses
+
+Current Topics:
+  ✓ TCP Fundamentals
+  ◉ TCP Handshake
+  ○ TCP Congestion Control
+  ○ TCP Retransmission
+
+Next:
+  → UDP
+  → Ports
+  → Socket Programming
+```
+
+Features:
+
+- Mark an article as learned.
+- Save personal notes.
+- Record practical exercises.
+- Set learning goals.
+- Add revision reminders.
+- Track progress by domain.
+- Track progress by engineering role.
+- Track progress by skill.
+- View learning history.
+- Identify incomplete prerequisites.
+- Resume learning from the last visited position.
+
+Progress must persist across sessions.
+
+Provide a useful dashboard showing actual learning progress, not just arbitrary percentages.
+
+---
+
+# 16. Career roadmap builder
+
+Create roadmaps based on professional roles.
+
+Example:
+
+```text
+Frontend Developer
+│
+├── Computer Fundamentals
+├── Programming Fundamentals
+├── HTML
+├── CSS
+├── JavaScript
+├── TypeScript
+├── Browser Internals
+├── DOM
+├── HTTP
+├── React
+├── State Management
+├── API Integration
+├── Testing
+├── Accessibility
+├── Performance Optimization
+├── Security
+└── Deployment
+```
+
+Another example:
+
+```text
+Embedded Software Engineer
+│
+├── Electronics Fundamentals
+├── Digital Logic
+├── C Programming
+├── Computer Architecture
+├── Microcontrollers
+├── Memory
+├── GPIO
+├── UART
+├── SPI
+├── I2C
+├── Interrupts
+├── Timers
+├── RTOS
+├── Firmware Development
+├── Hardware Debugging
+├── Device Drivers
+├── Embedded Security
+└── System Integration
+```
+
+Each roadmap must connect to actual knowledge articles and skills.
+
+Roadmaps should show:
+
+- Required prerequisites.
+- Recommended learning order.
+- Optional branches.
+- Specializations.
+- Practical projects.
+- Assessment milestones.
+- Relevant tools.
+- Related job positions.
+
+Do not assume that every person must learn every listed technology to qualify for a role.
+
+---
+
+# 17. Personal projects and practical engineering workspace
+
+Create a dedicated projects section.
+
+For each project, support:
+
+- Project name.
+- Description.
+- Domain.
+- Technologies.
+- Tools.
+- Skills demonstrated.
+- Related knowledge articles.
+- Architecture.
+- Repository URL.
+- Documentation.
+- Status.
+- Challenges.
+- Lessons learned.
+- Screenshots and diagrams.
+- Future improvements.
+
+Projects should connect back to the concepts they demonstrate.
+
+For example, a USB HID project should connect to:
+
+- Embedded Systems
+- USB
+- HID
+- Microcontrollers
+- Firmware
+- Device Descriptors
+- Operating Systems
+- Hardware Security
+
+---
+
+# 18. IoT and hardware inventory
+
+I also want a structured inventory for my physical engineering devices.
+
+Support:
+
+- Microcontrollers.
+- Development boards.
+- Sensors.
+- Actuators.
+- Networking equipment.
+- Wireless devices.
+- Debugging tools.
+- Logic analyzers.
+- Oscilloscopes.
+- USB devices.
+- RFID/NFC tools.
+- Embedded development equipment.
+- Electronics components.
+
+For each inventory item:
+
+- Name.
+- Manufacturer.
+- Model.
+- Category.
+- Description.
+- Specifications.
+- Interfaces.
+- Supported protocols.
+- Operating voltage.
+- Power requirements.
+- Pinout.
+- Compatibility.
+- Firmware.
+- Drivers.
+- Official documentation.
+- Purchase information.
+- Ownership status.
+- Location.
+- Personal notes.
+- Related knowledge articles.
+- Related projects.
+
+Example:
+
+```text
+Device: ESP32 Development Board
+
+Category: Embedded Systems
+
+Interfaces:
+  - Wi-Fi
+  - Bluetooth (model-dependent)
+  - GPIO
+  - UART
+  - SPI
+  - I2C
+
+Related concepts:
+  - Microcontroller
+  - Firmware
+  - IoT
+  - Wireless Communication
+  - Embedded C
+  - BLE
+  - MQTT
+
+Related roles:
+  - Embedded Software Engineer
+  - IoT Developer
+  - IoT Security Engineer
+```
+
+Do not assume all ESP32 variants have identical capabilities. Model-specific specifications must be recorded.
+
+---
+
+# 19. Troubleshooting and debugging knowledge base
+
+Create a personal troubleshooting system.
+
+For every issue, record:
+
+- Issue title.
+- Date.
+- Device or software.
+- Environment.
+- Operating system.
+- Version.
+- Error message.
+- Symptoms.
+- Root cause.
+- Investigation steps.
+- Solution.
+- Commands used.
+- Logs.
+- Screenshots.
+- Related concepts.
+- Related documentation.
+- Whether the problem is resolved.
+
+Support categories such as:
+
+- Windows
+- Linux
+- VS Code
+- Programming Languages
+- Web Development
+- Databases
+- Networking
+- Cloud
+- Docker
+- Git
+- Embedded Systems
+- Electronics
+- Hardware
+- IoT
+- Security
+
+Troubleshooting records should link to the underlying concepts.
+
+For example, a USB serial driver problem should connect to USB, UART, device drivers, COM ports, and operating-system device management.
+
+---
+
+# 20. Data architecture and content model
+
+Design a scalable data model.
+
+Do not make the whole application dependent on hardcoded frontend arrays.
+
+At minimum, consider entities such as:
+
+```text
+Domain
+Discipline
+Topic
+Concept
+Technology
+Protocol
+Tool
+Skill
+EngineeringRole
+Roadmap
+RoadmapStep
+KnowledgeArticle
+KnowledgeRelationship
+Source
+PersonalNote
+LearningProgress
+Project
+InventoryItem
+TroubleshootingRecord
+Tag
+```
+
+A concept should have a stable unique identifier and canonical URL/slug.
+
+The data model must support:
+
+- One-to-many relationships.
+- Many-to-many relationships.
+- Bidirectional knowledge relationships.
+- Multiple domains for one concept.
+- Multiple roles using one skill.
+- Multiple skills required by one role.
+- Multiple technologies used in one project.
+- Multiple references supporting one article.
+- Personal learning state without modifying the shared article itself.
+
+Separate public knowledge content from personal user data.
+
+Avoid duplicated definitions across multiple pages.
+
+Use a relational database with an appropriate relationship model if the existing architecture supports it. A graph database is not automatically required: a relational model with relationship tables may be sufficient initially.
+
+Choose the simplest architecture that supports the requirements.
+
+---
+
+# 21. Content ingestion and expansion
+
+The knowledge base must be expandable over time.
+
+I should be able to add a new concept without manually editing many unrelated pages.
+
+Build an approach for:
+
+1. Adding new domains.
+2. Adding new topics.
+3. Creating individual articles.
+4. Defining relationships.
+5. Connecting skills to roles.
+6. Connecting technologies to projects.
+7. Adding references.
+8. Updating existing articles.
+9. Importing research notes.
+10. Detecting duplicate concepts.
+11. Identifying missing related articles.
+12. Reviewing outdated material.
+
+If useful, create a content format such as Markdown or MDX with structured metadata.
+
+Example:
+
+```yaml
+id: usb-hid
+title: USB Human Interface Device
+slug: usb-hid
+type: concept
+
+domains:
+  - core-computing
+  - hardware
+  - cybersecurity
+
+level:
+  - beginner
+  - intermediate
+
+prerequisites:
+  - usb-fundamentals
+  - serial-communication
+
+related:
+  - usb-enumeration
+  - device-descriptor
+  - hid-report
+  - device-driver
+  - badusb
+
+roles:
+  - embedded-software-engineer
+  - hardware-security-researcher
+
+verification:
+  status: needs-review
+```
+
+The exact format can be adjusted to the existing stack.
+
+---
+
+# 22. Design and user experience requirements
+
+I want a serious technical encyclopedia, not a generic AI-generated SaaS dashboard.
+
+### Visual direction
+
+Use:
+
+- Clean documentation-style typography.
+- Excellent reading width.
+- Clear headings and hierarchy.
+- Code syntax highlighting.
+- Tables.
+- Diagrams.
+- Breadcrumbs.
+- Side navigation.
+- Backlinks.
+- Related article panels.
+- Search-first navigation.
+- Light and dark themes.
+- Responsive layout.
+- Accessible contrast.
+- Consistent spacing.
+
+Avoid:
+
+- Excessive gradients.
+- Excessive rounded cards.
+- Huge decorative hero sections.
+- Random icons for every concept.
+- Unnecessary animations.
+- Empty charts.
+- Fake statistics.
+- Repeated card grids.
+- Excessive whitespace.
+- Dashboard design that hides the actual knowledge.
+
+The article-reading experience should be the primary design priority.
+
+### Inspiration
+
+Study the information architecture and readability of:
+
+- Wikipedia
+- GeeksforGeeks
+- MDN Web Docs
+- Roadmap.sh
+- GitBook
+- Obsidian
+
+Create an original design that combines the strongest relevant characteristics.
+
+---
+
+# 23. Technical implementation requirements
+
+Inspect the existing stack and use it appropriately.
+
+Requirements:
+
+- Responsive frontend.
+- Maintainable components.
+- Reusable article templates.
+- Centralized content model.
+- Search indexing.
+- Persistent user progress.
+- Stable URLs.
+- Proper error handling.
+- Loading states.
+- Empty states.
+- Accessibility.
+- Performance optimization.
+- SEO-friendly article pages where applicable.
+- Database migrations if using a database.
+- Type safety where supported.
+- Input validation.
+- Secure authentication if user accounts are implemented.
+- Tests for important features.
+
+Do not introduce unnecessary microservices.
+
+Do not create a graph database simply because the application has a knowledge graph.
+
+Do not use localStorage as the only permanent storage mechanism for important data unless the application is intentionally designed as a local-only application.
+
+If the current project is local-first, preserve that approach where appropriate and provide export and backup options.
+
+---
+
+# 24. Implementation order
+
+Do not try to create hundreds of superficial pages at once.
+
+Build a working foundation and progressively expand the knowledge corpus.
+
+## Phase 1 — Repository audit and architecture
+
+- Inspect existing files.
+- Read the entire research.md.
+- Identify existing functionality.
+- Identify missing requirements.
+- Design the content model.
+- Design the relationship model.
+- Create the implementation plan.
+
+## Phase 2 — Information architecture
+
+- Create domain hierarchy.
+- Create role taxonomy.
+- Create skill taxonomy.
+- Create article taxonomy.
+- Create relationship types.
+- Establish canonical IDs and URLs.
+
+## Phase 3 — Core encyclopedia
+
+- Build the home page.
+- Build domain explorer.
+- Build article templates.
+- Build concept pages.
+- Build breadcrumbs.
+- Build related-concept navigation.
+- Build backlinks.
+- Build source references.
+
+## Phase 4 — Knowledge graph
+
+- Implement relationships.
+- Implement graph visualization.
+- Implement graph filtering.
+- Implement prerequisite navigation.
+- Implement connected-topic exploration.
+
+## Phase 5 — Search
+
+- Implement global search.
+- Add synonyms.
+- Add role and technology search.
+- Add filters.
+- Add related search results.
+
+## Phase 6 — Career and skill system
+
+- Build role encyclopedia.
+- Build skill pages.
+- Build proficiency levels.
+- Build career roadmaps.
+- Connect all roadmap items to actual articles.
+
+## Phase 7 — Personal workspace
+
+- Implement learning progress.
+- Implement notes.
+- Implement bookmarks.
+- Implement projects.
+- Implement revision tracking.
+
+## Phase 8 — Inventory and troubleshooting
+
+- Implement IoT inventory.
+- Implement hardware specifications.
+- Implement troubleshooting records.
+- Connect records to knowledge articles.
+
+## Phase 9 — Research ingestion
+
+- Process research.md.
+- Create canonical articles from meaningful concepts.
+- Preserve original explanations and context.
+- Build relationships.
+- Mark unverified content.
+- Identify gaps requiring future research.
+
+## Phase 10 — Quality and validation
+
+- Run the project.
+- Fix build errors.
+- Test all routes.
+- Test all major interactions.
+- Test mobile responsiveness.
+- Test persistence.
+- Test search.
+- Test relationship navigation.
+- Check for broken links.
+- Check for duplicate articles.
+- Check for inaccurate content.
+- Update documentation.
+
+You may adjust the order if repository constraints require it, but do not omit core features.
+
+---
+
+# 25. Initial content quality: Build representative complete examples
+
+Before expanding the entire encyclopedia, implement several high-quality interconnected knowledge clusters.
+
+These will establish the standard for every future article.
+
+### Cluster 1 — JavaScript and browser execution
+
+Include:
+
+- JavaScript
+- ECMAScript
+- JavaScript Engine
+- V8
+- Execution Context
+- Call Stack
+- Main Thread
+- Event Loop
+- Task Queue
+- Microtask Queue
+- Web APIs
+- Web Workers
+- Node.js
+- Worker Threads
+- libuv
+- Garbage Collection
+- JIT Compilation
+- Browser Rendering
+- DOM
+- CSSOM
+- Processes
+- Software Threads
+- Hardware Threads
+- Concurrency
+- Parallelism
+
+### Cluster 2 — Networking
+
+Include:
+
+- Computer Networks
+- OSI Model
+- TCP/IP Model
+- Ethernet
+- MAC Address
+- IP Address
+- Subnetting
+- DNS
+- DHCP
+- ARP
+- TCP
+- UDP
+- HTTP
+- HTTPS
+- TLS
+- Ports
+- Sockets
+- Routing
+- NAT
+- Firewalls
+- VPN
+- Wi-Fi
+- Network Troubleshooting
+
+### Cluster 3 — USB and hardware security
+
+Include:
+
+- USB
+- USB Host
+- USB Device
+- USB Enumeration
+- USB Descriptor
+- USB Endpoint
+- USB HID
+- HID Report
+- USB Mass Storage
+- Device Drivers
+- Firmware
+- Microcontrollers
+- BadUSB
+- HID Injection
+- USB Security
+- Hardware Security
+- Embedded Security
+- USB Protocol Analysis
+
+Connect these to Raspberry Pi Pico, Flipper Zero, USB Rubber Ducky, Bash Bunny, and other relevant hardware tools.
+
+### Cluster 4 — Embedded and IoT
+
+Include:
+
+- Embedded Systems
+- Microcontroller
+- Microprocessor
+- Firmware
+- GPIO
+- UART
+- SPI
+- I²C
+- JTAG
+- SWD
+- ADC
+- DAC
+- PWM
+- Interrupts
+- Timers
+- RTOS
+- Embedded Linux
+- Sensors
+- Actuators
+- MQTT
+- BLE
+- ESP32
+- Raspberry Pi Pico
+- IoT Security
+
+### Cluster 5 — Software engineering and web development
+
+Include:
+
+- Software Engineering
+- SDLC
+- Requirements
+- Architecture
+- Frontend
+- Backend
+- Full Stack
+- HTTP
+- APIs
+- Databases
+- SQL
+- Authentication
+- Authorization
+- Testing
+- Debugging
+- Git
+- CI/CD
+- Deployment
+- Monitoring
+- Performance
+
+### Cluster 6 — AI and data engineering
+
+Include:
+
+- AI
+- Machine Learning
+- Deep Learning
+- Neural Networks
+- NLP
+- Computer Vision
+- Transformers
+- LLMs
+- Embeddings
+- Vector Search
+- RAG
+- AI Agents
+- Data Analytics
+- Data Science
+- Data Engineering
+- ETL
+- Data Warehousing
+- Streaming
+- MLOps
+
+Each cluster must contain real interconnected articles, not just lists of topic names.
+
+---
+
+# 26. Definition of completion
+
+The project should not be considered complete merely because the homepage looks attractive.
+
+It should satisfy the following:
+
+- I can explore engineering domains hierarchically.
+- I can open individual concept articles.
+- I can navigate from one concept to another.
+- Articles show meaningful relationships.
+- I can see prerequisites and next topics.
+- I can explore engineering roles.
+- I can understand the skills required for a role.
+- I can follow role-specific roadmaps.
+- I can track learning status and proficiency separately.
+- I can save personal notes.
+- I can connect projects to concepts.
+- I can manage my physical hardware inventory.
+- I can document troubleshooting issues.
+- I can search across the knowledge base.
+- I can identify unverified and outdated content.
+- I can add new concepts without rewriting the application.
+- My data persists across sessions.
+- The website works on mobile and desktop.
+- Existing useful project functionality remains intact.
+
+Most importantly:
+
+**A concept should never be an isolated page when it has meaningful relationships with other concepts.**
+
+---
+
+# 27. How you should work as my VS Code agent
+
+Follow these instructions throughout implementation:
+
+1. First inspect the repository and research.md.
+2. Do not ask me to manually repeat information already present in the repository.
+3. Do not replace the existing project without understanding it.
+4. Do not merely produce a proposal; implement the actual changes.
+5. Work incrementally and keep the application runnable.
+6. Use reusable components and structured content.
+7. Do not create fake content to make the site appear complete.
+8. Do not invent technical facts or citations.
+9. Mark incomplete and unverified material honestly.
+10. Connect articles to existing canonical concepts rather than creating duplicates.
+11. Keep the code maintainable and well documented.
+12. Run tests and builds after meaningful changes.
+13. Fix errors instead of leaving them for me.
+14. Update README and project documentation.
+15. Maintain a progress checklist so work can continue across sessions.
+
+If the complete vision is too large for one implementation session, finish a coherent working foundation first and maintain a clearly prioritized backlog.
+
+Do not claim a feature is implemented unless it actually works.
+
+## Final instruction
+
+I am not trying to build another tutorial website or a collection of bookmarks.
+
+I want to build my own **End-to-End Tech & Engineering Codex**: a continuously expandable, interconnected technical encyclopedia that helps me understand how every layer of computing works, how different technologies depend on one another, what professional roles use them, what skills those roles require, and how I can progress from beginner to expert.
+
+Think of it as building a personal map of the entire technology and engineering ecosystem.
+
+**Start by auditing the existing repository and reading the complete `research.md`. Then design and implement the architecture that best fulfills this vision.**

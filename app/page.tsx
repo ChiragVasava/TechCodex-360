@@ -1,44 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Cpu, Database, HardDrive, Network, Shield, Terminal, WandSparkles, Globe2, Smartphone } from "lucide-react";
-import { roadmap, devices, software, logs } from "../content/data";
-
-const domains = [
-  ["Core Computing", "core-computing", Network],
-  ["Software Development", "software-web-app", Terminal],
-  ["Web Development", "software-web-app", Globe2],
-  ["App Development", "software-web-app", Smartphone],
-  ["Cloud & DevOps", "cloud-devops", HardDrive],
-  ["Debugging", "core-computing", WandSparkles],
-  ["IoT & Hardware", "iot-hardware", Cpu],
-  ["AI & Data", "ai-ml-data", Database],
-  ["Cybersecurity", "cybersecurity", Shield],
-] as const;
-
-export default function HomePage() {
-  const items = roadmap.flatMap((group) => group.items);
-  const stats = [
-    ["Total Skills Mastered", items.filter((item) => item.status === "experienced").length, "skills"],
-    ["Currently Learning", items.filter((item) => item.status === "learning").length, "skills"],
-    ["Planned Roles", items.filter((item) => item.status === "planned").length, "roles"],
-    ["Logged Devices", devices.length, "devices"],
-    ["Debugging Entries", logs.length, "entries"],
-  ];
-  return (
-    <div className="space-y-8">
-      <div className="card relative overflow-hidden p-6 md:p-8">
-        <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-cyan-500/10 to-transparent"/>
-        <p className="label mb-2">Personal Engineering Codex</p>
-        <h1 className="max-w-3xl text-2xl font-bold md:text-4xl">TechCodex 360: <span className="text-cyan-600 dark:text-cyan-400">My End-to-End Tech &amp; Engineering Codex</span></h1>
-        <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-400">{software.length} tools cataloged · {devices.length} devices tracked · {items.length} roadmap skills mapped</p>
-      </div>
-      <section>
-        <div className="mb-4 flex items-end justify-between"><div><p className="label">At a glance</p><h2 className="mt-1 text-xl font-bold">Quick stats</h2></div></div>
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">{stats.map(([label, value, unit]) => <div key={label as string} className="card p-5"><p className="text-sm text-slate-500 dark:text-slate-400">{label}</p><div className="mt-3 flex items-baseline gap-2"><strong className="text-3xl">{value}</strong><span className="text-xs text-slate-400">{unit}</span></div></div>)}</div>
-      </section>
-      <section>
-        <div className="mb-4"><p className="label">Explore</p><h2 className="mt-1 text-xl font-bold">Engineering domains</h2></div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{domains.map(([title, slug, Icon]) => <Link key={title} href={`/domains/${slug}`} className="card group flex items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-cyan-300 dark:hover:border-cyan-700"><span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-50 text-cyan-600 dark:bg-cyan-500/10 dark:text-cyan-300"><Icon size={21}/></span><span className="flex-1 font-semibold">{title}</span><ArrowRight className="text-slate-300 transition group-hover:text-cyan-500" size={18}/></Link>)}</div>
-      </section>
-    </div>
-  );
-}
+import { taxonomy } from "../content/taxonomy";
+import { articles, relationships, getArticle } from "../lib/knowledge";
+import { WorkspaceSummary } from "../components/workspace-learning";
+const startingPoints=[["event-loop","What happens after your JavaScript runs?","Follow the call stack, tasks, and browser concurrency."],["dns","How does a name become a connection?","Trace DNS, addresses, ports, TCP, and HTTPS."],["usb","What happens when you plug in a device?","Explore enumeration, descriptors, firmware, and trust."],["embedded-systems","How does code control the physical world?","Connect microcontrollers, interfaces, and real-time work."],["input-validation","Where should an application trust its input?","Separate validation, identity, and authorization."],["rag","How can a model use your knowledge?","Connect data pipelines, embeddings, retrieval, and evaluation."]];
+export default function HomePage(){return <div className="page-width"><section className="home-intro"><p className="eyebrow">My End-to-End Tech & Engineering Codex</p><h1>A connected understanding<br className="hidden sm:block"/> of engineering.</h1><p>From a line of code to the systems beneath it. Explore the concepts, follow their connections, and make your learning your own.</p><div className="link-strip"><Link className="btn primary" href="/knowledge">Open the encyclopedia</Link><Link className="btn" href="/graph?concept=usb">Explore the knowledge graph</Link></div><div className="corpus-note">{articles.length} authored articles · {relationships.length} documented relationships · {taxonomy.length} domains <Link href="/references">Review status</Link></div></section><WorkspaceSummary/><section className="home-section"><div className="section-heading"><div><p className="eyebrow">Start with a question</p><h2 className="section-title">Six paths into the codex</h2></div><Link href="/knowledge">All articles</Link></div><div className="starting-points">{startingPoints.map(([id,title,description],i)=><Link key={id} href={"/knowledge/"+id}><span className="path-number">{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{description}</p><span className="text-xs muted">{getArticle(id)?.level} · {getArticle(id)?.verification.status}</span></div></Link>)}</div></section><section className="home-section"><div className="section-heading"><div><p className="eyebrow">Across the disciplines</p><h2 className="section-title">The engineering atlas</h2></div><Link href="/domains">Open the full hierarchy</Link></div><div className="domain-directory">{taxonomy.map(d=><Link key={d.id} href={"/domains/"+d.id}><strong>{d.title}</strong><span>{d.disciplines.map(b=>b.title).join(" · ")}</span></Link>)}</div></section><section className="home-section workspace-shortcuts"><div><p className="eyebrow">Learn through practice</p><h2 className="section-title">Turn knowledge into evidence.</h2><p className="muted">Connect an engineering project, document a device, or record an investigation. Bring practical work back to the concepts it teaches.</p></div><div className="link-strip"><Link href="/projects">Projects</Link><Link href="/iot">Hardware inventory</Link><Link href="/logs">Troubleshooting</Link><Link href="/roles">Explore engineering roles</Link></div></section></div>;}

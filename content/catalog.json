@@ -1,0 +1,1563 @@
+{
+  "articles": [
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "domains": [
+        "web-development",
+        "core-computing"
+      ],
+      "discipline": "Programming languages",
+      "aliases": [
+        "JS",
+        "ECMAScript language"
+      ],
+      "summary": "JavaScript is a programming language whose core semantics are standardized as ECMAScript; browsers and server runtimes supply additional APIs around that language.",
+      "sources": [
+        "mdn-execution",
+        "html-event-loop"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "javascript",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "event-loop",
+      "title": "Event loop",
+      "domains": [
+        "web-development",
+        "core-computing",
+        "debugging-quality"
+      ],
+      "discipline": "Execution and scheduling",
+      "level": "Intermediate",
+      "aliases": [
+        "JavaScript event loop",
+        "microtask queue",
+        "task queue"
+      ],
+      "summary": "An event loop coordinates scheduled work in a host environment. In a browser, it selects tasks, runs microtask checkpoints and participates in deciding when rendering can occur.",
+      "sources": [
+        "html-event-loop",
+        "mdn-execution",
+        "node-event-loop"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "event-loop",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    },
+    {
+      "id": "call-stack",
+      "title": "Call stack",
+      "domains": [
+        "core-computing",
+        "web-development",
+        "debugging-quality"
+      ],
+      "discipline": "Execution and scheduling",
+      "aliases": [
+        "stack trace",
+        "execution context"
+      ],
+      "summary": "A call stack records active function invocations so execution can return to the caller when a function finishes.",
+      "sources": [
+        "mdn-execution"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "call-stack",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "web-workers",
+      "title": "Web Workers",
+      "kind": "technology",
+      "domains": [
+        "web-development",
+        "core-computing"
+      ],
+      "discipline": "Browser platform",
+      "level": "Intermediate",
+      "aliases": [
+        "Worker",
+        "browser worker"
+      ],
+      "summary": "Web Workers allow scripts to run in a worker execution environment separate from the page's main execution environment.",
+      "sources": [
+        "mdn-workers"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "web-workers",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js",
+      "kind": "technology",
+      "domains": [
+        "web-development",
+        "software-engineering"
+      ],
+      "discipline": "Server runtimes",
+      "level": "Intermediate",
+      "aliases": [
+        "Node",
+        "NodeJS",
+        "libuv",
+        "Worker Threads"
+      ],
+      "summary": "Node.js is a JavaScript runtime that combines a JavaScript engine with server and operating-system APIs, including asynchronous I/O and worker-thread facilities.",
+      "sources": [
+        "node-event-loop",
+        "node-workers"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "nodejs",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "dom",
+      "title": "Document Object Model",
+      "kind": "technology",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser platform",
+      "aliases": [
+        "DOM",
+        "document tree"
+      ],
+      "summary": "The DOM represents a document as objects and nodes with interfaces that programs can inspect and modify.",
+      "sources": [
+        "mdn-dom"
+      ],
+      "research": [
+        {
+          "start": 4801,
+          "end": 4965
+        }
+      ],
+      "slug": "dom",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "processes",
+      "title": "Processes",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Operating systems",
+      "aliases": [
+        "process",
+        "address space"
+      ],
+      "summary": "A process is an operating-system execution environment that groups resources such as an address space, open handles and one or more threads.",
+      "sources": [
+        "linux-pthreads"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "processes",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "threads",
+      "title": "Software threads",
+      "domains": [
+        "core-computing",
+        "debugging-quality"
+      ],
+      "discipline": "Operating systems",
+      "level": "Intermediate",
+      "aliases": [
+        "thread",
+        "OS thread",
+        "software thread"
+      ],
+      "summary": "A software thread is an execution sequence that an operating system or runtime can schedule, usually sharing a process's address space with other threads in that process.",
+      "sources": [
+        "linux-pthreads",
+        "node-workers"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "threads",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    },
+    {
+      "id": "concurrency",
+      "title": "Concurrency",
+      "domains": [
+        "core-computing",
+        "software-engineering"
+      ],
+      "discipline": "Execution and scheduling",
+      "level": "Intermediate",
+      "aliases": [
+        "concurrent execution",
+        "asynchronous concurrency"
+      ],
+      "summary": "Concurrency is the organization of multiple activities whose lifetimes overlap, allowing each to make progress without requiring simultaneous execution.",
+      "sources": [
+        "mdn-execution",
+        "linux-pthreads"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "concurrency",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    },
+    {
+      "id": "parallelism",
+      "title": "Parallelism",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Execution and scheduling",
+      "level": "Intermediate",
+      "aliases": [
+        "parallel execution",
+        "CPU parallelism"
+      ],
+      "summary": "Parallelism means performing multiple pieces of work at the same time using multiple execution resources.",
+      "sources": [
+        "linux-pthreads",
+        "node-workers",
+        "mdn-workers"
+      ],
+      "research": [
+        {
+          "start": 10300,
+          "end": 12352
+        }
+      ],
+      "slug": "parallelism",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    },
+    {
+      "id": "computer-networks",
+      "title": "Computer networks",
+      "domains": [
+        "networking",
+        "core-computing"
+      ],
+      "discipline": "Network foundations",
+      "aliases": [
+        "networking",
+        "network"
+      ],
+      "summary": "A computer network connects devices so they can exchange information using agreed communication rules called protocols.",
+      "sources": [
+        "rfc8200",
+        "rfc9293",
+        "mdn-http"
+      ],
+      "research": [
+        {
+          "start": 1360,
+          "end": 2300
+        },
+        {
+          "start": 9402,
+          "end": 9543
+        }
+      ],
+      "slug": "computer-networks",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "ip-address",
+      "title": "IP address",
+      "domains": [
+        "networking",
+        "core-computing",
+        "cloud-computing"
+      ],
+      "discipline": "Addressing and routing",
+      "aliases": [
+        "IPv4",
+        "IPv6",
+        "IP addressing"
+      ],
+      "summary": "An IP address identifies an interface or a set of interfaces for Internet Protocol delivery within an addressing and routing context.",
+      "sources": [
+        "rfc8200",
+        "rfc1034"
+      ],
+      "research": [
+        {
+          "start": 1360,
+          "end": 1990
+        },
+        {
+          "start": 9402,
+          "end": 9543
+        }
+      ],
+      "slug": "ip-address",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "dns",
+      "title": "Domain Name System",
+      "kind": "protocol",
+      "domains": [
+        "networking",
+        "web-development",
+        "cloud-computing"
+      ],
+      "discipline": "Naming and resolution",
+      "aliases": [
+        "DNS",
+        "name resolution",
+        "DNS resolver"
+      ],
+      "summary": "DNS is a distributed hierarchical naming system that publishes resource records under domain names, including records used to locate Internet services.",
+      "sources": [
+        "rfc1034",
+        "rfc1035"
+      ],
+      "research": [
+        {
+          "start": 1360,
+          "end": 1990
+        }
+      ],
+      "slug": "dns",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "ports",
+      "title": "Transport ports and sockets",
+      "domains": [
+        "networking",
+        "web-development"
+      ],
+      "discipline": "Transport protocols",
+      "aliases": [
+        "port",
+        "TCP port",
+        "UDP port",
+        "socket"
+      ],
+      "summary": "A transport port is a numbered identifier used with an address and transport protocol to distinguish communication endpoints; a socket is an operating-system or runtime abstraction for network communication.",
+      "sources": [
+        "rfc9293",
+        "mdn-http"
+      ],
+      "research": [
+        {
+          "start": 1360,
+          "end": 2300
+        }
+      ],
+      "slug": "ports",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept",
+      "level": "Beginner"
+    },
+    {
+      "id": "tcp",
+      "title": "Transmission Control Protocol",
+      "kind": "protocol",
+      "domains": [
+        "networking",
+        "core-computing",
+        "web-development",
+        "cloud-computing"
+      ],
+      "discipline": "Transport protocols",
+      "level": "Intermediate",
+      "aliases": [
+        "TCP",
+        "TCP/IP"
+      ],
+      "summary": "TCP provides a reliable, ordered byte-stream service between endpoints over IP, with connection management, retransmission, flow control and congestion control.",
+      "sources": [
+        "rfc9293"
+      ],
+      "research": [
+        {
+          "start": 1360,
+          "end": 2300
+        }
+      ],
+      "slug": "tcp",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "http",
+      "title": "Hypertext Transfer Protocol",
+      "kind": "protocol",
+      "domains": [
+        "networking",
+        "web-development"
+      ],
+      "discipline": "Application protocols",
+      "aliases": [
+        "HTTP",
+        "request",
+        "response"
+      ],
+      "summary": "HTTP is an application-level protocol that defines request and response semantics for interacting with resources and exchanging representations.",
+      "sources": [
+        "rfc9110",
+        "mdn-http"
+      ],
+      "research": [
+        {
+          "start": 1991,
+          "end": 2300
+        },
+        {
+          "start": 4801,
+          "end": 4965
+        }
+      ],
+      "slug": "http",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "https",
+      "title": "HTTPS",
+      "kind": "protocol",
+      "domains": [
+        "networking",
+        "web-development",
+        "cybersecurity"
+      ],
+      "discipline": "Secure application protocols",
+      "aliases": [
+        "HTTP Secure",
+        "secure HTTP"
+      ],
+      "summary": "HTTPS is HTTP communication secured using TLS, providing confidentiality and integrity in transit and authenticated server identity when certificate validation succeeds.",
+      "sources": [
+        "rfc9110",
+        "rfc8446"
+      ],
+      "research": [
+        {
+          "start": 1991,
+          "end": 2300
+        }
+      ],
+      "slug": "https",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "tls",
+      "title": "Transport Layer Security",
+      "kind": "protocol",
+      "domains": [
+        "networking",
+        "cybersecurity",
+        "web-development"
+      ],
+      "discipline": "Cryptographic protocols",
+      "level": "Intermediate",
+      "aliases": [
+        "TLS",
+        "SSL"
+      ],
+      "summary": "TLS is a cryptographic protocol family that establishes protected communication channels with confidentiality, integrity and peer authentication according to the selected configuration.",
+      "sources": [
+        "rfc8446"
+      ],
+      "research": [
+        {
+          "start": 1991,
+          "end": 2300
+        }
+      ],
+      "slug": "tls",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "usb",
+      "title": "Universal Serial Bus",
+      "kind": "protocol",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded",
+        "core-computing",
+        "cybersecurity"
+      ],
+      "discipline": "Peripheral interfaces",
+      "aliases": [
+        "USB",
+        "USB architecture"
+      ],
+      "summary": "USB is a family of standards for connecting hosts and peripherals, defining communication, device discovery and associated electrical and power behavior.",
+      "sources": [
+        "usb-docs",
+        "linux-usb",
+        "usb-hid-spec"
+      ],
+      "research": [
+        {
+          "start": 7525,
+          "end": 7899
+        },
+        {
+          "start": 8275,
+          "end": 8289
+        },
+        {
+          "start": 8766,
+          "end": 8909
+        }
+      ],
+      "slug": "usb",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "usb-hid",
+      "title": "USB Human Interface Device",
+      "kind": "protocol",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded",
+        "cybersecurity"
+      ],
+      "discipline": "USB device classes",
+      "aliases": [
+        "HID",
+        "Human Interface Device",
+        "USB keyboard",
+        "HID report",
+        "keyboard emulation"
+      ],
+      "summary": "USB HID is a device class that describes human-interface data through reports and report descriptors, allowing compatible hosts to interpret input and other device data.",
+      "sources": [
+        "usb-hid-spec",
+        "pico-docs"
+      ],
+      "research": [
+        {
+          "start": 7553,
+          "end": 7663
+        },
+        {
+          "start": 8766,
+          "end": 8847
+        }
+      ],
+      "slug": "usb-hid",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "usb-enumeration",
+      "title": "USB enumeration",
+      "kind": "technique",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded",
+        "debugging-quality"
+      ],
+      "discipline": "Peripheral discovery",
+      "level": "Intermediate",
+      "aliases": [
+        "device enumeration",
+        "USB discovery"
+      ],
+      "summary": "USB enumeration is the host-driven process that discovers an attached USB device, obtains its descriptors and configures it for subsequent use.",
+      "sources": [
+        "usb-docs",
+        "linux-usb"
+      ],
+      "research": [
+        {
+          "start": 8275,
+          "end": 8289
+        },
+        {
+          "start": 8774,
+          "end": 8787
+        },
+        {
+          "start": 8853,
+          "end": 8890
+        }
+      ],
+      "slug": "usb-enumeration",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "usb-descriptor",
+      "title": "USB descriptors",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded"
+      ],
+      "discipline": "Peripheral discovery",
+      "level": "Intermediate",
+      "aliases": [
+        "USB descriptor",
+        "device descriptor",
+        "configuration descriptor",
+        "report descriptor"
+      ],
+      "summary": "USB descriptors are structured data returned by a device to describe its identity fields, configurations, interfaces, endpoints and class-specific capabilities.",
+      "sources": [
+        "usb-docs",
+        "usb-hid-spec",
+        "linux-usb"
+      ],
+      "research": [
+        {
+          "start": 8275,
+          "end": 8289
+        },
+        {
+          "start": 8774,
+          "end": 8787
+        },
+        {
+          "start": 8874,
+          "end": 8890
+        }
+      ],
+      "slug": "usb-descriptor",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    },
+    {
+      "id": "device-driver",
+      "title": "Device drivers",
+      "kind": "technology",
+      "domains": [
+        "core-computing",
+        "hardware-electronics",
+        "iot-embedded",
+        "debugging-quality"
+      ],
+      "discipline": "Operating-system interfaces",
+      "level": "Intermediate",
+      "aliases": [
+        "driver",
+        "device driver",
+        "USB driver"
+      ],
+      "summary": "A device driver is software that participates in controlling hardware or a device function through operating-system interfaces.",
+      "sources": [
+        "linux-usb"
+      ],
+      "research": [
+        {
+          "start": 8275,
+          "end": 8289
+        },
+        {
+          "start": 8564,
+          "end": 8589
+        },
+        {
+          "start": 8774,
+          "end": 8787
+        }
+      ],
+      "slug": "device-driver",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "firmware",
+      "title": "Firmware",
+      "kind": "technology",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics",
+        "cybersecurity"
+      ],
+      "discipline": "Embedded software",
+      "aliases": [
+        "device firmware",
+        "embedded firmware"
+      ],
+      "summary": "Firmware is software closely associated with a device's hardware functions, commonly stored in nonvolatile memory and executed by an embedded processor or controller.",
+      "sources": [
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 8316,
+          "end": 8368
+        },
+        {
+          "start": 8495,
+          "end": 8516
+        }
+      ],
+      "slug": "firmware",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "microcontroller",
+      "title": "Microcontrollers",
+      "kind": "technology",
+      "domains": [
+        "iot-embedded",
+        "hardware-electronics",
+        "core-computing"
+      ],
+      "discipline": "Embedded processors",
+      "aliases": [
+        "MCU",
+        "microcontroller",
+        "microcontrollers"
+      ],
+      "summary": "A microcontroller integrates a processor core with memory and peripherals intended for controlling embedded tasks.",
+      "sources": [
+        "pico-docs",
+        "esp-docs"
+      ],
+      "research": [
+        {
+          "start": 8121,
+          "end": 8173
+        },
+        {
+          "start": 8316,
+          "end": 8368
+        }
+      ],
+      "slug": "microcontroller",
+      "verification": {
+        "status": "Needs review"
+      },
+      "level": "Beginner"
+    },
+    {
+      "id": "usb-security",
+      "title": "USB security",
+      "kind": "technique",
+      "domains": [
+        "cybersecurity",
+        "hardware-electronics",
+        "iot-embedded"
+      ],
+      "discipline": "Peripheral security",
+      "level": "Intermediate",
+      "aliases": [
+        "BadUSB",
+        "HID injection",
+        "USB device control",
+        "USB security testing"
+      ],
+      "summary": "USB security concerns the trust, access and failure boundaries created when a host accepts communication, device classes and electrical connections from a peripheral.",
+      "sources": [
+        "usb-docs",
+        "usb-hid-spec",
+        "hak5",
+        "flipper-docs"
+      ],
+      "research": [
+        {
+          "start": 7495,
+          "end": 7679
+        },
+        {
+          "start": 8766,
+          "end": 8909
+        },
+        {
+          "start": 9254,
+          "end": 9400
+        }
+      ],
+      "slug": "usb-security",
+      "verification": {
+        "status": "Needs review"
+      }
+    },
+    {
+      "id": "hardware-security",
+      "title": "Hardware security",
+      "domains": [
+        "cybersecurity",
+        "hardware-electronics",
+        "iot-embedded"
+      ],
+      "discipline": "Hardware assurance",
+      "level": "Intermediate",
+      "aliases": [
+        "embedded security",
+        "hardware security research"
+      ],
+      "summary": "Hardware security examines how physical components, interfaces, firmware and manufacturing or deployment decisions protect a system's assets and trust boundaries.",
+      "sources": [
+        "pico-docs",
+        "esp-docs",
+        "nist-bluetooth"
+      ],
+      "research": [
+        {
+          "start": 8175,
+          "end": 8269
+        },
+        {
+          "start": 8560,
+          "end": 8651
+        },
+        {
+          "start": 9320,
+          "end": 9400
+        }
+      ],
+      "slug": "hardware-security",
+      "verification": {
+        "status": "Needs review"
+      },
+      "kind": "concept"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "javascript",
+      "target": "event-loop",
+      "type": "commonly_used_with",
+      "reason": "JavaScript hosts schedule asynchronous jobs through event-loop mechanisms."
+    },
+    {
+      "source": "call-stack",
+      "target": "event-loop",
+      "type": "prerequisite_of",
+      "reason": "Understanding active synchronous calls explains why ready callbacks cannot interrupt them."
+    },
+    {
+      "source": "dom",
+      "target": "javascript",
+      "type": "used_by",
+      "reason": "JavaScript in browsers can inspect and update document nodes through the DOM API."
+    },
+    {
+      "source": "event-loop",
+      "target": "web-workers",
+      "type": "contrasts_with",
+      "reason": "An event loop schedules work within an agent; workers provide separate execution environments."
+    },
+    {
+      "source": "web-workers",
+      "target": "parallelism",
+      "type": "application_of",
+      "reason": "Independent worker computations can execute simultaneously when resources permit."
+    },
+    {
+      "source": "nodejs",
+      "target": "javascript",
+      "type": "built_with",
+      "reason": "Node.js exposes a runtime for programs written in JavaScript."
+    },
+    {
+      "source": "nodejs",
+      "target": "event-loop",
+      "type": "depends_on",
+      "reason": "Node coordinates asynchronous work through its host event loop."
+    },
+    {
+      "source": "threads",
+      "target": "processes",
+      "type": "part_of",
+      "reason": "Threads execute within a process and share some of its resources."
+    },
+    {
+      "source": "concurrency",
+      "target": "parallelism",
+      "type": "contrasts_with",
+      "reason": "Overlapping activity does not require simultaneous execution."
+    },
+    {
+      "source": "processes",
+      "target": "nodejs",
+      "type": "used_by",
+      "reason": "Node applications execute inside operating-system processes."
+    },
+    {
+      "source": "call-stack",
+      "target": "threads",
+      "type": "part_of",
+      "reason": "Each software thread maintains its own call state."
+    },
+    {
+      "source": "computer-networks",
+      "target": "ip-address",
+      "type": "prerequisite_of",
+      "reason": "Addressing is easier to understand after links, hosts and routing are distinguished."
+    },
+    {
+      "source": "ip-address",
+      "target": "dns",
+      "type": "prerequisite_of",
+      "reason": "Address records connect domain names to IP destinations."
+    },
+    {
+      "source": "ip-address",
+      "target": "ports",
+      "type": "prerequisite_of",
+      "reason": "Transport endpoints combine an address with a port and protocol."
+    },
+    {
+      "source": "ports",
+      "target": "tcp",
+      "type": "prerequisite_of",
+      "reason": "TCP identifies its endpoints using address and port information."
+    },
+    {
+      "source": "tcp",
+      "target": "http",
+      "type": "commonly_used_with",
+      "reason": "HTTP/1.1 and HTTP/2 commonly use TCP; this is not a claim about HTTP/3."
+    },
+    {
+      "source": "dns",
+      "target": "https",
+      "type": "commonly_used_with",
+      "reason": "Name resolution locates an endpoint while HTTPS validates the requested service identity."
+    },
+    {
+      "source": "http",
+      "target": "https",
+      "type": "secured_by",
+      "reason": "HTTPS applies TLS protection to HTTP communication."
+    },
+    {
+      "source": "https",
+      "target": "tls",
+      "type": "depends_on",
+      "reason": "HTTPS relies on TLS channel security and identity validation."
+    },
+    {
+      "source": "tls",
+      "target": "mqtt",
+      "type": "commonly_used_with",
+      "reason": "MQTT deployments can protect broker connections using TLS."
+    },
+    {
+      "source": "computer-networks",
+      "target": "observability",
+      "type": "related_to",
+      "reason": "Network telemetry helps distinguish connectivity problems from application failures."
+    },
+    {
+      "source": "usb",
+      "target": "usb-enumeration",
+      "type": "prerequisite_of",
+      "reason": "Enumeration uses the USB host/device communication architecture."
+    },
+    {
+      "source": "usb-descriptor",
+      "target": "usb-enumeration",
+      "type": "used_by",
+      "reason": "The host reads descriptors to discover and configure interfaces."
+    },
+    {
+      "source": "usb-hid",
+      "target": "usb",
+      "type": "specialization_of",
+      "reason": "HID defines a USB device class and its report conventions."
+    },
+    {
+      "source": "usb-enumeration",
+      "target": "device-driver",
+      "type": "related_to",
+      "reason": "Enumerated interfaces are matched to compatible host drivers."
+    },
+    {
+      "source": "usb-descriptor",
+      "target": "usb-hid",
+      "type": "used_by",
+      "reason": "HID report descriptors define the layout of HID reports."
+    },
+    {
+      "source": "firmware",
+      "target": "microcontroller",
+      "type": "used_by",
+      "reason": "Microcontrollers execute firmware that configures their peripherals."
+    },
+    {
+      "source": "usb",
+      "target": "firmware",
+      "type": "implemented_by",
+      "reason": "USB device behavior depends on controller hardware and supporting firmware."
+    },
+    {
+      "source": "device-driver",
+      "target": "firmware",
+      "type": "commonly_used_with",
+      "reason": "Host drivers communicate with behavior implemented by device firmware."
+    },
+    {
+      "source": "usb-security",
+      "target": "usb",
+      "type": "specialization_of",
+      "reason": "USB security examines the trust boundaries of USB interfaces and device behavior."
+    },
+    {
+      "source": "usb-security",
+      "target": "hardware-security",
+      "type": "part_of",
+      "reason": "Peripheral trust is one part of hardware assurance."
+    },
+    {
+      "source": "usb-hid",
+      "target": "usb-security",
+      "type": "tested_by",
+      "reason": "Authorized HID tests can evaluate controls against unexpected input devices."
+    },
+    {
+      "source": "microcontroller",
+      "target": "embedded-systems",
+      "type": "part_of",
+      "reason": "A microcontroller can supply computation and peripheral control within an embedded system."
+    },
+    {
+      "source": "firmware",
+      "target": "hardware-security",
+      "type": "secured_by",
+      "reason": "Firmware authenticity, update recovery and key handling are hardware-security concerns."
+    },
+    {
+      "source": "concurrency",
+      "target": "threads",
+      "type": "implemented_by",
+      "reason": "Threads are one mechanism for organizing overlapping execution."
+    }
+  ],
+  "sources": [
+    {
+      "id": "mdn-execution",
+      "title": "JavaScript execution model",
+      "publisher": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model",
+      "type": "Official documentation",
+      "claims": [
+        "Agents, execution contexts, jobs and the event loop"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "html-event-loop",
+      "title": "HTML Living Standard — Event loops",
+      "publisher": "WHATWG",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loops",
+      "type": "Specification",
+      "claims": [
+        "Tasks, microtasks and rendering opportunities"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "mdn-workers",
+      "title": "Using Web Workers",
+      "publisher": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers",
+      "type": "Official documentation",
+      "claims": [
+        "Worker messaging, isolation and available APIs"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "node-event-loop",
+      "title": "The Node.js Event Loop",
+      "publisher": "Node.js",
+      "url": "https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick",
+      "type": "Official documentation",
+      "claims": [
+        "Node event-loop phases and timer scheduling"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "node-workers",
+      "title": "Worker threads",
+      "publisher": "Node.js",
+      "url": "https://nodejs.org/api/worker_threads.html",
+      "type": "Official documentation",
+      "claims": [
+        "Worker threads for CPU-intensive JavaScript"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "mdn-dom",
+      "title": "Introduction to the DOM",
+      "publisher": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+      "type": "Official documentation",
+      "claims": [
+        "The DOM as a document API"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "linux-pthreads",
+      "title": "pthreads(7) — POSIX threads",
+      "publisher": "Linux man-pages project",
+      "url": "https://man7.org/linux/man-pages/man7/pthreads.7.html",
+      "type": "Technical reference",
+      "claims": [
+        "Process resources shared by threads and thread-specific state"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc1034",
+      "title": "RFC 1034 — Domain Names: Concepts and Facilities",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc1034",
+      "type": "Standard",
+      "claims": [
+        "DNS hierarchy, resolution and caching"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc1035",
+      "title": "RFC 1035 — Domain Names: Implementation and Specification",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035",
+      "type": "Standard",
+      "claims": [
+        "DNS messages, resource records and transport"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc9293",
+      "title": "RFC 9293 — Transmission Control Protocol",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293",
+      "type": "Standard",
+      "claims": [
+        "TCP byte streams, sequence numbers and connection management"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc8200",
+      "title": "RFC 8200 — Internet Protocol, Version 6",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200",
+      "type": "Standard",
+      "claims": [
+        "IPv6 packet and addressing model"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc9110",
+      "title": "RFC 9110 — HTTP Semantics",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110",
+      "type": "Standard",
+      "claims": [
+        "HTTP methods, status codes, fields and representations"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rfc8446",
+      "title": "RFC 8446 — TLS 1.3",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "type": "Standard",
+      "claims": [
+        "TLS 1.3 authenticated key exchange and protected records"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "mdn-http",
+      "title": "Overview of HTTP",
+      "publisher": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "type": "Official documentation",
+      "claims": [
+        "Requests, responses and HTTP application semantics"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "usb-docs",
+      "title": "USB specifications and documents",
+      "publisher": "USB Implementers Forum",
+      "url": "https://www.usb.org/documents",
+      "type": "Standards index",
+      "claims": [
+        "USB architecture, device classes and specification discovery"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "usb-hid-spec",
+      "title": "Device Class Definition for Human Interface Devices",
+      "publisher": "USB Implementers Forum",
+      "url": "https://www.usb.org/document-library/device-class-definition-hid-111",
+      "type": "Specification",
+      "claims": [
+        "HID descriptors and reports"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "linux-usb",
+      "title": "Linux USB API",
+      "publisher": "Linux kernel documentation",
+      "url": "https://docs.kernel.org/driver-api/usb/index.html",
+      "type": "Official documentation",
+      "claims": [
+        "Host-side USB drivers and gadget APIs"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "pico-docs",
+      "title": "Raspberry Pi Pico-series documentation",
+      "publisher": "Raspberry Pi",
+      "url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+      "type": "Official documentation",
+      "claims": [
+        "Board variants, SDKs and peripheral programming"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "esp-docs",
+      "title": "ESP-IDF Programming Guide",
+      "publisher": "Espressif",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/",
+      "type": "Official documentation",
+      "claims": [
+        "ESP32 programming and target-specific peripheral behavior"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "freertos-docs",
+      "title": "FreeRTOS documentation",
+      "publisher": "FreeRTOS",
+      "url": "https://www.freertos.org/Documentation/00-Overview",
+      "type": "Official documentation",
+      "claims": [
+        "Tasks, scheduling and synchronization"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "mqtt-spec",
+      "title": "MQTT Version 5.0",
+      "publisher": "OASIS",
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html",
+      "type": "Specification",
+      "claims": [
+        "Publish/subscribe, sessions and delivery quality"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "i2c-spec",
+      "title": "UM10204 — I2C-bus specification and user manual",
+      "publisher": "NXP Semiconductors",
+      "url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+      "type": "Specification",
+      "claims": [
+        "I2C transactions, addressing and electrical requirements"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "owasp-validation",
+      "title": "Input Validation Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+      "type": "Technical guidance",
+      "claims": [
+        "Syntactic and semantic validation, allowlists and canonicalization"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "owasp-authn",
+      "title": "Authentication Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "type": "Technical guidance",
+      "claims": [
+        "Authentication defenses and account lifecycle"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "owasp-authz",
+      "title": "Authorization Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "type": "Technical guidance",
+      "claims": [
+        "Deny by default, least privilege and authorization checks"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "git-book",
+      "title": "Pro Git",
+      "publisher": "Git project / Scott Chacon and Ben Straub",
+      "url": "https://git-scm.com/book/en/v2",
+      "type": "Technical book",
+      "claims": [
+        "Git snapshots, commits, branches and collaboration"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "github-actions",
+      "title": "GitHub Actions documentation",
+      "publisher": "GitHub",
+      "url": "https://docs.github.com/en/actions",
+      "type": "Official documentation",
+      "claims": [
+        "Workflow triggers, jobs, runners and delivery automation"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "otel",
+      "title": "OpenTelemetry documentation",
+      "publisher": "OpenTelemetry",
+      "url": "https://opentelemetry.io/docs/",
+      "type": "Official documentation",
+      "claims": [
+        "Logs, metrics, traces and telemetry instrumentation"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "sklearn",
+      "title": "Scikit-learn User Guide",
+      "publisher": "Scikit-learn project",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "type": "Official documentation",
+      "claims": [
+        "Supervised and unsupervised learning, preprocessing and model evaluation"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "tf-recommenders",
+      "title": "TensorFlow Recommenders",
+      "publisher": "TensorFlow",
+      "url": "https://www.tensorflow.org/recommenders",
+      "type": "Official documentation",
+      "claims": [
+        "Retrieval, embeddings and ranking models"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "rag-paper",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "publisher": "Lewis et al.",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "type": "Research paper",
+      "claims": [
+        "Combining retrieval with language generation"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "python-json",
+      "title": "json — JSON encoder and decoder",
+      "publisher": "Python documentation",
+      "url": "https://docs.python.org/3/library/json.html",
+      "type": "Official documentation",
+      "claims": [
+        "JSON serialization and deserialization"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "python-struct",
+      "title": "struct — Interpret bytes as packed binary data",
+      "publisher": "Python documentation",
+      "url": "https://docs.python.org/3/library/struct.html",
+      "type": "Official documentation",
+      "claims": [
+        "Byte order, packed records and binary layout"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "postgres-docs",
+      "title": "PostgreSQL documentation",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/",
+      "type": "Official documentation",
+      "claims": [
+        "Transactions, constraints, queries and indexes"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "youtube-research",
+      "title": "Deep Neural Networks for YouTube Recommendations",
+      "publisher": "Google Research",
+      "url": "https://research.google/pubs/deep-neural-networks-for-youtube-recommendations/",
+      "type": "Research paper",
+      "claims": [
+        "Published candidate generation and ranking architecture"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "meta-system-card",
+      "title": "Instagram Feed Ranking System Card",
+      "publisher": "Meta",
+      "url": "https://ai.meta.com/tools/system-cards/instagram-feed-ranking/",
+      "type": "Official documentation",
+      "claims": [
+        "Disclosed Feed ranking and filtering stages"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "hak5",
+      "title": "Hak5 documentation",
+      "publisher": "Hak5",
+      "url": "https://docs.hak5.org/",
+      "type": "Official documentation",
+      "claims": [
+        "Product-specific USB testing concepts and device capabilities"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "flipper-docs",
+      "title": "Flipper Zero documentation",
+      "publisher": "Flipper Devices",
+      "url": "https://docs.flipper.net/",
+      "type": "Official documentation",
+      "claims": [
+        "Supported interfaces and firmware-dependent device functions"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "nist-bluetooth",
+      "title": "Guide to Bluetooth Security — SP 800-121 Rev. 2",
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/800/121/r2/upd1/final",
+      "type": "Technical guidance",
+      "claims": [
+        "Bluetooth security mechanisms and deployment considerations"
+      ],
+      "status": "Needs review"
+    }
+  ]
+}

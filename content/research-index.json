@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "source": "research/research.md",
+  "sha256": "f6dfced4a580b610dad7fa341ec370dab4f00027fbf072b87b6d872e4931f2db",
+  "bytes": 574696,
+  "lineCount": 14673,
+  "lineConvention": "One-based lines after CRLF normalization; a terminal newline creates a final empty display line. Hash covers original bytes.",
+  "coverage": "Complete source coverage; thematic grouping only, not complete concept extraction or factual verification.",
+  "sections": [
+    {
+      "id": "research-section-1",
+      "start": 1,
+      "end": 237,
+      "title": "Research orientation and browser foundations",
+      "domains": [
+        "web-development",
+        "core-computing"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-2",
+      "start": 238,
+      "end": 763,
+      "title": "Validation, testing and deployment questions",
+      "domains": [
+        "software-engineering",
+        "debugging-quality"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-3",
+      "start": 764,
+      "end": 1316,
+      "title": "Indentation, programming language behavior and editors",
+      "domains": [
+        "software-engineering",
+        "core-computing"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-4",
+      "start": 1317,
+      "end": 2708,
+      "title": "DNS, ports, HTTP, HTTPS and hosted subdomains",
+      "domains": [
+        "networking",
+        "web-development",
+        "cloud-computing"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-5",
+      "start": 2709,
+      "end": 4303,
+      "title": "Cybersecurity, wireless assessment, professions and legal labs",
+      "domains": [
+        "cybersecurity",
+        "networking"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-6",
+      "start": 4304,
+      "end": 4880,
+      "title": "Browser requests, HTTP representations and rendering",
+      "domains": [
+        "web-development",
+        "core-computing"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-7",
+      "start": 4881,
+      "end": 6617,
+      "title": "Privacy, platform data collection, consent and recommendations",
+      "domains": [
+        "cybersecurity",
+        "ai-ml",
+        "data-analytics"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-8",
+      "start": 6618,
+      "end": 7498,
+      "title": "DAT files, formats and application interpretation",
+      "domains": [
+        "core-computing",
+        "debugging-quality"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-9",
+      "start": 7499,
+      "end": 8652,
+      "title": "HID, Bluetooth and hardware security research",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded",
+        "cybersecurity"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-10",
+      "start": 8653,
+      "end": 10565,
+      "title": "Hardware tools, device comparisons and practical learning",
+      "domains": [
+        "hardware-electronics",
+        "iot-embedded",
+        "cybersecurity"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-11",
+      "start": 10566,
+      "end": 12532,
+      "title": "Processes, threads, browser execution, JavaScript and performance",
+      "domains": [
+        "core-computing",
+        "web-development",
+        "debugging-quality"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "research-section-12",
+      "start": 12533,
+      "end": 14673,
+      "title": "Express routing, middleware, request flow and error handling",
+      "domains": [
+        "web-development",
+        "software-engineering"
+      ],
+      "status": "Needs review"
+    }
+  ],
+  "reviewFlags": [
+    {
+      "id": "source-provenance",
+      "title": "Incomplete citation provenance",
+      "ranges": [
+        {
+          "start": 1,
+          "end": 14673
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Image proxy URLs, favicons and labels such as NIST+2 are not claim-level citations. Keep the original text, recover primary references and verify the claims before promoting content."
+    },
+    {
+      "id": "duplicates",
+      "title": "Repeated and sometimes contradictory explanations",
+      "ranges": [
+        {
+          "start": 1,
+          "end": 14673
+        }
+      ],
+      "status": "Needs review",
+      "detail": "The corpus is a preserved conversation archive, not a peer-reviewed technical manual. Reconcile repeated answers against canonical definitions while retaining the source passages."
+    },
+    {
+      "id": "flattened-snippets",
+      "title": "Flattened code and illustrative HTTP examples",
+      "ranges": [
+        {
+          "start": 4345,
+          "end": 4791
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Some code loses line breaks. HTTP/1.1 wire examples must not be presented as universal HTTP/2 or HTTP/3 formats; sample lengths and headers require checking. Repair and execute examples in isolation before publication."
+    },
+    {
+      "id": "privacy-current-events",
+      "title": "Privacy, policy and current-event claims require primary evidence",
+      "ranges": [
+        {
+          "start": 5421,
+          "end": 5466
+        },
+        {
+          "start": 5980,
+          "end": 6003
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Do not treat legal, regulatory, policy or incident assertions in these passages as verified. Record jurisdiction, publication date and a directly supporting primary source before using them as factual guidance."
+    },
+    {
+      "id": "multiblue-identity",
+      "title": "Unverified Multiblue product identity",
+      "ranges": [
+        {
+          "start": 7499,
+          "end": 7524
+        },
+        {
+          "start": 7667,
+          "end": 7675
+        }
+      ],
+      "status": "Conflicting sources",
+      "detail": "An earlier passage asserts device capabilities; a later passage says no reliable manufacturer specification or technical manual was established. Preserve both. Bluetooth HID techniques do not establish the identity or specifications of a particular product."
+    },
+    {
+      "id": "hardware-variants",
+      "title": "Hardware claims depend on exact variants",
+      "ranges": [
+        {
+          "start": 7499,
+          "end": 10565
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Confirm model, revision, firmware, interfaces, voltage and protocol support using manufacturer documentation. Product families and security demonstrations must not be treated as interchangeable specifications."
+    },
+    {
+      "id": "authorized-security",
+      "title": "Security material needs scoped learning context",
+      "ranges": [
+        {
+          "start": 2709,
+          "end": 4303
+        },
+        {
+          "start": 7499,
+          "end": 10565
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Derived practical material must describe owned or explicitly authorized labs and defensive validation. Preserve distinctions between network interception, valid TLS, endpoint compromise and phishing."
+    },
+    {
+      "id": "runtime-specific-behavior",
+      "title": "Runtime and framework behavior must be qualified",
+      "ranges": [
+        {
+          "start": 10566,
+          "end": 14673
+        }
+      ],
+      "status": "Needs review",
+      "detail": "Distinguish hardware threads, operating-system threads and JavaScript agents. Validate event-loop and middleware behavior against the relevant runtime/framework version; avoid universal timing or browser-process claims."
+    }
+  ]
+}

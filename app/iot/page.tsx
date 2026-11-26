@@ -1,10 +1,4 @@
-"use client";
-import { useState } from "react";
-import { devices } from "../../content/data";
+import { WorkspaceRecords } from "../../components/workspace-records";
+import { LegacyCollection } from "../../components/workspace-legacy";
 
-export default function IotPage() {
-  const [query, setQuery] = useState("");
-  const [status, setStatus] = useState("All");
-  const visible = devices.filter((item) => (status === "All" || item.status === status) && `${item.name} ${item.type} ${item.specs} ${item.notes}`.toLowerCase().includes(query.toLowerCase()));
-  return <div><div className="mb-6"><p className="label">Connected systems</p><h1 className="mt-1 text-3xl font-bold">IoT Devices &amp; Hardware</h1></div><div className="mb-5 flex flex-col gap-3 sm:flex-row"><input className="input flex-1" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search devices, sensors, or specs..."/><select className="input sm:w-40" value={status} onChange={(e) => setStatus(e.target.value)}><option>All</option><option>Active</option><option>Storage</option></select></div><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{visible.map((item) => <article className="card p-5" key={item.name}><div className="flex items-start justify-between"><div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-100 text-xs font-bold text-cyan-700 dark:bg-slate-800 dark:text-cyan-300">{item.icon}</div><span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${item.status === "Active" ? "bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300" : "bg-slate-100 text-slate-500 dark:bg-slate-800"}`}>{item.status}</span></div><h2 className="mt-4 text-lg font-bold">{item.name}</h2><p className="mt-1 text-xs uppercase tracking-wide text-cyan-600">{item.type}</p><dl className="mt-4 space-y-2 text-sm"><div><dt className="label">Specs</dt><dd className="mt-1 text-slate-600 dark:text-slate-300">{item.specs}</dd></div><div><dt className="label">Location</dt><dd className="mt-1">{item.location}</dd></div><div><dt className="label">Setup notes</dt><dd className="mt-1 text-slate-600 dark:text-slate-300">{item.notes}</dd></div></dl></article>)}</div>{!visible.length && <p className="card p-8 text-center text-slate-500">No matching devices.</p>}</div>;
-}
+export default function IotPage() { return <><WorkspaceRecords kind="inventory" /><LegacyCollection kind="inventory" /></>; }

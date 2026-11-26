@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { skillProfiles } from "../../content/careers";
+import { ConceptLinks } from "../roles/concept-links";
+export const metadata: Metadata = { title: "Skills & Technologies | TechCodex", description: "Subject-specific outcomes, exercises and assessments from beginner through mastery." };
+export default function SkillsPage() {
+  return <main><p className="eyebrow">Skills & technologies</p><h1 className="page-title">Build knowledge you can demonstrate</h1><p className="muted mt-3 max-w-3xl leading-7">Choose a subject to see prerequisites, concrete learning outcomes, practical exercises and assessment criteria. Proficiency describes what you can do; learning status describes what you are currently working on.</p><p className="muted mt-3 max-w-3xl text-sm leading-6">These six representative progressions are editorial drafts marked Needs review. Advanced work branches by role. Mastery describes original, independently assessed contributions and is not guaranteed by completing a checklist.</p><div className="mt-7 divide-y divide-slate-200 border-y border-slate-200 dark:divide-slate-800 dark:border-slate-800">{skillProfiles.map(skill => <article key={skill.id} className="py-6"><h2 className="text-xl font-semibold"><Link className="text-cyan-700 hover:underline dark:text-cyan-300" href={`/skills/${skill.id}`}>{skill.title}</Link></h2><p className="muted mb-4 mt-2 leading-7">{skill.summary}</p><ConceptLinks ids={skill.concepts} /><Link className="mt-4 inline-block text-sm underline" href={`/skills/${skill.id}`}>Explore all five proficiency levels →</Link></article>)}</div></main>;
+}
