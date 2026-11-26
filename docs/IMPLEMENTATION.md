@@ -31,8 +31,8 @@ The complete 14,672-line `research/research.md` was reviewed in contiguous assig
 - [x] Personal learning workspace with separate status/proficiency and backup.
 - [x] Projects, inventory, troubleshooting CRUD and concept connections.
 - [x] Research manifest, original source reader, review queue, ingestion validation.
-- [ ] Validate content integrity, important interactions, persistence, build, and responsive layout.
-- [ ] Update setup/contribution documentation and record precise validation results.
+- [x] Validate content integrity, important interactions, persistence, build, and responsive layout.
+- [x] Update setup/contribution documentation and record precise validation results.
 
 ## Prioritized expansion backlog
 
@@ -51,3 +51,18 @@ The 75 relationship records connect all 52 articles; 44 reference candidates car
 Personal persistence is intentionally local to a browser origin. JSON backup and restore are implemented; authentication, remote synchronization, uploads, background reminder notifications, and automatic fact-checking are not implemented. Authoring uses version-controlled metadata and Markdown, with build-time integrity validation.
 
 This session delivers a coherent working foundation, not a claim that the entire engineering encyclopedia is complete.
+
+## Validation record — 2026-11-26
+
+- `npm test`: 20 passing tests covering canonical links and source ranges, prerequisite direction, bounded graph traversal, search aliases versus related terms, Windows line endings in article contents, backlinks, career/skill integrity, and personal-data validation.
+- `npm run lint`: TypeScript passes. VS Code diagnostics report no errors.
+- `npm run build`: production build succeeds with 106 generated static pages. Content validation confirms 52 articles, 75 relationships, 44 source candidates, and 14 domains; article search and research indexes are current.
+- `node scripts/smoke-routes.cjs http://127.0.0.1:3001`: 107 successful page requests and four correct HTTP 404 responses. Missing canonical routes are constrained to the generated catalog.
+- Browser checks: saved learning status, independent proficiency, notes, and bookmarks survive reload; projects/devices/issues can be created, edited, reloaded, and deleted with cancellation/confirmation; career selection persists. Temporary personal QA records were removed.
+- Search suggestions respond to arrow navigation and Enter. Graph checks cover highlighted paths, selected-node navigation, zoom, domain filtering, and prerequisite-only filtering. Article contents resolve to existing headings; USB has an actual inbound article link.
+- Backup checks: the export handler produces versioned JSON and a dated filename; malformed JSON is rejected, and validated JSON restores through the settings UI. The integrated browser did not expose a native download event, so export content was captured at the Blob/download boundary; an operating-system save-dialog check remains manual.
+- Responsive checks at 375, 768, and 1440 CSS pixels found no document overflow on the article reader. Mobile menu dismissal restores focus; desktop uses the three-column reader. Both themes were inspected. This is not a complete accessibility or cross-browser certification.
+- Fixed a graph hydration mismatch by rendering each SVG title as one text value; fresh development and production page loads with graph interaction produced no console or page errors. The production route sweep also passed after this fix.
+- The research source remains byte-identical: SHA-256 `f6dfced4a580b610dad7fa341ec370dab4f00027fbf072b87b6d872e4931f2db`, 574,696 bytes. The viewer counts the terminal empty display line, yielding 14,673 displayed lines.
+
+These checks establish the working foundation's behavior. They do not establish factual verification of the whole corpus, full research migration, browser eviction guarantees, or completion of the expansion backlog.
