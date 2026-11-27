@@ -19,7 +19,8 @@ const clean = text => text.replace(/[*`]/g, '').trim();
 for (const document of plan.documents) {
   const text = fs.readFileSync(path.join(root, 'research', document.file), 'utf8').replace(/\r\n/g, '\n');
   const lines = text.split('\n'); sources.set(document.id, lines);
-  const boundaries = [{ start: 1, title: 'Orientation and course map', id: 'orientation' }];
+  const boundaries = document.sections ? [...document.sections] : [{ start: 1, title: 'Orientation and course map', id: 'orientation' }];
+  if (boundaries[0]?.start !== 1 || boundaries.some((b, i) => !Number.isInteger(b.start) || b.start > lines.length || (i > 0 && b.start <= boundaries[i - 1].start))) throw new Error(`Invalid chapter boundaries for ${document.id}`);
   let fence = false;
   lines.forEach((line, i) => {
     if (/^\s*(```|~~~)/.test(line)) fence = !fence;
@@ -35,6 +36,7 @@ for (const document of plan.documents) {
 }
 function formatRange(document, range) {
   const doc = manifest.documents.find(d => d.id === document);
+  if (doc.format === 'plain') return `This plain-text research passage is preserved in the [browser research collection](/study). Read the connected canonical articles for explanations with corrections; the source export is not independently verified.`;
   let fence = false;
   return sources.get(document).slice(range.start - 1, range.end).map(line => {
     if (/^\s*(```|~~~)/.test(line)) { fence = !fence; return line; }
@@ -63,6 +65,10 @@ for (const item of plan.articles) {
   if (!article.domains.includes(item.domain)) article.domains.push(item.domain);
   for (const document of new Set(ranges.map(r => r.document))) if (!article.sources.includes(`study-${document}`)) article.sources.push(`study-${document}`);
   const filename = path.join(root, 'content/articles', item.id + '.md');
+  if (item.curated) {
+    if (!fs.existsSync(filename)) throw new Error(`Missing curated article: ${item.id}`);
+    continue;
+  }
   const previous = fs.existsSync(filename) ? fs.readFileSync(filename, 'utf8').replace(/\r\n/g, '\n').split(marker)[0] : `# ${item.title}\n`;
   const body = ranges.map(range => `> Imported lesson from [${manifest.documents.find(d => d.id === range.document).title}, lines ${range.start}–${range.end}](/research?document=${range.document}&start=${range.start}&end=${range.end}). Needs review: examples and claims retain their source context; reading does not certify proficiency.\n\n${formatRange(range.document, range)}`).join('\n\n---\n\n');
   const parent = item.domain === 'core-computing' ? (item.id === 'data-structures' ? 'algorithms' : 'data-structures') : item.domain === 'web-development' ? 'software-engineering' : item.domain === 'debugging-quality' ? 'testing' : item.domain === 'cybersecurity' ? 'software-engineering' : 'software-engineering';

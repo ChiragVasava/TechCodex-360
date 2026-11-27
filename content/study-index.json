@@ -642,6 +642,174 @@
         "phase-20-section-4": 35514,
         "phase-20-section-5": 35532
       }
+    },
+    {
+      "id": "browser-notes",
+      "file": "research.txt",
+      "title": "Browser rendering, Web Components and storage",
+      "format": "plain",
+      "sections": [
+        {
+          "start": 1,
+          "id": "rendering",
+          "title": "DOM, CSSOM and rendering",
+          "reviewNote": "A style change does not always trigger layout and paint; render-blocking CSS depends on context."
+        },
+        {
+          "start": 46,
+          "id": "selection",
+          "title": "Document objects and DOM methods",
+          "reviewNote": "Document is an object. Its selection methods return elements or collections, not methods."
+        },
+        {
+          "start": 73,
+          "id": "shadow-dom",
+          "title": "Shadow DOM and encapsulation",
+          "reviewNote": "Closed mode is not a security boundary. Inheritance and explicit styling APIs cross some style boundaries."
+        },
+        {
+          "start": 113,
+          "id": "devtools",
+          "title": "Shadow trees in the page and DevTools",
+          "reviewNote": "Shadow DOM exists in the live page; DevTools visualizes it. Widget implementations and browser controls vary."
+        },
+        {
+          "start": 131,
+          "id": "web-components",
+          "title": "Custom elements, templates and slots",
+          "reviewNote": "These APIs can be used separately. A template is inert markup; a slot projects light-DOM content."
+        },
+        {
+          "start": 166,
+          "id": "storage",
+          "title": "Browser storage choices",
+          "reviewNote": "Quotas and retention vary by browser policy. A new tab can initially copy its opener session storage."
+        },
+        {
+          "start": 210,
+          "id": "storage-writes",
+          "title": "Who writes browser storage?",
+          "reviewNote": "Storage APIs require application operations; cookie transmission follows matching and privacy rules."
+        },
+        {
+          "start": 235,
+          "id": "autofill",
+          "title": "Password managers and autofill",
+          "reviewNote": "A website cannot enumerate the password vault, but page code can read a password field value before submission."
+        },
+        {
+          "start": 257,
+          "id": "storage-apis",
+          "title": "Storage APIs and helper functions",
+          "reviewNote": "The supplied IndexedDB wrapper branch is unfinished; use real transactions and completion/error handlers."
+        }
+      ],
+      "sha256": "c6cee4de7406dc516d35198d69aa95436aaba15b02b81e8d85e52fad0f278f47",
+      "lineCount": 291,
+      "bytes": 21099,
+      "chapters": [
+        {
+          "start": 1,
+          "id": "rendering",
+          "title": "DOM, CSSOM and rendering",
+          "reviewNote": "A style change does not always trigger layout and paint; render-blocking CSS depends on context.",
+          "end": 45,
+          "articles": [
+            "browser-rendering",
+            "cssom"
+          ]
+        },
+        {
+          "start": 46,
+          "id": "selection",
+          "title": "Document objects and DOM methods",
+          "reviewNote": "Document is an object. Its selection methods return elements or collections, not methods.",
+          "end": 72,
+          "articles": [
+            "dom-selection",
+            "dom"
+          ]
+        },
+        {
+          "start": 73,
+          "id": "shadow-dom",
+          "title": "Shadow DOM and encapsulation",
+          "reviewNote": "Closed mode is not a security boundary. Inheritance and explicit styling APIs cross some style boundaries.",
+          "end": 112,
+          "articles": [
+            "shadow-dom"
+          ]
+        },
+        {
+          "start": 113,
+          "id": "devtools",
+          "title": "Shadow trees in the page and DevTools",
+          "reviewNote": "Shadow DOM exists in the live page; DevTools visualizes it. Widget implementations and browser controls vary.",
+          "end": 130,
+          "articles": [
+            "browser-devtools",
+            "shadow-dom"
+          ]
+        },
+        {
+          "start": 131,
+          "id": "web-components",
+          "title": "Custom elements, templates and slots",
+          "reviewNote": "These APIs can be used separately. A template is inert markup; a slot projects light-DOM content.",
+          "end": 165,
+          "articles": [
+            "web-components",
+            "custom-elements",
+            "html-templates"
+          ]
+        },
+        {
+          "start": 166,
+          "id": "storage",
+          "title": "Browser storage choices",
+          "reviewNote": "Quotas and retention vary by browser policy. A new tab can initially copy its opener session storage.",
+          "end": 209,
+          "articles": [
+            "browser-storage",
+            "cookies",
+            "local-storage",
+            "session-storage",
+            "indexeddb"
+          ]
+        },
+        {
+          "start": 210,
+          "id": "storage-writes",
+          "title": "Who writes browser storage?",
+          "reviewNote": "Storage APIs require application operations; cookie transmission follows matching and privacy rules.",
+          "end": 234,
+          "articles": [
+            "browser-storage"
+          ]
+        },
+        {
+          "start": 235,
+          "id": "autofill",
+          "title": "Password managers and autofill",
+          "reviewNote": "A website cannot enumerate the password vault, but page code can read a password field value before submission.",
+          "end": 256,
+          "articles": [
+            "browser-storage",
+            "browser-autofill"
+          ]
+        },
+        {
+          "start": 257,
+          "id": "storage-apis",
+          "title": "Storage APIs and helper functions",
+          "reviewNote": "The supplied IndexedDB wrapper branch is unfinished; use real transactions and completion/error handlers.",
+          "end": 291,
+          "articles": [
+            "browser-storage"
+          ]
+        }
+      ],
+      "anchors": {}
     }
   ]
 }

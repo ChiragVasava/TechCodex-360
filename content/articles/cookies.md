@@ -1,5 +1,9 @@
 # Cookies
 
+## Cookies versus browser databases
+
+Cookies can be established by a server response or, when allowed, page JavaScript. The browser later decides which requests carry them using attributes and policy; matching is more specific than merely visiting the same website. `HttpOnly` prevents JavaScript cookie access and must be set by the server. Cookies are distinct from [local storage](/knowledge/local-storage), [session storage](/knowledge/session-storage), [IndexedDB](/knowledge/indexeddb) and the [password manager](/knowledge/browser-autofill).
+
 <!-- imported-study-material -->
 
 > Imported lesson from [Full-stack interview handbook, lines 23009–23085](/research?document=interview&start=23009&end=23085). Needs review: examples and claims retain their source context; reading does not certify proficiency.
@@ -78,6 +82,12 @@ Because browsers automatically attach matching cookies, the request may carry th
 A CSRF token is usually a separate unpredictable value that the client must provide with state-changing requests. The server validates it.
 
 Important: CORS alone is not a complete CSRF defense.
+
+---
+
+> Imported lesson from [Browser rendering, Web Components and storage, lines 175–179](/research?document=browser-notes&start=175&end=179). Needs review: examples and claims retain their source context; reading does not certify proficiency.
+
+This plain-text research passage is preserved in the [browser research collection](/study). Read the connected canonical articles for explanations with corrections; the source export is not independently verified.
 
 ## Connected study
 

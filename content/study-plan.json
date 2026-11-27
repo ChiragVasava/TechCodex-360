@@ -9,6 +9,68 @@
       "id": "interview",
       "file": "Interview_Focused_SE_Study_Material.md",
       "title": "Full-stack interview handbook"
+    },
+    {
+      "id": "browser-notes",
+      "file": "research.txt",
+      "title": "Browser rendering, Web Components and storage",
+      "format": "plain",
+      "sections": [
+        {
+          "start": 1,
+          "id": "rendering",
+          "title": "DOM, CSSOM and rendering",
+          "reviewNote": "A style change does not always trigger layout and paint; render-blocking CSS depends on context."
+        },
+        {
+          "start": 46,
+          "id": "selection",
+          "title": "Document objects and DOM methods",
+          "reviewNote": "Document is an object. Its selection methods return elements or collections, not methods."
+        },
+        {
+          "start": 73,
+          "id": "shadow-dom",
+          "title": "Shadow DOM and encapsulation",
+          "reviewNote": "Closed mode is not a security boundary. Inheritance and explicit styling APIs cross some style boundaries."
+        },
+        {
+          "start": 113,
+          "id": "devtools",
+          "title": "Shadow trees in the page and DevTools",
+          "reviewNote": "Shadow DOM exists in the live page; DevTools visualizes it. Widget implementations and browser controls vary."
+        },
+        {
+          "start": 131,
+          "id": "web-components",
+          "title": "Custom elements, templates and slots",
+          "reviewNote": "These APIs can be used separately. A template is inert markup; a slot projects light-DOM content."
+        },
+        {
+          "start": 166,
+          "id": "storage",
+          "title": "Browser storage choices",
+          "reviewNote": "Quotas and retention vary by browser policy. A new tab can initially copy its opener session storage."
+        },
+        {
+          "start": 210,
+          "id": "storage-writes",
+          "title": "Who writes browser storage?",
+          "reviewNote": "Storage APIs require application operations; cookie transmission follows matching and privacy rules."
+        },
+        {
+          "start": 235,
+          "id": "autofill",
+          "title": "Password managers and autofill",
+          "reviewNote": "A website cannot enumerate the password vault, but page code can read a password field value before submission."
+        },
+        {
+          "start": 257,
+          "id": "storage-apis",
+          "title": "Storage APIs and helper functions",
+          "reviewNote": "The supplied IndexedDB wrapper branch is unfinished; use real transactions and completion/error handlers."
+        }
+      ]
     }
   ],
   "articles": [
@@ -66,6 +128,13 @@
           "start": 1320,
           "end": 1472
         }
+      ],
+      "extraRanges": [
+        {
+          "document": "browser-notes",
+          "start": 1,
+          "end": 45
+        }
       ]
     },
     {
@@ -78,6 +147,13 @@
         {
           "start": 1473,
           "end": 1572
+        }
+      ],
+      "extraRanges": [
+        {
+          "document": "browser-notes",
+          "start": 166,
+          "end": 291
         }
       ]
     },
@@ -1351,6 +1427,13 @@
           "start": 23009,
           "end": 23085
         }
+      ],
+      "extraRanges": [
+        {
+          "document": "browser-notes",
+          "start": 175,
+          "end": 179
+        }
       ]
     },
     {
@@ -1586,6 +1669,13 @@
         {
           "start": 27814,
           "end": 27834
+        }
+      ],
+      "extraRanges": [
+        {
+          "document": "browser-notes",
+          "start": 113,
+          "end": 130
         }
       ]
     },
@@ -1832,6 +1922,182 @@
           "end": 2304
         }
       ]
+    },
+    {
+      "id": "cssom",
+      "title": "CSS Object Model",
+      "aliases": [
+        "CSSOM"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 1,
+          "end": 45
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "dom-selection",
+      "title": "DOM selection methods",
+      "aliases": [
+        "DOM selectors"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 46,
+          "end": 72
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "shadow-dom",
+      "title": "Shadow DOM",
+      "aliases": [],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 73,
+          "end": 130
+        }
+      ],
+      "curated": true,
+      "level": "Intermediate"
+    },
+    {
+      "id": "web-components",
+      "title": "Web Components",
+      "aliases": [],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 131,
+          "end": 164
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "custom-elements",
+      "title": "Custom elements",
+      "aliases": [],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 139,
+          "end": 164
+        }
+      ],
+      "curated": true,
+      "level": "Intermediate"
+    },
+    {
+      "id": "html-templates",
+      "title": "HTML templates and slots",
+      "aliases": [
+        "HTML Templates"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 151,
+          "end": 164
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "local-storage",
+      "title": "Local storage",
+      "aliases": [
+        "localStorage"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 181,
+          "end": 185
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "session-storage",
+      "title": "Session storage",
+      "aliases": [
+        "sessionStorage"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 187,
+          "end": 191
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "indexeddb",
+      "title": "IndexedDB",
+      "aliases": [],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 193,
+          "end": 208
+        }
+      ],
+      "curated": true,
+      "level": "Intermediate"
+    },
+    {
+      "id": "browser-autofill",
+      "title": "Browser autofill and password managers",
+      "aliases": [
+        "Password autofill"
+      ],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 235,
+          "end": 255
+        }
+      ],
+      "curated": true,
+      "level": "Beginner"
+    },
+    {
+      "id": "dom",
+      "title": "Document Object Model",
+      "aliases": [],
+      "domain": "web-development",
+      "document": "browser-notes",
+      "ranges": [
+        {
+          "start": 46,
+          "end": 72
+        }
+      ],
+      "curated": true
     }
   ],
   "relationships": [
@@ -2020,6 +2286,114 @@
       "target": "python-collections",
       "type": "prerequisite_of",
       "reason": "Python collection operations use language expressions and iteration."
+    },
+    {
+      "source": "dom",
+      "target": "cssom",
+      "type": "commonly_used_with",
+      "reason": "Document structure and style rules contribute to browser rendering."
+    },
+    {
+      "source": "dom",
+      "target": "dom-selection",
+      "type": "prerequisite_of",
+      "reason": "Selection methods query nodes in a document or element subtree."
+    },
+    {
+      "source": "dom",
+      "target": "shadow-dom",
+      "type": "prerequisite_of",
+      "reason": "A shadow root attaches a separate node tree to a host element."
+    },
+    {
+      "source": "cssom",
+      "target": "browser-rendering",
+      "type": "used_by",
+      "reason": "Rendering uses style information together with document structure."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "web-components",
+      "type": "commonly_used_with",
+      "reason": "Web components can use shadow trees to encapsulate internal markup."
+    },
+    {
+      "source": "custom-elements",
+      "target": "web-components",
+      "type": "part_of",
+      "reason": "Custom element registration supplies reusable element behavior."
+    },
+    {
+      "source": "html-templates",
+      "target": "web-components",
+      "type": "commonly_used_with",
+      "reason": "Templates provide reusable markup for component instances."
+    },
+    {
+      "source": "html-templates",
+      "target": "shadow-dom",
+      "type": "commonly_used_with",
+      "reason": "Slots in shadow trees distribute light-DOM content into the rendered component."
+    },
+    {
+      "source": "javascript",
+      "target": "custom-elements",
+      "type": "prerequisite_of",
+      "reason": "Custom element classes and callbacks use JavaScript."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "react-reconciliation",
+      "type": "contrasts_with",
+      "reason": "Shadow DOM is browser encapsulation; React reconciliation updates UI representations."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "browser-devtools",
+      "type": "tested_by",
+      "reason": "DevTools can inspect the live host and its shadow tree."
+    },
+    {
+      "source": "local-storage",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "Local storage is a synchronous string store for origin-scoped preferences."
+    },
+    {
+      "source": "session-storage",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "Session storage scopes string records to an origin and top-level page session."
+    },
+    {
+      "source": "indexeddb",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "IndexedDB provides asynchronous structured storage using transactions."
+    },
+    {
+      "source": "local-storage",
+      "target": "session-storage",
+      "type": "contrasts_with",
+      "reason": "These APIs share methods but differ in scope and lifecycle."
+    },
+    {
+      "source": "browser-autofill",
+      "target": "browser-storage",
+      "type": "contrasts_with",
+      "reason": "Password-manager vault storage is distinct from website-controlled origin storage."
+    },
+    {
+      "source": "browser-autofill",
+      "target": "authentication",
+      "type": "related_to",
+      "reason": "Autofill assists sign-in without replacing server-side authentication."
+    },
+    {
+      "source": "indexeddb",
+      "target": "database-transactions",
+      "type": "related_to",
+      "reason": "IndexedDB operations commit or abort within transactions."
     }
   ]
 }

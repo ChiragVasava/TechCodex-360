@@ -30,13 +30,13 @@ node scripts/smoke-routes.cjs http://127.0.0.1:3000
 ## Working foundation
 
 - Fourteen expandable domains with discipline trees and explicitly marked documentation gaps.
-- 171 canonical articles, including 119 new topics extracted from the DSA and interview study material and 10 enriched existing articles. The complete supplied documents are also readable as 28 study chapters. This is not complete coverage of the engineering disciplines.
-- 232 typed, directed relationships with reasons, prerequisites, next topics, backlinks, and a bounded graph explorer with filters, zoom, pan, and path highlighting.
+- 181 canonical articles, including the DSA/interview expansion and ten browser API concepts from the plain-text research. Supplied documents are also readable as 37 study sections. This is not complete coverage of the engineering disciplines.
+- 250 typed, directed relationships with reasons, prerequisites, next topics, backlinks, and a bounded graph explorer with filters, zoom, pan, and path highlighting.
 - Global search across titles, aliases, article text, domains, disciplines, roles, skills, references, legacy collections, and personal project/device/issue records. Keyboard suggestions support Ctrl/Cmd+K, arrow keys, Enter, and Escape.
 - Eleven substantive role profiles, an honest directory of additional titles, six five-level skill curricula, and role roadmaps with saved optional branches.
 - Learning status and proficiency stored separately; personal notes, bookmarks, evidence, goals, revision dates, reading positions, history, and domain/role progress.
 - Editable projects, model-specific hardware inventory, and troubleshooting records with canonical concept links.
-- Source review queue and line-addressable archives for all three research documents. Original source bytes are preserved.
+- Source review queue and line-addressable archives for all four research documents. Original source bytes are preserved.
 - Seven local SVG illustrations, rendered Mermaid flowcharts, syntax-highlighted examples with supplied outputs, and an interactive array lab with editable inputs and step traces.
 - Explicit Documented labels in domain trees; canonical articles are automatically included in all their declared domains. Documentation availability is independent of verification and personal progress.
 
@@ -100,10 +100,18 @@ Priority: verify source claims, expand missing concepts in the six clusters, com
 
 ## Supplied courses and visual practice
 
-Open `/study` for all DSA and interview chapters, or `/practice/arrays` for the interactive lab. Search includes the imported article bodies, chapter titles and practice entry. The original documents remain available at `/research?document=dsa` and `/research?document=interview`.
+Open `/study` for DSA, interview and browser research sections, or `/practice/arrays` for the interactive lab. Search includes the imported article bodies, chapter titles and practice entry. The original documents remain available at `/research?document=dsa` and `/research?document=interview`.
 
-The importer reads every line and preserves complete chapter coverage. It maps selected technical passages into 129 canonical articles; project stories, employer-specific interview advice, source quizzes and progress counters retain their original context in the chapter reader. They are not converted into personal projects, assessment scores or verified facts. Original external illustrations are links to source references. Missing downloadable attachments are labeled; new local diagrams and the array lab replace selected visual examples.
+The importer reads every line and preserves complete chapter coverage. It maps selected technical passages into 140 canonical articles; project stories, employer-specific interview advice, source quizzes and progress counters retain their original context in the chapter reader. They are not converted into personal projects, assessment scores or verified facts. Original external illustrations are links to source references. Missing downloadable attachments are labeled; new local diagrams and the array lab replace selected visual examples.
 
 When editing the supplied documents, review all affected source ranges in the study plan, run `npm run content:index`, inspect the changed articles and commit the source plus generated files. The build uses check-only ingestion and rejects stale source hashes, mappings, generated excerpts and indexes. CRLF and LF checkouts produce identical results. Put editorial additions before the `<!-- imported-study-material -->` marker; the imported portion is replaced on regeneration.
 
 The fixed JavaScript array implementations are tested. The supplied Java/Python/backend examples are preserved as study material with expected outputs; they have not all been executed or independently verified. The article reader does not execute supplied code. Further claim review and fine-grained concept extraction remain ongoing.
+
+## Browser research notes
+
+[research/research.txt](research/research.txt) is preserved as the `browser-notes` document. Its nine explicit section boundaries and correction notes are in the study plan. `/study` links to the complete transcript sections; `/research?document=browser-notes` provides exact source lines and integrity details. Plain text is escaped and never interpreted as HTML or executed.
+
+Ten curated articles explain CSSOM, DOM selection, Shadow DOM, Web Components, custom elements, templates/slots, local storage, session storage, IndexedDB and autofill. They include worked examples, expected outputs, diagrams where useful and MDN/web.dev references. Existing DOM, rendering, storage, cookies and DevTools articles connect the new material. Corrections address rendering-stage shortcuts, closed-root security, opener session-storage copies, autofilled input visibility and the incomplete IndexedDB wrapper. Article status remains Needs review.
+
+A study-plan entry with `curated: true` maintains provenance and chapter links without replacing its authored Markdown. Use this for corrected synthesis of source material. Plain-text documents can declare ordered `sections` starting at line 1; coverage extends through the final source line. Reindexing still validates the full source hash, boundaries and generated manifest.

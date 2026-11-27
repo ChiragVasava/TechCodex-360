@@ -199,7 +199,9 @@
       ],
       "summary": "The DOM represents a document as objects and nodes with interfaces that programs can inspect and modify.",
       "sources": [
-        "mdn-dom"
+        "mdn-dom",
+        "study-browser-notes",
+        "mdn-dom-selection"
       ],
       "research": [
         {
@@ -211,7 +213,14 @@
       "verification": {
         "status": "Needs review"
       },
-      "level": "Beginner"
+      "level": "Beginner",
+      "materialRanges": [
+        {
+          "start": 46,
+          "end": 72,
+          "document": "browser-notes"
+        }
+      ]
     },
     {
       "id": "processes",
@@ -1868,7 +1877,9 @@
         "status": "Needs review"
       },
       "sources": [
-        "study-interview"
+        "study-interview",
+        "study-browser-notes",
+        "webdev-rendering-performance"
       ],
       "research": [],
       "materialRanges": [
@@ -1876,6 +1887,11 @@
           "start": 1320,
           "end": 1472,
           "document": "interview"
+        },
+        {
+          "document": "browser-notes",
+          "start": 1,
+          "end": 45
         }
       ]
     },
@@ -1895,7 +1911,11 @@
         "status": "Needs review"
       },
       "sources": [
-        "study-interview"
+        "study-interview",
+        "study-browser-notes",
+        "mdn-web-storage",
+        "mdn-session-storage",
+        "mdn-indexeddb"
       ],
       "research": [],
       "materialRanges": [
@@ -1903,6 +1923,11 @@
           "start": 1473,
           "end": 1572,
           "document": "interview"
+        },
+        {
+          "document": "browser-notes",
+          "start": 166,
+          "end": 291
         }
       ]
     },
@@ -4214,7 +4239,8 @@
         "status": "Needs review"
       },
       "sources": [
-        "study-interview"
+        "study-interview",
+        "study-browser-notes"
       ],
       "research": [],
       "materialRanges": [
@@ -4222,6 +4248,11 @@
           "start": 23009,
           "end": 23085,
           "document": "interview"
+        },
+        {
+          "document": "browser-notes",
+          "start": 175,
+          "end": 179
         }
       ]
     },
@@ -4626,7 +4657,9 @@
         "status": "Needs review"
       },
       "sources": [
-        "study-interview"
+        "study-interview",
+        "study-browser-notes",
+        "mdn-shadow-dom"
       ],
       "research": [],
       "materialRanges": [
@@ -4634,6 +4667,11 @@
           "start": 27814,
           "end": 27834,
           "document": "interview"
+        },
+        {
+          "document": "browser-notes",
+          "start": 113,
+          "end": 130
         }
       ]
     },
@@ -5074,6 +5112,302 @@
           "start": 1533,
           "end": 2304,
           "document": "dsa"
+        }
+      ]
+    },
+    {
+      "id": "cssom",
+      "slug": "cssom",
+      "title": "CSS Object Model",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "CSSOM"
+      ],
+      "summary": "The CSS Object Model (CSSOM) is a set of interfaces for representing and manipulating CSS. It exposes stylesheets, rules and declarations; it is not the browser's final pixel image.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-cssom",
+        "webdev-rendering-performance"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1,
+          "end": 45,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "dom-selection",
+      "slug": "dom-selection",
+      "title": "DOM selection methods",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "DOM selectors"
+      ],
+      "summary": "In document.getElementById('header'), document is the current page's Document object; getElementById is a method; 'header' is its argument. The dot accesses an object member, and the parentheses call the function.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-dom-selection"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 46,
+          "end": 72,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "shadow-dom",
+      "slug": "shadow-dom",
+      "title": "Shadow DOM",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Shadow DOM attaches a separate node tree to a host element. It helps encapsulate a component's markup and styles. It exists in the running page; browser Inspect tools merely display it.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-shadow-dom"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 73,
+          "end": 130,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "web-components",
+      "slug": "web-components",
+      "title": "Web Components",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Web Components describes a set of browser technologies for reusable elements and encapsulated UI. The technologies cooperate, but an application does not have to use every one of them together.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-shadow-dom",
+        "mdn-custom-elements",
+        "mdn-templates-slots"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 131,
+          "end": 164,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "custom-elements",
+      "slug": "custom-elements",
+      "title": "Custom elements",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Custom elements let JavaScript define behavior for registered HTML element names. An autonomous custom element extends HTMLElement; its valid registered name includes a hyphen.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-custom-elements"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 139,
+          "end": 164,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "html-templates",
+      "slug": "html-templates",
+      "title": "HTML templates and slots",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "HTML Templates"
+      ],
+      "summary": "A template holds markup that is not rendered as ordinary page content. Its content is a DocumentFragment that can be cloned. A slot has a different job: it marks an insertion point for light-DOM content in a shadow tree.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-templates-slots"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 151,
+          "end": 164,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "local-storage",
+      "slug": "local-storage",
+      "title": "Local storage",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "localStorage"
+      ],
+      "summary": "localStorage is a browser API for origin-scoped string key/value data. It is useful for small preferences that should survive page reloads and ordinary browser restarts. Reads and writes are synchronous.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-web-storage"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 181,
+          "end": 185,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "session-storage",
+      "slug": "session-storage",
+      "title": "Session storage",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "sessionStorage"
+      ],
+      "summary": "sessionStorage provides string key/value storage partitioned by origin and top-level browsing context. It is suited to temporary state such as a multi-step form in one tab.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-session-storage"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 187,
+          "end": 191,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "indexeddb",
+      "slug": "indexeddb",
+      "title": "IndexedDB",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "IndexedDB is an asynchronous browser database API for structured records, object stores and indexes. Reads and writes operate through transactions. It is appropriate for larger local application data and offline workflows.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-indexeddb"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 193,
+          "end": 208,
+          "document": "browser-notes"
+        }
+      ]
+    },
+    {
+      "id": "browser-autofill",
+      "slug": "browser-autofill",
+      "title": "Browser autofill and password managers",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Browser APIs and architecture",
+      "level": "Beginner",
+      "aliases": [
+        "Password autofill"
+      ],
+      "summary": "Browser autofill fills form fields using browser-managed or password-manager information. That storage is distinct from a website's cookies, local storage, session storage and IndexedDB.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-browser-notes",
+        "mdn-password-input",
+        "mdn-autocomplete"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 235,
+          "end": 255,
+          "document": "browser-notes"
         }
       ]
     }
@@ -6470,6 +6804,114 @@
       "target": "python-collections",
       "type": "prerequisite_of",
       "reason": "Python collection operations use language expressions and iteration."
+    },
+    {
+      "source": "dom",
+      "target": "cssom",
+      "type": "commonly_used_with",
+      "reason": "Document structure and style rules contribute to browser rendering."
+    },
+    {
+      "source": "dom",
+      "target": "dom-selection",
+      "type": "prerequisite_of",
+      "reason": "Selection methods query nodes in a document or element subtree."
+    },
+    {
+      "source": "dom",
+      "target": "shadow-dom",
+      "type": "prerequisite_of",
+      "reason": "A shadow root attaches a separate node tree to a host element."
+    },
+    {
+      "source": "cssom",
+      "target": "browser-rendering",
+      "type": "used_by",
+      "reason": "Rendering uses style information together with document structure."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "web-components",
+      "type": "commonly_used_with",
+      "reason": "Web components can use shadow trees to encapsulate internal markup."
+    },
+    {
+      "source": "custom-elements",
+      "target": "web-components",
+      "type": "part_of",
+      "reason": "Custom element registration supplies reusable element behavior."
+    },
+    {
+      "source": "html-templates",
+      "target": "web-components",
+      "type": "commonly_used_with",
+      "reason": "Templates provide reusable markup for component instances."
+    },
+    {
+      "source": "html-templates",
+      "target": "shadow-dom",
+      "type": "commonly_used_with",
+      "reason": "Slots in shadow trees distribute light-DOM content into the rendered component."
+    },
+    {
+      "source": "javascript",
+      "target": "custom-elements",
+      "type": "prerequisite_of",
+      "reason": "Custom element classes and callbacks use JavaScript."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "react-reconciliation",
+      "type": "contrasts_with",
+      "reason": "Shadow DOM is browser encapsulation; React reconciliation updates UI representations."
+    },
+    {
+      "source": "shadow-dom",
+      "target": "browser-devtools",
+      "type": "tested_by",
+      "reason": "DevTools can inspect the live host and its shadow tree."
+    },
+    {
+      "source": "local-storage",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "Local storage is a synchronous string store for origin-scoped preferences."
+    },
+    {
+      "source": "session-storage",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "Session storage scopes string records to an origin and top-level page session."
+    },
+    {
+      "source": "indexeddb",
+      "target": "browser-storage",
+      "type": "part_of",
+      "reason": "IndexedDB provides asynchronous structured storage using transactions."
+    },
+    {
+      "source": "local-storage",
+      "target": "session-storage",
+      "type": "contrasts_with",
+      "reason": "These APIs share methods but differ in scope and lifecycle."
+    },
+    {
+      "source": "browser-autofill",
+      "target": "browser-storage",
+      "type": "contrasts_with",
+      "reason": "Password-manager vault storage is distinct from website-controlled origin storage."
+    },
+    {
+      "source": "browser-autofill",
+      "target": "authentication",
+      "type": "related_to",
+      "reason": "Autofill assists sign-in without replacing server-side authentication."
+    },
+    {
+      "source": "indexeddb",
+      "target": "database-transactions",
+      "type": "related_to",
+      "reason": "IndexedDB operations commit or abort within transactions."
     }
   ],
   "sources": [
@@ -7003,6 +7445,149 @@
       "type": "Official language documentation",
       "claims": [
         "Python list operations; confirm behavior against the Python version used"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "study-browser-notes",
+      "title": "Browser rendering, Web Components and storage",
+      "publisher": "Personal research collection",
+      "url": "/research?document=browser-notes",
+      "type": "Supplied study notes",
+      "claims": [
+        "Source lessons, code examples and interview preparation; not independent verification"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "mdn-cssom",
+      "title": "CSS Object Model",
+      "url": "https://developer.mozilla.org/en-US/Web/API/CSS_Object_Model",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Stylesheet, rule and declaration interfaces"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-dom-selection",
+      "title": "Document querySelectorAll",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Document/querySelectorAll",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Static selector results and query syntax"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-shadow-dom",
+      "title": "Using shadow DOM",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Web_components/Using_shadow_DOM",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Host/root encapsulation, open and closed modes, security limitations"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-custom-elements",
+      "title": "Using custom elements",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Web_components/Using_custom_elements",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Registration and lifecycle callbacks"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-templates-slots",
+      "title": "Using templates and slots",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Web_components/Using_templates_and_slots",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Template fragments and content distribution"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-web-storage",
+      "title": "Web Storage API",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Web_Storage_API",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Synchronous storage APIs and origin scope"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-session-storage",
+      "title": "Window sessionStorage",
+      "url": "https://developer.mozilla.org/en-US/Web/API/Window/sessionStorage",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Page sessions, restores and opener copies"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-indexeddb",
+      "title": "Using IndexedDB",
+      "url": "https://developer.mozilla.org/en-US/Web/API/IndexedDB_API/Using_IndexedDB",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Object stores, upgrades and transaction completion"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-password-input",
+      "title": "Password input",
+      "url": "https://developer.mozilla.org/en-US/Web/HTML/Reference/Elements/input/password",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Password field value, masking and autocomplete"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "mdn-autocomplete",
+      "title": "HTML autocomplete attribute",
+      "url": "https://developer.mozilla.org/en-US/Web/HTML/Reference/Attributes/autocomplete",
+      "publisher": "MDN Web Docs",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Form purpose tokens and password manager caveats"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "webdev-rendering-performance",
+      "title": "Rendering performance",
+      "url": "https://web.dev/articles/rendering-performance",
+      "publisher": "web.dev",
+      "type": "Official web platform documentation",
+      "claims": [
+        "Style, layout, paint and compositing; stages can be skipped"
       ],
       "status": "Needs review",
       "accessedAt": "2026-11-27"

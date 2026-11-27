@@ -18,7 +18,7 @@ test('new concepts rank by canonical identity and chapters and practice are sear
   assert.ok(searchCodex('array visualization').some(r => r.href === '/practice/arrays'));
 });
 
-test('complete study chapters cover both immutable source documents without gaps', () => {
+test('complete study chapters cover every immutable source document without gaps', () => {
   for (const doc of manifest.documents) {
     const text = fs.readFileSync(`research/${doc.file}`, 'utf8').replace(/\r\n/g, '\n');
     assert.equal(crypto.createHash('sha256').update(text).digest('hex'), doc.sha256);
@@ -32,6 +32,23 @@ test('complete study chapters cover both immutable source documents without gaps
     assert.equal(next, doc.lineCount + 1);
   }
   assert.equal(manifest.documents.find(d => d.id === 'interview').chapters.length, 21);
+});
+
+test('browser text research has corrected canonical links and preserves literal source markup', async () => {
+  const { readStudyChapter } = require('../lib/study-materials.ts');
+  const doc = manifest.documents.find(d => d.id === 'browser-notes');
+  assert.equal(doc.chapters.length, 9);
+  assert.equal(doc.chapters[0].start, 1);
+  assert.ok(doc.chapters.every(c => c.reviewNote && c.articles.length));
+  const result = await readStudyChapter(doc.id, 'shadow-dom');
+  const original = fs.readFileSync(`research/${doc.file}`, 'utf8').replace(/\r\n/g, '\n').split('\n');
+  assert.equal(result.body, original.slice(result.chapter.start - 1, result.chapter.end).join('\n'));
+  assert.ok(result.body.includes('<style>'));
+  assert.ok(result.body.includes('closed'));
+  for (const id of ['cssom','dom-selection','shadow-dom','web-components','custom-elements','html-templates','local-storage','session-storage','indexeddb','browser-autofill']) {
+    assert.equal(resolveConcept(id).id, id);
+    assert.ok(articles.find(a => a.id === id).materialRanges.some(r => r.document === doc.id));
+  }
 });
 
 test('study import is current and --check never rewrites source or generated files', () => {

@@ -6,6 +6,12 @@
 
 This is a simplified pipeline. Layout computes geometry, paint records visual content, and compositing combines layers. A change need not repeat every stage; browser implementations decide what work is necessary. Start with [HTML](/knowledge/html), [CSS](/knowledge/css), and the [DOM](/knowledge/dom).
 
+## Clarifications from the browser research
+
+The [CSSOM](/knowledge/cssom) exposes stylesheet rules and declarations; it is distinct from resolved element styles and the rendering structures. Not every JavaScript change triggers all rendering stages. A geometry change can require layout; a color-only change can avoid layout. Relevant stylesheets may block rendering, but not all CSS resources always block every render.
+
+`display: none` suppresses the element's generated boxes; `visibility: hidden` usually retains layout space. The simplified rendering pipeline is a learning model, not a complete description of every browser implementation. See [rendering performance](https://web.dev/articles/rendering-performance).
+
 <!-- imported-study-material -->
 
 > Imported lesson from [Full-stack interview handbook, lines 1320–1472](/research?document=interview&start=1320&end=1472). Needs review: examples and claims retain their source context; reading does not certify proficiency.
@@ -160,6 +166,12 @@ Their main technologies include:
 - HTML Templates.
 
 For example, we can create a reusable `<user-card>` element that displays user information.
+
+---
+
+> Imported lesson from [Browser rendering, Web Components and storage, lines 1–45](/research?document=browser-notes&start=1&end=45). Needs review: examples and claims retain their source context; reading does not certify proficiency.
+
+This plain-text research passage is preserved in the [browser research collection](/study). Read the connected canonical articles for explanations with corrections; the source export is not independently verified.
 
 ## Connected study
 

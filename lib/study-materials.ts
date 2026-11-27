@@ -11,6 +11,7 @@ export const readStudySource = cache(async (id: string) => {
 export async function readStudyChapter(documentId: string, chapterId: string) {
   const document = studyDocument(documentId); const chapter = document?.chapters.find(item => item.id === chapterId);
   const source = await readStudySource(documentId); if (!document || !chapter || source === null) return null;
+  if (document.file.endsWith('.txt')) return { document, chapter, body: source.split("\n").slice(chapter.start - 1, chapter.end).join("\n") };
   let fence = false;
   const body = source.split("\n").slice(chapter.start - 1, chapter.end).map(line => {
     if (/^\s*(```|~~~)/.test(line)) { fence = !fence; return line; }

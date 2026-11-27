@@ -1,5 +1,18 @@
 # Browser storage
 
+## Choosing and writing storage
+
+| Mechanism | Application operation | Main distinction |
+| --- | --- | --- |
+| [Cookies](/knowledge/cookies) | Server Set-Cookie or document.cookie | Eligible requests carry matching cookies under browser policy |
+| [Local storage](/knowledge/local-storage) | setItem and getItem | Synchronous string preferences |
+| [Session storage](/knowledge/session-storage) | setItem and getItem | Origin plus top-level page-session scope |
+| [IndexedDB](/knowledge/indexeddb) | Open, transaction, object-store request | Asynchronous structured records |
+
+There is no single built-in API that automatically chooses between these. An application wrapper must implement each supported mechanism and reject unsupported choices. The supplied research wrapper leaves IndexedDB unimplemented; use the complete transaction example in its article.
+
+Browser-managed caches, history and [password-manager autofill](/knowledge/browser-autofill) are different facilities. Quotas and retention vary, and saved data may be cleared. A new tab can initially copy its opener's session storage, so it is not always empty.
+
 <!-- imported-study-material -->
 
 > Imported lesson from [Full-stack interview handbook, lines 1473–1572](/research?document=interview&start=1473&end=1572). Needs review: examples and claims retain their source context; reading does not certify proficiency.
@@ -101,6 +114,12 @@ Answer:
 - IndexedDB: Asynchronous browser database that supports structured data, indexes and larger datasets.
 
 Local Storage is suitable for simple preferences, while IndexedDB is more suitable for complex offline application data.
+
+---
+
+> Imported lesson from [Browser rendering, Web Components and storage, lines 166–291](/research?document=browser-notes&start=166&end=291). Needs review: examples and claims retain their source context; reading does not certify proficiency.
+
+This plain-text research passage is preserved in the [browser research collection](/study). Read the connected canonical articles for explanations with corrections; the source export is not independently verified.
 
 ## Connected study
 

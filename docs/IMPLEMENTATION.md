@@ -100,3 +100,16 @@ Remaining content work, in order:
 5. Continue original research extraction, missing engineering clusters and role profiles from the backlog above. This content expansion does not finish the full master vision.
 
 For future source edits, review line ranges in [the study plan](../content/study-plan.json), then run `npm run content:index`, tests and build. Commit the sources and generated outputs together. Do not put manual edits below the import marker, where regeneration replaces extracted material.
+
+## Plain-text browser research — 2026-11-27
+
+- [x] Read the complete [browser research](../research/research.txt); preserve it without rewriting, split into nine contiguous transcript sections and expose exact source ranges.
+- [x] Add ten curated articles: CSSOM, DOM selection, Shadow DOM, Web Components, custom elements, templates/slots, local storage, session storage, IndexedDB and browser autofill. Enrich the existing DOM, rendering, storage, cookies and DevTools articles without duplicating their identities.
+- [x] Add 18 meaningful relationship edges, three Mermaid diagrams, worked code and expected output. Domain coverage and search include the new canonical articles automatically.
+- [x] Check important corrections against MDN and web.dev: closed shadow roots are not a security boundary; rendering does not always repeat every stage; session storage can start from an opener copy; password input values are accessible before submission; the supplied IndexedDB wrapper has no implementation.
+- [x] Show correction notes beside preserved transcripts. Escape plain text, including embedded HTML, instead of interpreting it as markup or executing examples.
+- [x] Extend ingestion with explicit section boundaries and curated article mappings; make article provenance labels work for any registered study document.
+- [x] Validate 33 tests, TypeScript diagnostics and the production build (274 static pages). The production route sweep passes 278 page requests plus four missing-page checks.
+- [x] Browser checks confirm the Shadow DOM diagram, corrected provenance links, literal HTML in the transcript with no embedded style/script elements, and no document overflow at 375 pixels. Five authored browser examples produce the documented outputs: CSSOM `120px`, selection `1 2`, shadow queries `null` / `Inside`, custom element `Hello, engineer`, and template `0` / `Reusable message`.
+
+Current corpus: 181 articles, 250 relationships, 60 references and 37 supplied-study sections. Full original preservation does not imply complete factual verification; all new articles retain Needs review. The new IndexedDB example implements a full write transaction, but quota, blocked upgrades and cross-browser behavior remain broader validation work.

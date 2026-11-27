@@ -34,3 +34,6 @@ These sources are provided for claim review. This article is **Needs review**; n
 
 - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) — MDN Web Docs.
 
+## Objects, methods and selection
+
+In `document.querySelector("p")`, `document` is an object representing the current document, `querySelector` is a method accessed through the dot, and `"p"` is its argument. A single selection can return `null`; a collection can be empty. Read [DOM selection methods](/knowledge/dom-selection) for a worked live-versus-static collection example. [Shadow DOM](/knowledge/shadow-dom) introduces a separate tree attached to a host, not a different page that exists only in DevTools.
