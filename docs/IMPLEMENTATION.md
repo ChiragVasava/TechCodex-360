@@ -76,3 +76,27 @@ Schema v2 hashes UTF-8 text after only CRLF-to-LF normalization and records the 
 Regression checks cover LF and CRLF fixtures, the committed Git blob, unchanged source bytes after checking, and rejection of real content edits or stale section metadata. All 23 tests and TypeScript checks pass. Commit the regenerated manifest together with the shared integrity helper, viewer, and indexer changes; deployments continue to check rather than regenerate the manifest.
 
 The production build passes with schema v2. The production research route returns HTTP 200 and reports matching normalized integrity without a stale-manifest warning. A new Vercel deployment has not been triggered from this workspace.
+
+## Study-material expansion — 2026-11-27
+
+- [x] Preserve both supplied documents byte-for-byte and expose every line through source archives and 28 readable chapters (7 DSA sections and 21 interview sections including orientation).
+- [x] Map source passages into 129 canonical articles: 119 new topics and 10 enriched existing articles. Total corpus: 171 articles, 232 relationships, 48 reference records, 14 domains.
+- [x] Keep domain coverage automatic for canonical articles; show Documented separately from verification and personal learning status. Planned topics remain explicitly undocumented.
+- [x] Add article-body, study-chapter and practice search, with canonical IDs ranked as exact matches.
+- [x] Add seven local SVG illustrations, on-demand Mermaid rendering, highlighted code and supplied outputs. Keep original remote illustrations as source references; label absent downloadable attachments.
+- [x] Add an interactive three-algorithm array lab with editable inputs, traces, final outputs, edge cases and a quantitative comparison graph with an accessible data table.
+- [x] Preserve source ranges and Needs review status. Do not import interview stories, readiness counters or quiz counters as personal records or achievements.
+- [x] Make ingestion deterministic and check-only during builds. Detect stale source hashes, chapter metadata, generated excerpts and search data. Keep LF/CRLF portability.
+- [x] Document the regeneration procedure and safe editorial area before the import marker.
+
+Validation: 32 tests pass, including complete chapter coverage, source immutability, LF/CRLF fixtures, stale-source rejection, domain coverage, search and algorithm edge cases. Production compilation and type checking pass. The initial production route sweep passed 258 page requests and four missing-page responses. Browser interaction checks confirmed array outputs, loaded SVG images, a rendered Mermaid diagram, domain coverage labels, search suggestions and article layouts at 375/768/1440 pixels without document overflow.
+
+Remaining content work, in order:
+
+1. Review imported claims against current primary sources, especially authentication, cloud, framework versions and employer-specific advice. No imported article has been marked independently Verified.
+2. Break compound study articles into finer canonical concepts where justified; preserve a single identity and contextual links. The complete chapters preserve material that has not yet received a dedicated concept article.
+3. Execute and assess the supplied Java/Python/framework examples in appropriate environments. The current automated execution coverage is for the fixed JavaScript array lab, not all supplied code.
+4. Expand per-concept illustrations and assessments beyond the initial array and application workflows; original quiz attachments were not supplied.
+5. Continue original research extraction, missing engineering clusters and role profiles from the backlog above. This content expansion does not finish the full master vision.
+
+For future source edits, review line ranges in [the study plan](../content/study-plan.json), then run `npm run content:index`, tests and build. Commit the sources and generated outputs together. Do not put manual edits below the import marker, where regeneration replaces extracted material.

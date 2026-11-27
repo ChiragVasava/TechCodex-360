@@ -19,7 +19,7 @@ npm run build
 npm start -- --hostname 127.0.0.1
 ```
 
-The build validates content and research indexes before compiling Next.js. There are no new runtime dependencies.
+The build validates content and research indexes before compiling Next.js. Mermaid is loaded on demand when a lesson diagram approaches the viewport; use Node.js 24 for its supported runtime.
 
 With the production server running, check every documented route and missing-page status:
 
@@ -30,15 +30,17 @@ node scripts/smoke-routes.cjs http://127.0.0.1:3000
 ## Working foundation
 
 - Fourteen expandable domains with discipline trees and explicitly marked documentation gaps.
-- Fifty-two authored canonical articles across JavaScript/browser execution, networking, USB/security, embedded systems, software engineering, and AI/data. This is a starter corpus, not complete coverage of these disciplines.
-- Seventy-five typed, directed relationships with reasons, prerequisites, next topics, backlinks, and a bounded graph explorer with filters, zoom, pan, and path highlighting.
+- 171 canonical articles, including 119 new topics extracted from the DSA and interview study material and 10 enriched existing articles. The complete supplied documents are also readable as 28 study chapters. This is not complete coverage of the engineering disciplines.
+- 232 typed, directed relationships with reasons, prerequisites, next topics, backlinks, and a bounded graph explorer with filters, zoom, pan, and path highlighting.
 - Global search across titles, aliases, article text, domains, disciplines, roles, skills, references, legacy collections, and personal project/device/issue records. Keyboard suggestions support Ctrl/Cmd+K, arrow keys, Enter, and Escape.
 - Eleven substantive role profiles, an honest directory of additional titles, six five-level skill curricula, and role roadmaps with saved optional branches.
 - Learning status and proficiency stored separately; personal notes, bookmarks, evidence, goals, revision dates, reading positions, history, and domain/role progress.
 - Editable projects, model-specific hardware inventory, and troubleshooting records with canonical concept links.
-- Source review queue and complete line-addressable research archive. The original research bytes are preserved.
+- Source review queue and line-addressable archives for all three research documents. Original source bytes are preserved.
+- Seven local SVG illustrations, rendered Mermaid flowcharts, syntax-highlighted examples with supplied outputs, and an interactive array lab with editable inputs and step traces.
+- Explicit Documented labels in domain trees; canonical articles are automatically included in all their declared domains. Documentation availability is independent of verification and personal progress.
 
-All starter articles remain **Needs review**. A reference link or access date is not a claim that every statement has been independently verified. Unwritten topics have no fabricated article pages.
+All imported and starter articles remain **Needs review**. A reference link or access date is not a claim that every statement has been independently verified. Unwritten topics have no fabricated article pages.
 
 ## Personal storage and backups
 
@@ -60,6 +62,8 @@ Inventory and troubleshooting pages preserve their original seed records in clea
 | Roles and skill curricula | [content/careers.ts](content/careers.ts) | Profiles, milestones, optional paths, and skill outcomes |
 | Research archive | [research/research.md](research/research.md) | Unmodified primary corpus |
 | Research coverage manifest | [content/research-index.json](content/research-index.json) | SHA-256, full coverage, and review flags |
+| Study import plan | [content/study-plan.json](content/study-plan.json) | Reviewed source ranges, canonical mappings and prerequisite edges |
+| Study coverage manifest | [content/study-index.json](content/study-index.json) | Complete chapter coverage and portable content hashes |
 | Personal data model | [lib/workspace.ts](lib/workspace.ts) | Validated versioned backup and record schemas |
 | Original collections | [content/data.ts](content/data.ts) | Preserved devices, tools, logs, and roadmap |
 
@@ -93,3 +97,13 @@ Full concept extraction is still ongoing. The preserved archive is not presented
 See [the implementation checklist and prioritized backlog](docs/IMPLEMENTATION.md), [workspace design](docs/workspace.md), and [career content design](docs/careers.md).
 
 Priority: verify source claims, expand missing concepts in the six clusters, complete the Express/serialization/privacy/hardware research extraction, and deepen the remaining role profiles. Rich media uploads, personalized assessments, automated source freshness checks, and authenticated cross-device storage are future work.
+
+## Supplied courses and visual practice
+
+Open `/study` for all DSA and interview chapters, or `/practice/arrays` for the interactive lab. Search includes the imported article bodies, chapter titles and practice entry. The original documents remain available at `/research?document=dsa` and `/research?document=interview`.
+
+The importer reads every line and preserves complete chapter coverage. It maps selected technical passages into 129 canonical articles; project stories, employer-specific interview advice, source quizzes and progress counters retain their original context in the chapter reader. They are not converted into personal projects, assessment scores or verified facts. Original external illustrations are links to source references. Missing downloadable attachments are labeled; new local diagrams and the array lab replace selected visual examples.
+
+When editing the supplied documents, review all affected source ranges in the study plan, run `npm run content:index`, inspect the changed articles and commit the source plus generated files. The build uses check-only ingestion and rejects stale source hashes, mappings, generated excerpts and indexes. CRLF and LF checkouts produce identical results. Put editorial additions before the `<!-- imported-study-material -->` marker; the imported portion is replaced on regeneration.
+
+The fixed JavaScript array implementations are tested. The supplied Java/Python/backend examples are preserved as study material with expected outputs; they have not all been executed or independently verified. The article reader does not execute supplied code. Further claim review and fine-grained concept extraction remain ongoing.

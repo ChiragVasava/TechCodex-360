@@ -14,7 +14,8 @@
       "summary": "JavaScript is a programming language whose core semantics are standardized as ECMAScript; browsers and server runtimes supply additional APIs around that language.",
       "sources": [
         "mdn-execution",
-        "html-event-loop"
+        "html-event-loop",
+        "study-interview"
       ],
       "research": [
         {
@@ -30,6 +31,13 @@
       "level": "Beginner",
       "searchTerms": [
         "ECMAScript language"
+      ],
+      "materialRanges": [
+        {
+          "start": 3725,
+          "end": 4021,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -49,7 +57,8 @@
       "sources": [
         "html-event-loop",
         "mdn-execution",
-        "node-event-loop"
+        "node-event-loop",
+        "study-interview"
       ],
       "research": [
         {
@@ -65,6 +74,13 @@
       "searchTerms": [
         "microtask queue",
         "task queue"
+      ],
+      "materialRanges": [
+        {
+          "start": 4881,
+          "end": 5225,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -144,7 +160,8 @@
       "summary": "Node.js is a JavaScript runtime that combines a JavaScript engine with server and operating-system APIs, including asynchronous I/O and worker-thread facilities.",
       "sources": [
         "node-event-loop",
-        "node-workers"
+        "node-workers",
+        "study-interview"
       ],
       "research": [
         {
@@ -159,6 +176,13 @@
       "searchTerms": [
         "libuv",
         "Worker Threads"
+      ],
+      "materialRanges": [
+        {
+          "start": 20304,
+          "end": 20538,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -1258,7 +1282,8 @@
       },
       "sources": [
         "owasp-validation",
-        "owasp-authz"
+        "owasp-authz",
+        "study-interview"
       ],
       "research": [
         {
@@ -1269,6 +1294,13 @@
       "searchTerms": [
         "Frontend Validation",
         "Backend Validation"
+      ],
+      "materialRanges": [
+        {
+          "start": 20719,
+          "end": 20753,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -1291,12 +1323,25 @@
         "status": "Needs review"
       },
       "sources": [
-        "owasp-authn"
+        "owasp-authn",
+        "study-interview"
       ],
       "research": [
         {
           "start": 246,
           "end": 570
+        }
+      ],
+      "materialRanges": [
+        {
+          "start": 22538,
+          "end": 22612,
+          "document": "interview"
+        },
+        {
+          "start": 22949,
+          "end": 23008,
+          "document": "interview"
         }
       ]
     },
@@ -1320,12 +1365,20 @@
         "status": "Needs review"
       },
       "sources": [
-        "owasp-authz"
+        "owasp-authz",
+        "study-interview"
       ],
       "research": [
         {
           "start": 13830,
           "end": 14028
+        }
+      ],
+      "materialRanges": [
+        {
+          "start": 23171,
+          "end": 23300,
+          "document": "interview"
         }
       ]
     },
@@ -1348,9 +1401,17 @@
         "status": "Needs review"
       },
       "sources": [
-        "git-book"
+        "git-book",
+        "study-interview"
       ],
-      "research": []
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 2152,
+          "end": 2582,
+          "document": "interview"
+        }
+      ]
     },
     {
       "id": "testing",
@@ -1372,12 +1433,20 @@
       },
       "sources": [
         "swebok",
-        "node-test"
+        "node-test",
+        "study-interview"
       ],
       "research": [
         {
           "start": 1,
           "end": 90
+        }
+      ],
+      "materialRanges": [
+        {
+          "start": 24905,
+          "end": 25092,
+          "document": "interview"
         }
       ]
     },
@@ -1403,7 +1472,8 @@
       },
       "sources": [
         "chrome-devtools",
-        "swebok"
+        "swebok",
+        "study-interview"
       ],
       "research": [
         {
@@ -1413,6 +1483,13 @@
       ],
       "searchTerms": [
         "Root Cause Analysis"
+      ],
+      "materialRanges": [
+        {
+          "start": 28007,
+          "end": 28082,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -1435,13 +1512,21 @@
       },
       "sources": [
         "github-actions",
-        "git-book"
+        "git-book",
+        "study-interview"
       ],
       "research": [],
       "searchTerms": [
         "Continuous Integration",
         "Continuous Delivery",
         "Continuous Deployment"
+      ],
+      "materialRanges": [
+        {
+          "start": 29919,
+          "end": 30139,
+          "document": "interview"
+        }
       ]
     },
     {
@@ -1680,6 +1765,3316 @@
         "Recommendations",
         "Ranking",
         "Interest Graph"
+      ]
+    },
+    {
+      "id": "html",
+      "slug": "html",
+      "title": "HTML",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "HTML5"
+      ],
+      "summary": "Study HTML through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 419,
+          "end": 769,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "css",
+      "slug": "css",
+      "title": "CSS",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "CSS3"
+      ],
+      "summary": "Study CSS through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 770,
+          "end": 1275,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "tailwind-css",
+      "slug": "tailwind-css",
+      "title": "Tailwind CSS",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Tailwind CSS through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1276,
+          "end": 1319,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "browser-rendering",
+      "slug": "browser-rendering",
+      "title": "Browser rendering",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Browser rendering through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1320,
+          "end": 1472,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "browser-storage",
+      "slug": "browser-storage",
+      "title": "Browser storage",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Browser storage through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1473,
+          "end": 1572,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "chrome-extensions",
+      "slug": "chrome-extensions",
+      "title": "Chrome extensions",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Chrome extensions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1799,
+          "end": 2143,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "git-branching",
+      "slug": "git-branching",
+      "title": "Git branching and merging",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Git branching and merging through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 2583,
+          "end": 2760,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "git-rebase",
+      "slug": "git-rebase",
+      "title": "Git rebase",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Git rebase through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 2761,
+          "end": 2840,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "git-recovery",
+      "slug": "git-recovery",
+      "title": "Git reset, revert, restore and stash",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Git reset, revert, restore and stash through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 2841,
+          "end": 2967,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "slug": "github",
+      "title": "GitHub",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study GitHub through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 3086,
+          "end": 3179,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "code-review",
+      "slug": "code-review",
+      "title": "Code review",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Pull Requests"
+      ],
+      "summary": "Study Code review through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 3180,
+          "end": 3403,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "semantic-versioning",
+      "slug": "semantic-versioning",
+      "title": "Semantic versioning",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Semantic versioning through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 3404,
+          "end": 3519,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "javascript-scope",
+      "slug": "javascript-scope",
+      "title": "JavaScript scope and hoisting",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Hoisting",
+        "Temporal Dead Zone"
+      ],
+      "summary": "Study JavaScript scope and hoisting through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 4022,
+          "end": 4141,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "closures",
+      "slug": "closures",
+      "title": "Closures",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Closures through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 4142,
+          "end": 4312,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "javascript-prototypes",
+      "slug": "javascript-prototypes",
+      "title": "JavaScript prototypes and this",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study JavaScript prototypes and this through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 4313,
+          "end": 4496,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "javascript-arrays",
+      "slug": "javascript-arrays",
+      "title": "JavaScript array methods",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study JavaScript array methods through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 4497,
+          "end": 4646,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "asynchronous-javascript",
+      "slug": "asynchronous-javascript",
+      "title": "Asynchronous JavaScript",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Promises",
+        "Async Await"
+      ],
+      "summary": "Study Asynchronous JavaScript through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 4647,
+          "end": 4880,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "fetch-api",
+      "slug": "fetch-api",
+      "title": "Fetch API",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Fetch API through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 5226,
+          "end": 5324,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "debouncing-throttling",
+      "slug": "debouncing-throttling",
+      "title": "Debouncing and throttling",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Debouncing and throttling through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 5325,
+          "end": 5439,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "javascript-modules",
+      "slug": "javascript-modules",
+      "title": "JavaScript modules and errors",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study JavaScript modules and errors through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 5440,
+          "end": 5547,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "slug": "typescript",
+      "title": "TypeScript",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study TypeScript through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 6479,
+          "end": 7011,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "slug": "java",
+      "title": "Java",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Java through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 7020,
+          "end": 7870,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "java-strings",
+      "slug": "java-strings",
+      "title": "Java strings",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Java strings through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 7870,
+          "end": 8020,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "object-oriented-programming",
+      "slug": "object-oriented-programming",
+      "title": "Object-oriented programming",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "OOP"
+      ],
+      "summary": "Study Object-oriented programming through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 8021,
+          "end": 8634,
+          "document": "interview"
+        },
+        {
+          "start": 9138,
+          "end": 9219,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "java-exceptions",
+      "slug": "java-exceptions",
+      "title": "Java exception handling",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Java exception handling through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 8635,
+          "end": 8827,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "java-collections",
+      "slug": "java-collections",
+      "title": "Java Collections Framework",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Java Collections Framework through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 8828,
+          "end": 9137,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "slug": "python",
+      "title": "Python",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Python through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 9228,
+          "end": 9994,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-collections",
+      "slug": "python-collections",
+      "title": "Python collections",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Python collections through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 9995,
+          "end": 10659,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-functions",
+      "slug": "python-functions",
+      "title": "Python functions",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Python functions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 10660,
+          "end": 10919,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-oop",
+      "slug": "python-oop",
+      "title": "Object-oriented Python",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Object-oriented Python through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 10920,
+          "end": 11169,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-files-exceptions",
+      "slug": "python-files-exceptions",
+      "title": "Python files and exceptions",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Python files and exceptions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 11170,
+          "end": 11333,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-modules",
+      "slug": "python-modules",
+      "title": "Python modules and packages",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Python modules and packages through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 11334,
+          "end": 11486,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-iterators",
+      "slug": "python-iterators",
+      "title": "Advanced Python techniques",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Advanced",
+      "aliases": [],
+      "summary": "Study Advanced Python techniques through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 11487,
+          "end": 11777,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-memory",
+      "slug": "python-memory",
+      "title": "Python memory management",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Python memory management through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 11778,
+          "end": 11892,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "python-concurrency",
+      "slug": "python-concurrency",
+      "title": "Python concurrency",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Python concurrency through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 11893,
+          "end": 12001,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "static-analysis",
+      "slug": "static-analysis",
+      "title": "Static analysis",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Static analysis through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12059,
+          "end": 12161,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "algorithm-complexity",
+      "slug": "algorithm-complexity",
+      "title": "Time and space complexity",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Intermediate",
+      "aliases": [
+        "Big-O",
+        "Big O",
+        "Time Complexity",
+        "Space Complexity"
+      ],
+      "summary": "Study Time and space complexity through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview",
+        "study-dsa"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12221,
+          "end": 12269,
+          "document": "interview"
+        },
+        {
+          "document": "dsa",
+          "start": 124,
+          "end": 175
+        }
+      ]
+    },
+    {
+      "id": "data-structures",
+      "slug": "data-structures",
+      "title": "Data structures",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Data structures through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12270,
+          "end": 12363,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "string-algorithms",
+      "slug": "string-algorithms",
+      "title": "String interview algorithms",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study String interview algorithms through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12654,
+          "end": 12769,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "hash-maps",
+      "slug": "hash-maps",
+      "title": "Hash maps and counting",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [
+        "HashMap",
+        "Hash Maps"
+      ],
+      "summary": "Study Hash maps and counting through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12770,
+          "end": 12913,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "search-sort-recursion",
+      "slug": "search-sort-recursion",
+      "title": "Searching, sorting and recursion practice",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Searching, sorting and recursion practice through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 12914,
+          "end": 13094,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "slug": "databases",
+      "title": "Database fundamentals",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [
+        "Databases",
+        "Database Fundamentals"
+      ],
+      "summary": "Study Database fundamentals through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13243,
+          "end": 13285,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "relational-data-modeling",
+      "slug": "relational-data-modeling",
+      "title": "Relational data modeling",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Data Modeling"
+      ],
+      "summary": "Study Relational data modeling through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13286,
+          "end": 13439,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "slug": "sql",
+      "title": "SQL",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study SQL through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13440,
+          "end": 13630,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "sql-joins",
+      "slug": "sql-joins",
+      "title": "SQL joins",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study SQL joins through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13631,
+          "end": 13730,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "database-normalization",
+      "slug": "database-normalization",
+      "title": "Database normalization",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Database normalization through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13731,
+          "end": 13797,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "database-indexes",
+      "slug": "database-indexes",
+      "title": "Database constraints and indexes",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Database Indexes"
+      ],
+      "summary": "Study Database constraints and indexes through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13798,
+          "end": 13927,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "database-transactions",
+      "slug": "database-transactions",
+      "title": "Database transactions",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "ACID",
+        "Transactions"
+      ],
+      "summary": "Study Database transactions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 13928,
+          "end": 14082,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "postgresql",
+      "slug": "postgresql",
+      "title": "PostgreSQL",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study PostgreSQL through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 14083,
+          "end": 14153,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mysql-sqlite",
+      "slug": "mysql-sqlite",
+      "title": "MySQL and SQLite comparisons",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study MySQL and SQLite comparisons through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 14154,
+          "end": 14190,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "connection-pooling",
+      "slug": "connection-pooling",
+      "title": "Connection pooling",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Connection pooling through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 14191,
+          "end": 14231,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "prisma",
+      "slug": "prisma",
+      "title": "Prisma ORM",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Prisma"
+      ],
+      "summary": "Study Prisma ORM through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 14232,
+          "end": 14818,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "sqlalchemy",
+      "slug": "sqlalchemy",
+      "title": "SQLAlchemy",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study SQLAlchemy through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 14951,
+          "end": 15000,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "sql-window-functions",
+      "slug": "sql-window-functions",
+      "title": "SQL subqueries, CTEs and window functions",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Window Functions",
+        "CTEs"
+      ],
+      "summary": "Study SQL subqueries, CTEs and window functions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 15001,
+          "end": 15422,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "nosql",
+      "slug": "nosql",
+      "title": "NoSQL",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study NoSQL through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 15431,
+          "end": 15494,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mongodb",
+      "slug": "mongodb",
+      "title": "MongoDB",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study MongoDB through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 15495,
+          "end": 15888,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "document-modeling",
+      "slug": "document-modeling",
+      "title": "Document data modeling",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Document data modeling through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 15889,
+          "end": 15982,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mongodb-aggregation",
+      "slug": "mongodb-aggregation",
+      "title": "MongoDB aggregation",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study MongoDB aggregation through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 15983,
+          "end": 16138,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mongodb-indexes",
+      "slug": "mongodb-indexes",
+      "title": "MongoDB indexes",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study MongoDB indexes through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 16139,
+          "end": 16221,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mongodb-transactions",
+      "slug": "mongodb-transactions",
+      "title": "MongoDB transactions",
+      "kind": "concept",
+      "domains": [
+        "data-analytics"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study MongoDB transactions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 16222,
+          "end": 16286,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "mongoose",
+      "slug": "mongoose",
+      "title": "Mongoose ODM",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Mongoose"
+      ],
+      "summary": "Study Mongoose ODM through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 16287,
+          "end": 16432,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "redis",
+      "slug": "redis",
+      "title": "Redis",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Redis through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 16433,
+          "end": 16721,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "caching",
+      "slug": "caching",
+      "title": "Caching",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Caching through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 16722,
+          "end": 16873,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "slug": "react",
+      "title": "React",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "React.js"
+      ],
+      "summary": "Study React through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 17228,
+          "end": 17796,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-reconciliation",
+      "slug": "react-reconciliation",
+      "title": "React reconciliation",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Virtual DOM"
+      ],
+      "summary": "Study React reconciliation through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 17797,
+          "end": 17909,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-state",
+      "slug": "react-state",
+      "title": "React state",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "useState"
+      ],
+      "summary": "Study React state through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 17910,
+          "end": 18283,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-hooks",
+      "slug": "react-hooks",
+      "title": "React Hooks",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study React Hooks through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 18284,
+          "end": 18698,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-context",
+      "slug": "react-context",
+      "title": "React Context",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Context API"
+      ],
+      "summary": "Study React Context through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 18699,
+          "end": 18839,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "custom-hooks",
+      "slug": "custom-hooks",
+      "title": "Custom Hooks",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Custom Hooks through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 18840,
+          "end": 18982,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-router",
+      "slug": "react-router",
+      "title": "React Router",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study React Router through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 18983,
+          "end": 19146,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "api-integration",
+      "slug": "api-integration",
+      "title": "API integration",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study API integration through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 19147,
+          "end": 19317,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-performance",
+      "slug": "react-performance",
+      "title": "React performance",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study React performance through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 19318,
+          "end": 19434,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-typescript",
+      "slug": "react-typescript",
+      "title": "React with TypeScript",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study React with TypeScript through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 19435,
+          "end": 19594,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "nextjs",
+      "slug": "nextjs",
+      "title": "Next.js",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Next.js through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20097,
+          "end": 20228,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "backend-engineering",
+      "slug": "backend-engineering",
+      "title": "Backend engineering",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Backend"
+      ],
+      "summary": "Study Backend engineering through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20273,
+          "end": 20303,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "express",
+      "slug": "express",
+      "title": "Express.js",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Express"
+      ],
+      "summary": "Study Express.js through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20539,
+          "end": 20584,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "middleware",
+      "slug": "middleware",
+      "title": "Middleware",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Middleware through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20585,
+          "end": 20631,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "backend-architecture",
+      "slug": "backend-architecture",
+      "title": "Backend architecture",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Backend architecture through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20632,
+          "end": 20683,
+          "document": "interview"
+        },
+        {
+          "start": 20754,
+          "end": 20787,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "rest",
+      "slug": "rest",
+      "title": "REST API design",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "REST",
+        "RESTful APIs"
+      ],
+      "summary": "Study REST API design through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 20684,
+          "end": 20718,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "microservices",
+      "slug": "microservices",
+      "title": "Microservices",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Microservices through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 21272,
+          "end": 21312,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "npm",
+      "slug": "npm",
+      "title": "npm and dependency management",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "npm",
+        "Package Management"
+      ],
+      "summary": "Study npm and dependency management through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22065,
+          "end": 22238,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "api-resilience",
+      "slug": "api-resilience",
+      "title": "Resilient external APIs",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Resilient external APIs through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22239,
+          "end": 22325,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "file-uploads",
+      "slug": "file-uploads",
+      "title": "File upload and document processing",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study File upload and document processing through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22326,
+          "end": 22430,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "fastapi",
+      "slug": "fastapi",
+      "title": "FastAPI",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study FastAPI through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22451,
+          "end": 22529,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "password-storage",
+      "slug": "password-storage",
+      "title": "Password storage",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Password Hashing"
+      ],
+      "summary": "Study Password storage through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22613,
+          "end": 22746,
+          "document": "interview"
+        },
+        {
+          "start": 24889,
+          "end": 24896,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "jwt",
+      "slug": "jwt",
+      "title": "JSON Web Tokens",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "JWT"
+      ],
+      "summary": "Study JSON Web Tokens through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22747,
+          "end": 22875,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "refresh-tokens",
+      "slug": "refresh-tokens",
+      "title": "Access and refresh tokens",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Access and refresh tokens through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 22876,
+          "end": 22948,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "slug": "cookies",
+      "title": "Cookies",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Cookies through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 23009,
+          "end": 23085,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "oauth-oidc",
+      "slug": "oauth-oidc",
+      "title": "OAuth 2.0 and OpenID Connect",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study OAuth 2.0 and OpenID Connect through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 23086,
+          "end": 23170,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "web-security",
+      "slug": "web-security",
+      "title": "Web security",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Web security through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 23391,
+          "end": 23552,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "rate-limiting",
+      "slug": "rate-limiting",
+      "title": "Rate limiting",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Rate limiting through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 23600,
+          "end": 23672,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "password-reset",
+      "slug": "password-reset",
+      "title": "Password reset and email verification",
+      "kind": "concept",
+      "domains": [
+        "cybersecurity"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Password reset and email verification through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 23673,
+          "end": 23753,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "cors",
+      "slug": "cors",
+      "title": "Same-Origin Policy and CORS",
+      "kind": "concept",
+      "domains": [
+        "web-development"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "CORS",
+        "Same-Origin Policy"
+      ],
+      "summary": "Study Same-Origin Policy and CORS through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 24795,
+          "end": 24888,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "test-strategy",
+      "slug": "test-strategy",
+      "title": "Test strategy",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "Test Planning"
+      ],
+      "summary": "Study Test strategy through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 25093,
+          "end": 25216,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "pytest",
+      "slug": "pytest",
+      "title": "pytest",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [
+        "PyTest"
+      ],
+      "summary": "Study pytest through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 25217,
+          "end": 25498,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "api-testing",
+      "slug": "api-testing",
+      "title": "API testing",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study API testing through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 25499,
+          "end": 25637,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "playwright",
+      "slug": "playwright",
+      "title": "Playwright",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Playwright through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 25638,
+          "end": 26057,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "flaky-tests",
+      "slug": "flaky-tests",
+      "title": "Flaky tests",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Flaky tests through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 26183,
+          "end": 26292,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "postman",
+      "slug": "postman",
+      "title": "Postman",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Postman through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 26402,
+          "end": 26431,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "test-reports",
+      "slug": "test-reports",
+      "title": "Test reporting",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Test reporting through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 26432,
+          "end": 26496,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "react-testing",
+      "slug": "react-testing",
+      "title": "React testing",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study React testing through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 26497,
+          "end": 26599,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "node-testing",
+      "slug": "node-testing",
+      "title": "Node.js test runner",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Node.js test runner through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 26600,
+          "end": 26625,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "browser-devtools",
+      "slug": "browser-devtools",
+      "title": "Browser DevTools",
+      "kind": "concept",
+      "domains": [
+        "debugging-quality"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Browser DevTools through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 27814,
+          "end": 27834,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "cloud-fundamentals",
+      "slug": "cloud-fundamentals",
+      "title": "Cloud fundamentals",
+      "kind": "concept",
+      "domains": [
+        "cloud-computing"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Cloud fundamentals through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 28091,
+          "end": 28246,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "slug": "deployment",
+      "title": "Deployment",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Deployment through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 28247,
+          "end": 28334,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "linux-administration",
+      "slug": "linux-administration",
+      "title": "Linux administration",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Linux administration through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 28335,
+          "end": 28645,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "slug": "docker",
+      "title": "Docker",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Containers"
+      ],
+      "summary": "Study Docker through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 28646,
+          "end": 29097,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "aws",
+      "slug": "aws",
+      "title": "AWS",
+      "kind": "concept",
+      "domains": [
+        "cloud-computing"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study AWS through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 29098,
+          "end": 29518,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "terraform",
+      "slug": "terraform",
+      "title": "Terraform",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [
+        "Infrastructure as Code"
+      ],
+      "summary": "Study Terraform through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 29519,
+          "end": 29918,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "hosting-process-management",
+      "slug": "hosting-process-management",
+      "title": "Hosting and process management",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Hosting and process management through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 30140,
+          "end": 30269,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "github-actions",
+      "slug": "github-actions",
+      "title": "GitHub Actions",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study GitHub Actions through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 30274,
+          "end": 30413,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "environment-variables",
+      "slug": "environment-variables",
+      "title": "Environment variables",
+      "kind": "concept",
+      "domains": [
+        "devops"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Environment variables through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 30470,
+          "end": 30504,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "webhooks",
+      "slug": "webhooks",
+      "title": "Webhooks",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Webhooks through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 31080,
+          "end": 31208,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "idempotency",
+      "slug": "idempotency",
+      "title": "Idempotency",
+      "kind": "concept",
+      "domains": [
+        "software-engineering"
+      ],
+      "discipline": "Interview study",
+      "level": "Intermediate",
+      "aliases": [],
+      "summary": "Study Idempotency through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-interview"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 31328,
+          "end": 31375,
+          "document": "interview"
+        }
+      ]
+    },
+    {
+      "id": "arrays",
+      "slug": "arrays",
+      "title": "Arrays and indexing",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Arrays and indexing through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-dsa",
+        "oracle-java-arrays",
+        "python-data-structures"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 65,
+          "end": 109,
+          "document": "dsa"
+        }
+      ]
+    },
+    {
+      "id": "algorithms",
+      "slug": "algorithms",
+      "title": "Algorithms",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Algorithms through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-dsa"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 110,
+          "end": 123,
+          "document": "dsa"
+        }
+      ]
+    },
+    {
+      "id": "array-min-max",
+      "slug": "array-min-max",
+      "title": "Find array minimum and maximum",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Find array minimum and maximum through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-dsa"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 222,
+          "end": 913,
+          "document": "dsa"
+        }
+      ]
+    },
+    {
+      "id": "second-largest",
+      "slug": "second-largest",
+      "title": "Second-largest distinct value",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [],
+      "summary": "Study Second-largest distinct value through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-dsa"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 914,
+          "end": 1532,
+          "document": "dsa"
+        }
+      ]
+    },
+    {
+      "id": "array-reversal",
+      "slug": "array-reversal",
+      "title": "Reverse an array with two pointers",
+      "kind": "concept",
+      "domains": [
+        "core-computing"
+      ],
+      "discipline": "Algorithms & programming",
+      "level": "Beginner",
+      "aliases": [
+        "Two Pointers"
+      ],
+      "summary": "Study Reverse an array with two pointers through explanations, examples and interview questions from the supplied learning material.",
+      "verification": {
+        "status": "Needs review"
+      },
+      "sources": [
+        "study-dsa"
+      ],
+      "research": [],
+      "materialRanges": [
+        {
+          "start": 1533,
+          "end": 2304,
+          "document": "dsa"
+        }
       ]
     }
   ],
@@ -2133,6 +5528,948 @@
       "target": "parallelism",
       "type": "commonly_used_with",
       "reason": "Multiple threads may execute simultaneously when hardware resources permit."
+    },
+    {
+      "source": "html",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "HTML is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "css",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "CSS is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "tailwind-css",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Tailwind CSS is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "browser-rendering",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Browser rendering is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "browser-storage",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Browser storage is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "chrome-extensions",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Chrome extensions is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "git",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Git is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "git-branching",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Git branching and merging is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "git-rebase",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Git rebase is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "git-recovery",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Git reset, revert, restore and stash is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "github",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "GitHub is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "code-review",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Code review is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "semantic-versioning",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Semantic versioning is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "javascript",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JavaScript is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "javascript-scope",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JavaScript scope and hoisting is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "closures",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Closures is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "javascript-prototypes",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JavaScript prototypes and this is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "javascript-arrays",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JavaScript array methods is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "asynchronous-javascript",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Asynchronous JavaScript is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "event-loop",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Event loop is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "fetch-api",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Fetch API is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "debouncing-throttling",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Debouncing and throttling is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "javascript-modules",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JavaScript modules and errors is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "typescript",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "TypeScript is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "java",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Java is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "java-strings",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Java strings is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "object-oriented-programming",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Object-oriented programming is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "java-exceptions",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Java exception handling is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "java-collections",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Java Collections Framework is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-collections",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python collections is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-functions",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python functions is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-oop",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Object-oriented Python is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-files-exceptions",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python files and exceptions is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-modules",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python modules and packages is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-iterators",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Advanced Python techniques is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-memory",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python memory management is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "python-concurrency",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Python concurrency is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "static-analysis",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Static analysis is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "algorithm-complexity",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Time and space complexity is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "data-structures",
+      "target": "algorithms",
+      "type": "related_to",
+      "reason": "Data structures is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "string-algorithms",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "String interview algorithms is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "hash-maps",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Hash maps and counting is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "search-sort-recursion",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Searching, sorting and recursion practice is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "databases",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Database fundamentals is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "relational-data-modeling",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Relational data modeling is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "sql",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "SQL is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "sql-joins",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "SQL joins is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "database-normalization",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Database normalization is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "database-indexes",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Database constraints and indexes is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "database-transactions",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Database transactions is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "postgresql",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "PostgreSQL is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mysql-sqlite",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "MySQL and SQLite comparisons is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "connection-pooling",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Connection pooling is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "prisma",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Prisma ORM is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "sqlalchemy",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "SQLAlchemy is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "sql-window-functions",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "SQL subqueries, CTEs and window functions is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "nosql",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "NoSQL is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mongodb",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "MongoDB is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "document-modeling",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Document data modeling is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mongodb-aggregation",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "MongoDB aggregation is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mongodb-indexes",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "MongoDB indexes is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mongodb-transactions",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "MongoDB transactions is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "mongoose",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Mongoose ODM is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "redis",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Redis is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "caching",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Caching is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-reconciliation",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React reconciliation is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-state",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React state is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-hooks",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React Hooks is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-context",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React Context is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "custom-hooks",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Custom Hooks is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-router",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React Router is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "api-integration",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "API integration is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-performance",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React performance is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-typescript",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "React with TypeScript is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "nextjs",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Next.js is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "backend-engineering",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Backend engineering is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "nodejs",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Node.js is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "express",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Express.js is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "middleware",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Middleware is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "backend-architecture",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Backend architecture is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "rest",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "REST API design is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "microservices",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Microservices is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "npm",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "npm and dependency management is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "api-resilience",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Resilient external APIs is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "file-uploads",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "File upload and document processing is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "fastapi",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "FastAPI is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "authentication",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Authentication is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "password-storage",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Password storage is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "jwt",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "JSON Web Tokens is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "refresh-tokens",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Access and refresh tokens is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "cookies",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Cookies is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "oauth-oidc",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "OAuth 2.0 and OpenID Connect is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "authorization",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Authorization is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "web-security",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Web security is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "rate-limiting",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Rate limiting is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "password-reset",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Password reset and email verification is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "cors",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Same-Origin Policy and CORS is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "test-strategy",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Test strategy is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "pytest",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "pytest is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "api-testing",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "API testing is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "playwright",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Playwright is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "flaky-tests",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Flaky tests is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "postman",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Postman is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "test-reports",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Test reporting is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "react-testing",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "React testing is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "node-testing",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Node.js test runner is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "browser-devtools",
+      "target": "testing",
+      "type": "related_to",
+      "reason": "Browser DevTools is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "cloud-fundamentals",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Cloud fundamentals is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "deployment",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Deployment is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "linux-administration",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Linux administration is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "docker",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Docker is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "aws",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "AWS is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "terraform",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Terraform is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "ci-cd",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Continuous integration and delivery is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "hosting-process-management",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Hosting and process management is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "github-actions",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "GitHub Actions is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "environment-variables",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Environment variables is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "webhooks",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Webhooks is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "idempotency",
+      "target": "software-engineering",
+      "type": "related_to",
+      "reason": "Idempotency is studied in the supplied software engineering curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "arrays",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Arrays and indexing is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "algorithms",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Algorithms is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "array-min-max",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Find array minimum and maximum is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "second-largest",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Second-largest distinct value is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "array-reversal",
+      "target": "data-structures",
+      "type": "related_to",
+      "reason": "Reverse an array with two pointers is studied in the supplied programming and data-structure curriculum; use the linked foundations to place the lesson in context."
+    },
+    {
+      "source": "arrays",
+      "target": "array-min-max",
+      "type": "prerequisite_of",
+      "reason": "A scan uses array indexing to maintain minimum and maximum trackers."
+    },
+    {
+      "source": "arrays",
+      "target": "second-largest",
+      "type": "prerequisite_of",
+      "reason": "Distinct runner-up tracking builds on indexed array traversal."
+    },
+    {
+      "source": "arrays",
+      "target": "array-reversal",
+      "type": "prerequisite_of",
+      "reason": "Two-pointer reversal requires indexing and element swaps."
+    },
+    {
+      "source": "algorithms",
+      "target": "algorithm-complexity",
+      "type": "prerequisite_of",
+      "reason": "Analyze an algorithm by counting operations as input size grows."
+    },
+    {
+      "source": "javascript",
+      "target": "javascript-scope",
+      "type": "prerequisite_of",
+      "reason": "Scope determines where JavaScript bindings are accessible."
+    },
+    {
+      "source": "javascript-scope",
+      "target": "closures",
+      "type": "prerequisite_of",
+      "reason": "Closures retain access to lexical bindings."
+    },
+    {
+      "source": "javascript",
+      "target": "asynchronous-javascript",
+      "type": "prerequisite_of",
+      "reason": "Async programming builds on functions and their execution."
+    },
+    {
+      "source": "event-loop",
+      "target": "asynchronous-javascript",
+      "type": "prerequisite_of",
+      "reason": "Queue scheduling explains asynchronous callback execution."
+    },
+    {
+      "source": "javascript",
+      "target": "typescript",
+      "type": "prerequisite_of",
+      "reason": "TypeScript adds static type analysis to JavaScript programs."
+    },
+    {
+      "source": "html",
+      "target": "browser-rendering",
+      "type": "prerequisite_of",
+      "reason": "The browser builds document structure from HTML."
+    },
+    {
+      "source": "css",
+      "target": "browser-rendering",
+      "type": "prerequisite_of",
+      "reason": "Style computation and layout use CSS rules."
+    },
+    {
+      "source": "javascript",
+      "target": "react",
+      "type": "prerequisite_of",
+      "reason": "React components use JavaScript expressions and functions."
+    },
+    {
+      "source": "react",
+      "target": "react-hooks",
+      "type": "prerequisite_of",
+      "reason": "Hooks are called within React components and custom hooks."
+    },
+    {
+      "source": "react-state",
+      "target": "react-context",
+      "type": "prerequisite_of",
+      "reason": "Context distributes values including state to descendant components."
+    },
+    {
+      "source": "react",
+      "target": "nextjs",
+      "type": "prerequisite_of",
+      "reason": "Next.js builds application conventions around React."
+    },
+    {
+      "source": "nodejs",
+      "target": "express",
+      "type": "prerequisite_of",
+      "reason": "Express runs in the Node.js environment."
+    },
+    {
+      "source": "express",
+      "target": "middleware",
+      "type": "prerequisite_of",
+      "reason": "Request processing in Express is composed from middleware."
+    },
+    {
+      "source": "http",
+      "target": "rest",
+      "type": "prerequisite_of",
+      "reason": "HTTP-based REST APIs use HTTP methods and response semantics."
+    },
+    {
+      "source": "sql",
+      "target": "sql-joins",
+      "type": "prerequisite_of",
+      "reason": "Joins combine relations within SQL queries."
+    },
+    {
+      "source": "sql",
+      "target": "sql-window-functions",
+      "type": "prerequisite_of",
+      "reason": "Window expressions build on SQL selection and ordering."
+    },
+    {
+      "source": "relational-data-modeling",
+      "target": "database-normalization",
+      "type": "prerequisite_of",
+      "reason": "Normalization analyzes dependencies in relational schemas."
+    },
+    {
+      "source": "mongodb",
+      "target": "mongodb-aggregation",
+      "type": "prerequisite_of",
+      "reason": "Aggregation pipelines operate on MongoDB documents."
+    },
+    {
+      "source": "python",
+      "target": "pytest",
+      "type": "prerequisite_of",
+      "reason": "Python tests use functions, imports and assertions."
+    },
+    {
+      "source": "testing",
+      "target": "playwright",
+      "type": "prerequisite_of",
+      "reason": "Browser automation needs explicit assertions and test isolation."
+    },
+    {
+      "source": "git",
+      "target": "git-branching",
+      "type": "prerequisite_of",
+      "reason": "Branches name development histories in Git."
+    },
+    {
+      "source": "git-branching",
+      "target": "git-rebase",
+      "type": "prerequisite_of",
+      "reason": "Rebase rewrites a branch history onto another base."
+    },
+    {
+      "source": "git",
+      "target": "github-actions",
+      "type": "prerequisite_of",
+      "reason": "Actions workflows respond to repository events."
+    },
+    {
+      "source": "authentication",
+      "target": "jwt",
+      "type": "prerequisite_of",
+      "reason": "JWT can represent claims used in an authentication system."
+    },
+    {
+      "source": "cookies",
+      "target": "web-security",
+      "type": "prerequisite_of",
+      "reason": "Cookie attributes and browser behavior affect session security."
+    },
+    {
+      "source": "java",
+      "target": "java-collections",
+      "type": "prerequisite_of",
+      "reason": "The collections APIs use Java interfaces and generic types."
+    },
+    {
+      "source": "python",
+      "target": "python-collections",
+      "type": "prerequisite_of",
+      "reason": "Python collection operations use language expressions and iteration."
     }
   ],
   "sources": [
@@ -2623,6 +6960,52 @@
         "Separation of retrieval and ranking; query and candidate embeddings in a two-tower model."
       ],
       "status": "Needs review"
+    },
+    {
+      "id": "study-dsa",
+      "title": "DSA coding course - Java and Python",
+      "publisher": "Personal research collection",
+      "url": "/research?document=dsa",
+      "type": "Supplied study notes",
+      "claims": [
+        "Source lessons, code examples and interview preparation; not independent verification"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "study-interview",
+      "title": "Full-stack interview handbook",
+      "publisher": "Personal research collection",
+      "url": "/research?document=interview",
+      "type": "Supplied study notes",
+      "claims": [
+        "Source lessons, code examples and interview preparation; not independent verification"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "oracle-java-arrays",
+      "title": "The Java Tutorials: Arrays",
+      "publisher": "Oracle",
+      "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+      "type": "Official language documentation",
+      "claims": [
+        "Fixed length and zero-based indexing of Java arrays; tutorial targets JDK 8"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
+    },
+    {
+      "id": "python-data-structures",
+      "title": "Python Tutorial: Data Structures",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "type": "Official language documentation",
+      "claims": [
+        "Python list operations; confirm behavior against the Python version used"
+      ],
+      "status": "Needs review",
+      "accessedAt": "2026-11-27"
     }
   ]
 }

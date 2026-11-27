@@ -82,3 +82,42 @@ These sources are provided for claim review. This article is **Needs review**; n
 - [Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) — OWASP.
 - [Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) — OWASP.
 
+<!-- imported-study-material -->
+
+> Imported lesson from [Full-stack interview handbook, lines 20719–20753](/research?document=interview&start=20719&end=20753). Needs review: examples and claims retain their source context; reading does not certify proficiency.
+
+## Request Validation and Error Handling
+
+**Q11.47. Why is request validation necessary?**
+
+Answer: Validation ensures incoming data has the expected structure, types, and values before business logic processes it. It helps prevent invalid records, unexpected errors, and some security problems. Never assume frontend validation alone is sufficient.
+
+**Q11.48. What is schema validation?**
+
+Answer: Schema validation checks data against a defined structure and rules. A library such as Zod can validate fields, required values, string lengths, email formats, and allowed values.
+
+```javascript
+import { z } from "zod";
+
+const studentSchema = z.object({
+  name: z.string().min(2).max(100),
+  email: z.string().email(),
+  course: z.enum(["CSE", "IT", "EC"])
+});
+```
+
+**Q11.49. What is centralized error handling?**
+
+Answer: Centralized error handling uses a common error-handling middleware to format and return errors consistently. This prevents each route from implementing a different error response and helps avoid exposing internal details.
+
+**Q11.50. Which HTTP status codes should be used for common errors?**
+
+Answer: Use `400` for malformed or invalid requests, `401` for missing or invalid authentication, `403` for insufficient permission, `404` for a missing resource, `409` for conflicts, and `500` for unexpected server failures. Consistent error responses make frontend handling more reliable.
+
+### Security integration
+
+Authentication, JWT verification, cookies and CORS enforcement are taught in [Security](/research?document=interview&start=22528). Here, identify where validation, authentication and authorization middleware sit in the Express request lifecycle.
+
+## Connected study
+
+Continue with [software engineering](/knowledge/software-engineering) and the [complete study library](/study).

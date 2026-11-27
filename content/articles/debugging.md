@@ -31,3 +31,84 @@ These sources are provided for claim review. This article is **Needs review**; n
 - [Chrome DevTools documentation](https://developer.chrome.com/docs/devtools/) — Chrome for Developers.
 - [Software Engineering Body of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering) — IEEE Computer Society.
 
+<!-- imported-study-material -->
+
+> Imported lesson from [Full-stack interview handbook, lines 28007–28082](/research?document=interview&start=28007&end=28082). Needs review: examples and claims retain their source context; reading does not certify proficiency.
+
+## Python debugger and logging APIs
+
+### 57. Debugging
+
+Python debugging can be performed using:
+
+- `print()` statements.
+- IDE breakpoints.
+- VS Code debugger.
+- `pdb`.
+- Logging.
+- Exception tracebacks.
+
+Example using `pdb`:
+
+```python
+import pdbdef add(a, b):    pdb.set_trace()    result = a + b    return resultprint(add(10, 20))
+```
+
+Common debugger commands include:
+
+| Command      | Purpose               |
+| ------------ | --------------------- |
+| `n`          | Next line             |
+| `s`          | Step into             |
+| `c`          | Continue              |
+| `p variable` | Print variable        |
+| `l`          | Show surrounding code |
+| `q`          | Quit debugger         |
+
+### Python logging API
+
+Logging records events that happen while an application runs.
+
+```python
+import logginglogging.basicConfig(    level=logging.INFO,    format="%(asctime)s - %(levelname)s - %(message)s")logging.debug("Debug message")logging.info("Application started")logging.warning("Something unusual happened")logging.error("Operation failed")logging.critical("Critical failure")
+```
+
+Logging levels from least to most severe:
+
+1. DEBUG
+2. INFO
+3. WARNING
+4. ERROR
+5. CRITICAL
+
+In real projects, use logging instead of relying only on `print()` statements.
+
+
+
+
+## Node.js logging and debugger
+
+
+
+## Logging, Debugging and Testing
+
+**Q15.30. What is logging?**
+
+Answer: Logging records application events and system behaviour, such as incoming requests, authentication failures, database errors, and background job execution. Structured logging with tools such as Pino or Winston is useful in production.
+
+**Q15.31. How do you debug a Node.js application?**
+
+Answer: Use console logs, stack traces, breakpoints, the Node.js inspector, the VS Code debugger, and request/database logs.
+
+```bash
+node --inspect src/server.js
+node --inspect-brk src/server.js
+```
+
+The second command pauses at the beginning. Do not expose the inspector port to untrusted networks.
+
+---
+
+## Connected study
+
+Continue with [testing](/knowledge/testing) and the [complete study library](/study).

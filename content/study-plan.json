@@ -1,0 +1,2025 @@
+{
+  "documents": [
+    {
+      "id": "dsa",
+      "file": "DSA.md",
+      "title": "DSA coding course - Java and Python"
+    },
+    {
+      "id": "interview",
+      "file": "Interview_Focused_SE_Study_Material.md",
+      "title": "Full-stack interview handbook"
+    }
+  ],
+  "articles": [
+    {
+      "id": "html",
+      "title": "HTML",
+      "domain": "web-development",
+      "aliases": [
+        "HTML5"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 419,
+          "end": 769
+        }
+      ]
+    },
+    {
+      "id": "css",
+      "title": "CSS",
+      "domain": "web-development",
+      "aliases": [
+        "CSS3"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 770,
+          "end": 1275
+        }
+      ]
+    },
+    {
+      "id": "tailwind-css",
+      "title": "Tailwind CSS",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 1276,
+          "end": 1319
+        }
+      ]
+    },
+    {
+      "id": "browser-rendering",
+      "title": "Browser rendering",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 1320,
+          "end": 1472
+        }
+      ]
+    },
+    {
+      "id": "browser-storage",
+      "title": "Browser storage",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 1473,
+          "end": 1572
+        }
+      ]
+    },
+    {
+      "id": "chrome-extensions",
+      "title": "Chrome extensions",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 1799,
+          "end": 2143
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 2152,
+          "end": 2582
+        }
+      ]
+    },
+    {
+      "id": "git-branching",
+      "title": "Git branching and merging",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 2583,
+          "end": 2760
+        }
+      ]
+    },
+    {
+      "id": "git-rebase",
+      "title": "Git rebase",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 2761,
+          "end": 2840
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "git-recovery",
+      "title": "Git reset, revert, restore and stash",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 2841,
+          "end": 2967
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "github",
+      "title": "GitHub",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 3086,
+          "end": 3179
+        }
+      ]
+    },
+    {
+      "id": "code-review",
+      "title": "Code review",
+      "domain": "software-engineering",
+      "aliases": [
+        "Pull Requests"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 3180,
+          "end": 3403
+        }
+      ]
+    },
+    {
+      "id": "semantic-versioning",
+      "title": "Semantic versioning",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 3404,
+          "end": 3519
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 3725,
+          "end": 4021
+        }
+      ]
+    },
+    {
+      "id": "javascript-scope",
+      "title": "JavaScript scope and hoisting",
+      "domain": "web-development",
+      "aliases": [
+        "Hoisting",
+        "Temporal Dead Zone"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4022,
+          "end": 4141
+        }
+      ]
+    },
+    {
+      "id": "closures",
+      "title": "Closures",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4142,
+          "end": 4312
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "javascript-prototypes",
+      "title": "JavaScript prototypes and this",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4313,
+          "end": 4496
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "javascript-arrays",
+      "title": "JavaScript array methods",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4497,
+          "end": 4646
+        }
+      ]
+    },
+    {
+      "id": "asynchronous-javascript",
+      "title": "Asynchronous JavaScript",
+      "domain": "web-development",
+      "aliases": [
+        "Promises",
+        "Async Await"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4647,
+          "end": 4880
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "event-loop",
+      "title": "Event loop",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 4881,
+          "end": 5225
+        }
+      ]
+    },
+    {
+      "id": "fetch-api",
+      "title": "Fetch API",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 5226,
+          "end": 5324
+        }
+      ]
+    },
+    {
+      "id": "debouncing-throttling",
+      "title": "Debouncing and throttling",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 5325,
+          "end": 5439
+        }
+      ]
+    },
+    {
+      "id": "javascript-modules",
+      "title": "JavaScript modules and errors",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 5440,
+          "end": 5547
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 6479,
+          "end": 7011
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "java",
+      "title": "Java",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 7020,
+          "end": 7870
+        }
+      ]
+    },
+    {
+      "id": "java-strings",
+      "title": "Java strings",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 7870,
+          "end": 8020
+        }
+      ]
+    },
+    {
+      "id": "object-oriented-programming",
+      "title": "Object-oriented programming",
+      "domain": "software-engineering",
+      "aliases": [
+        "OOP"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 8021,
+          "end": 8634
+        },
+        {
+          "start": 9138,
+          "end": 9219
+        }
+      ]
+    },
+    {
+      "id": "java-exceptions",
+      "title": "Java exception handling",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 8635,
+          "end": 8827
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "java-collections",
+      "title": "Java Collections Framework",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 8828,
+          "end": 9137
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Python",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 9228,
+          "end": 9994
+        }
+      ]
+    },
+    {
+      "id": "python-collections",
+      "title": "Python collections",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 9995,
+          "end": 10659
+        }
+      ]
+    },
+    {
+      "id": "python-functions",
+      "title": "Python functions",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 10660,
+          "end": 10919
+        }
+      ]
+    },
+    {
+      "id": "python-oop",
+      "title": "Object-oriented Python",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 10920,
+          "end": 11169
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "python-files-exceptions",
+      "title": "Python files and exceptions",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 11170,
+          "end": 11333
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "python-modules",
+      "title": "Python modules and packages",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 11334,
+          "end": 11486
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "python-iterators",
+      "title": "Advanced Python techniques",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 11487,
+          "end": 11777
+        }
+      ],
+      "level": "Advanced"
+    },
+    {
+      "id": "python-memory",
+      "title": "Python memory management",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 11778,
+          "end": 11892
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "python-concurrency",
+      "title": "Python concurrency",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 11893,
+          "end": 12001
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "static-analysis",
+      "title": "Static analysis",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12059,
+          "end": 12161
+        }
+      ]
+    },
+    {
+      "id": "algorithm-complexity",
+      "title": "Time and space complexity",
+      "domain": "core-computing",
+      "aliases": [
+        "Big-O",
+        "Big O",
+        "Time Complexity",
+        "Space Complexity"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12221,
+          "end": 12269
+        }
+      ],
+      "extraRanges": [
+        {
+          "document": "dsa",
+          "start": 124,
+          "end": 175
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "data-structures",
+      "title": "Data structures",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12270,
+          "end": 12363
+        }
+      ]
+    },
+    {
+      "id": "string-algorithms",
+      "title": "String interview algorithms",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12654,
+          "end": 12769
+        }
+      ]
+    },
+    {
+      "id": "hash-maps",
+      "title": "Hash maps and counting",
+      "domain": "core-computing",
+      "aliases": [
+        "HashMap",
+        "Hash Maps"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12770,
+          "end": 12913
+        }
+      ]
+    },
+    {
+      "id": "search-sort-recursion",
+      "title": "Searching, sorting and recursion practice",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 12914,
+          "end": 13094
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Database fundamentals",
+      "domain": "core-computing",
+      "aliases": [
+        "Databases",
+        "Database Fundamentals"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13243,
+          "end": 13285
+        }
+      ]
+    },
+    {
+      "id": "relational-data-modeling",
+      "title": "Relational data modeling",
+      "domain": "data-analytics",
+      "aliases": [
+        "Data Modeling"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13286,
+          "end": 13439
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "title": "SQL",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13440,
+          "end": 13630
+        }
+      ]
+    },
+    {
+      "id": "sql-joins",
+      "title": "SQL joins",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13631,
+          "end": 13730
+        }
+      ]
+    },
+    {
+      "id": "database-normalization",
+      "title": "Database normalization",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13731,
+          "end": 13797
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "database-indexes",
+      "title": "Database constraints and indexes",
+      "domain": "data-analytics",
+      "aliases": [
+        "Database Indexes"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13798,
+          "end": 13927
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "database-transactions",
+      "title": "Database transactions",
+      "domain": "data-analytics",
+      "aliases": [
+        "ACID",
+        "Transactions"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 13928,
+          "end": 14082
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "postgresql",
+      "title": "PostgreSQL",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 14083,
+          "end": 14153
+        }
+      ]
+    },
+    {
+      "id": "mysql-sqlite",
+      "title": "MySQL and SQLite comparisons",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 14154,
+          "end": 14190
+        }
+      ]
+    },
+    {
+      "id": "connection-pooling",
+      "title": "Connection pooling",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 14191,
+          "end": 14231
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "prisma",
+      "title": "Prisma ORM",
+      "domain": "web-development",
+      "aliases": [
+        "Prisma"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 14232,
+          "end": 14818
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "sqlalchemy",
+      "title": "SQLAlchemy",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 14951,
+          "end": 15000
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "sql-window-functions",
+      "title": "SQL subqueries, CTEs and window functions",
+      "domain": "data-analytics",
+      "aliases": [
+        "Window Functions",
+        "CTEs"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 15001,
+          "end": 15422
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "nosql",
+      "title": "NoSQL",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 15431,
+          "end": 15494
+        }
+      ]
+    },
+    {
+      "id": "mongodb",
+      "title": "MongoDB",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 15495,
+          "end": 15888
+        }
+      ]
+    },
+    {
+      "id": "document-modeling",
+      "title": "Document data modeling",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 15889,
+          "end": 15982
+        }
+      ]
+    },
+    {
+      "id": "mongodb-aggregation",
+      "title": "MongoDB aggregation",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 15983,
+          "end": 16138
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "mongodb-indexes",
+      "title": "MongoDB indexes",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 16139,
+          "end": 16221
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "mongodb-transactions",
+      "title": "MongoDB transactions",
+      "domain": "data-analytics",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 16222,
+          "end": 16286
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "mongoose",
+      "title": "Mongoose ODM",
+      "domain": "web-development",
+      "aliases": [
+        "Mongoose"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 16287,
+          "end": 16432
+        }
+      ]
+    },
+    {
+      "id": "redis",
+      "title": "Redis",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 16433,
+          "end": 16721
+        }
+      ]
+    },
+    {
+      "id": "caching",
+      "title": "Caching",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 16722,
+          "end": 16873
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "domain": "web-development",
+      "aliases": [
+        "React.js"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 17228,
+          "end": 17796
+        }
+      ]
+    },
+    {
+      "id": "react-reconciliation",
+      "title": "React reconciliation",
+      "domain": "web-development",
+      "aliases": [
+        "Virtual DOM"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 17797,
+          "end": 17909
+        }
+      ]
+    },
+    {
+      "id": "react-state",
+      "title": "React state",
+      "domain": "web-development",
+      "aliases": [
+        "useState"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 17910,
+          "end": 18283
+        }
+      ]
+    },
+    {
+      "id": "react-hooks",
+      "title": "React Hooks",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 18284,
+          "end": 18698
+        }
+      ]
+    },
+    {
+      "id": "react-context",
+      "title": "React Context",
+      "domain": "web-development",
+      "aliases": [
+        "Context API"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 18699,
+          "end": 18839
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "custom-hooks",
+      "title": "Custom Hooks",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 18840,
+          "end": 18982
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "react-router",
+      "title": "React Router",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 18983,
+          "end": 19146
+        }
+      ]
+    },
+    {
+      "id": "api-integration",
+      "title": "API integration",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 19147,
+          "end": 19317
+        }
+      ]
+    },
+    {
+      "id": "react-performance",
+      "title": "React performance",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 19318,
+          "end": 19434
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "react-typescript",
+      "title": "React with TypeScript",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 19435,
+          "end": 19594
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "nextjs",
+      "title": "Next.js",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20097,
+          "end": 20228
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "backend-engineering",
+      "title": "Backend engineering",
+      "domain": "web-development",
+      "aliases": [
+        "Backend"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20273,
+          "end": 20303
+        }
+      ]
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20304,
+          "end": 20538
+        }
+      ]
+    },
+    {
+      "id": "express",
+      "title": "Express.js",
+      "domain": "web-development",
+      "aliases": [
+        "Express"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20539,
+          "end": 20584
+        }
+      ]
+    },
+    {
+      "id": "middleware",
+      "title": "Middleware",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20585,
+          "end": 20631
+        }
+      ]
+    },
+    {
+      "id": "backend-architecture",
+      "title": "Backend architecture",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20632,
+          "end": 20683
+        },
+        {
+          "start": 20754,
+          "end": 20787
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "rest",
+      "title": "REST API design",
+      "domain": "web-development",
+      "aliases": [
+        "REST",
+        "RESTful APIs"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20684,
+          "end": 20718
+        }
+      ]
+    },
+    {
+      "id": "input-validation",
+      "title": "Input validation",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 20719,
+          "end": 20753
+        }
+      ]
+    },
+    {
+      "id": "microservices",
+      "title": "Microservices",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 21272,
+          "end": 21312
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "npm",
+      "title": "npm and dependency management",
+      "domain": "software-engineering",
+      "aliases": [
+        "npm",
+        "Package Management"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22065,
+          "end": 22238
+        }
+      ]
+    },
+    {
+      "id": "api-resilience",
+      "title": "Resilient external APIs",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22239,
+          "end": 22325
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "file-uploads",
+      "title": "File upload and document processing",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22326,
+          "end": 22430
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "fastapi",
+      "title": "FastAPI",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22451,
+          "end": 22529
+        }
+      ]
+    },
+    {
+      "id": "authentication",
+      "title": "Authentication",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22538,
+          "end": 22612
+        },
+        {
+          "start": 22949,
+          "end": 23008
+        }
+      ]
+    },
+    {
+      "id": "password-storage",
+      "title": "Password storage",
+      "domain": "cybersecurity",
+      "aliases": [
+        "Password Hashing"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22613,
+          "end": 22746
+        },
+        {
+          "start": 24889,
+          "end": 24896
+        }
+      ]
+    },
+    {
+      "id": "jwt",
+      "title": "JSON Web Tokens",
+      "domain": "cybersecurity",
+      "aliases": [
+        "JWT"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22747,
+          "end": 22875
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "refresh-tokens",
+      "title": "Access and refresh tokens",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 22876,
+          "end": 22948
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "cookies",
+      "title": "Cookies",
+      "domain": "web-development",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23009,
+          "end": 23085
+        }
+      ]
+    },
+    {
+      "id": "oauth-oidc",
+      "title": "OAuth 2.0 and OpenID Connect",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23086,
+          "end": 23170
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "authorization",
+      "title": "Authorization",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23171,
+          "end": 23300
+        }
+      ]
+    },
+    {
+      "id": "web-security",
+      "title": "Web security",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23391,
+          "end": 23552
+        }
+      ]
+    },
+    {
+      "id": "rate-limiting",
+      "title": "Rate limiting",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23600,
+          "end": 23672
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "password-reset",
+      "title": "Password reset and email verification",
+      "domain": "cybersecurity",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 23673,
+          "end": 23753
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "cors",
+      "title": "Same-Origin Policy and CORS",
+      "domain": "web-development",
+      "aliases": [
+        "CORS",
+        "Same-Origin Policy"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 24795,
+          "end": 24888
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "testing",
+      "title": "Software testing",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 24905,
+          "end": 25092
+        }
+      ]
+    },
+    {
+      "id": "test-strategy",
+      "title": "Test strategy",
+      "domain": "debugging-quality",
+      "aliases": [
+        "Test Planning"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 25093,
+          "end": 25216
+        }
+      ]
+    },
+    {
+      "id": "pytest",
+      "title": "pytest",
+      "domain": "debugging-quality",
+      "aliases": [
+        "PyTest"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 25217,
+          "end": 25498
+        }
+      ]
+    },
+    {
+      "id": "api-testing",
+      "title": "API testing",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 25499,
+          "end": 25637
+        }
+      ]
+    },
+    {
+      "id": "playwright",
+      "title": "Playwright",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 25638,
+          "end": 26057
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "flaky-tests",
+      "title": "Flaky tests",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 26183,
+          "end": 26292
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "postman",
+      "title": "Postman",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 26402,
+          "end": 26431
+        }
+      ]
+    },
+    {
+      "id": "test-reports",
+      "title": "Test reporting",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 26432,
+          "end": 26496
+        }
+      ]
+    },
+    {
+      "id": "react-testing",
+      "title": "React testing",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 26497,
+          "end": 26599
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "node-testing",
+      "title": "Node.js test runner",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 26600,
+          "end": 26625
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "browser-devtools",
+      "title": "Browser DevTools",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 27814,
+          "end": 27834
+        }
+      ]
+    },
+    {
+      "id": "debugging",
+      "title": "Debugging",
+      "domain": "debugging-quality",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 28007,
+          "end": 28082
+        }
+      ]
+    },
+    {
+      "id": "cloud-fundamentals",
+      "title": "Cloud fundamentals",
+      "domain": "cloud-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 28091,
+          "end": 28246
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 28247,
+          "end": 28334
+        }
+      ]
+    },
+    {
+      "id": "linux-administration",
+      "title": "Linux administration",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 28335,
+          "end": 28645
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "title": "Docker",
+      "domain": "devops",
+      "aliases": [
+        "Containers"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 28646,
+          "end": 29097
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "aws",
+      "title": "AWS",
+      "domain": "cloud-computing",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 29098,
+          "end": 29518
+        }
+      ]
+    },
+    {
+      "id": "terraform",
+      "title": "Terraform",
+      "domain": "devops",
+      "aliases": [
+        "Infrastructure as Code"
+      ],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 29519,
+          "end": 29918
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "ci-cd",
+      "title": "Continuous integration and delivery",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 29919,
+          "end": 30139
+        }
+      ]
+    },
+    {
+      "id": "hosting-process-management",
+      "title": "Hosting and process management",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 30140,
+          "end": 30269
+        }
+      ]
+    },
+    {
+      "id": "github-actions",
+      "title": "GitHub Actions",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 30274,
+          "end": 30413
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "environment-variables",
+      "title": "Environment variables",
+      "domain": "devops",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 30470,
+          "end": 30504
+        }
+      ]
+    },
+    {
+      "id": "webhooks",
+      "title": "Webhooks",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 31080,
+          "end": 31208
+        }
+      ]
+    },
+    {
+      "id": "idempotency",
+      "title": "Idempotency",
+      "domain": "software-engineering",
+      "aliases": [],
+      "document": "interview",
+      "ranges": [
+        {
+          "start": 31328,
+          "end": 31375
+        }
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "arrays",
+      "title": "Arrays and indexing",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "dsa",
+      "ranges": [
+        {
+          "start": 65,
+          "end": 109
+        }
+      ]
+    },
+    {
+      "id": "algorithms",
+      "title": "Algorithms",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "dsa",
+      "ranges": [
+        {
+          "start": 110,
+          "end": 123
+        }
+      ]
+    },
+    {
+      "id": "array-min-max",
+      "title": "Find array minimum and maximum",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "dsa",
+      "ranges": [
+        {
+          "start": 222,
+          "end": 913
+        }
+      ]
+    },
+    {
+      "id": "second-largest",
+      "title": "Second-largest distinct value",
+      "domain": "core-computing",
+      "aliases": [],
+      "document": "dsa",
+      "ranges": [
+        {
+          "start": 914,
+          "end": 1532
+        }
+      ]
+    },
+    {
+      "id": "array-reversal",
+      "title": "Reverse an array with two pointers",
+      "domain": "core-computing",
+      "aliases": [
+        "Two Pointers"
+      ],
+      "document": "dsa",
+      "ranges": [
+        {
+          "start": 1533,
+          "end": 2304
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "arrays",
+      "target": "array-min-max",
+      "type": "prerequisite_of",
+      "reason": "A scan uses array indexing to maintain minimum and maximum trackers."
+    },
+    {
+      "source": "arrays",
+      "target": "second-largest",
+      "type": "prerequisite_of",
+      "reason": "Distinct runner-up tracking builds on indexed array traversal."
+    },
+    {
+      "source": "arrays",
+      "target": "array-reversal",
+      "type": "prerequisite_of",
+      "reason": "Two-pointer reversal requires indexing and element swaps."
+    },
+    {
+      "source": "algorithms",
+      "target": "algorithm-complexity",
+      "type": "prerequisite_of",
+      "reason": "Analyze an algorithm by counting operations as input size grows."
+    },
+    {
+      "source": "javascript",
+      "target": "javascript-scope",
+      "type": "prerequisite_of",
+      "reason": "Scope determines where JavaScript bindings are accessible."
+    },
+    {
+      "source": "javascript-scope",
+      "target": "closures",
+      "type": "prerequisite_of",
+      "reason": "Closures retain access to lexical bindings."
+    },
+    {
+      "source": "javascript",
+      "target": "asynchronous-javascript",
+      "type": "prerequisite_of",
+      "reason": "Async programming builds on functions and their execution."
+    },
+    {
+      "source": "event-loop",
+      "target": "asynchronous-javascript",
+      "type": "prerequisite_of",
+      "reason": "Queue scheduling explains asynchronous callback execution."
+    },
+    {
+      "source": "javascript",
+      "target": "typescript",
+      "type": "prerequisite_of",
+      "reason": "TypeScript adds static type analysis to JavaScript programs."
+    },
+    {
+      "source": "html",
+      "target": "browser-rendering",
+      "type": "prerequisite_of",
+      "reason": "The browser builds document structure from HTML."
+    },
+    {
+      "source": "css",
+      "target": "browser-rendering",
+      "type": "prerequisite_of",
+      "reason": "Style computation and layout use CSS rules."
+    },
+    {
+      "source": "javascript",
+      "target": "react",
+      "type": "prerequisite_of",
+      "reason": "React components use JavaScript expressions and functions."
+    },
+    {
+      "source": "react",
+      "target": "react-hooks",
+      "type": "prerequisite_of",
+      "reason": "Hooks are called within React components and custom hooks."
+    },
+    {
+      "source": "react-state",
+      "target": "react-context",
+      "type": "prerequisite_of",
+      "reason": "Context distributes values including state to descendant components."
+    },
+    {
+      "source": "react",
+      "target": "nextjs",
+      "type": "prerequisite_of",
+      "reason": "Next.js builds application conventions around React."
+    },
+    {
+      "source": "nodejs",
+      "target": "express",
+      "type": "prerequisite_of",
+      "reason": "Express runs in the Node.js environment."
+    },
+    {
+      "source": "express",
+      "target": "middleware",
+      "type": "prerequisite_of",
+      "reason": "Request processing in Express is composed from middleware."
+    },
+    {
+      "source": "http",
+      "target": "rest",
+      "type": "prerequisite_of",
+      "reason": "HTTP-based REST APIs use HTTP methods and response semantics."
+    },
+    {
+      "source": "sql",
+      "target": "sql-joins",
+      "type": "prerequisite_of",
+      "reason": "Joins combine relations within SQL queries."
+    },
+    {
+      "source": "sql",
+      "target": "sql-window-functions",
+      "type": "prerequisite_of",
+      "reason": "Window expressions build on SQL selection and ordering."
+    },
+    {
+      "source": "relational-data-modeling",
+      "target": "database-normalization",
+      "type": "prerequisite_of",
+      "reason": "Normalization analyzes dependencies in relational schemas."
+    },
+    {
+      "source": "mongodb",
+      "target": "mongodb-aggregation",
+      "type": "prerequisite_of",
+      "reason": "Aggregation pipelines operate on MongoDB documents."
+    },
+    {
+      "source": "python",
+      "target": "pytest",
+      "type": "prerequisite_of",
+      "reason": "Python tests use functions, imports and assertions."
+    },
+    {
+      "source": "testing",
+      "target": "playwright",
+      "type": "prerequisite_of",
+      "reason": "Browser automation needs explicit assertions and test isolation."
+    },
+    {
+      "source": "git",
+      "target": "git-branching",
+      "type": "prerequisite_of",
+      "reason": "Branches name development histories in Git."
+    },
+    {
+      "source": "git-branching",
+      "target": "git-rebase",
+      "type": "prerequisite_of",
+      "reason": "Rebase rewrites a branch history onto another base."
+    },
+    {
+      "source": "git",
+      "target": "github-actions",
+      "type": "prerequisite_of",
+      "reason": "Actions workflows respond to repository events."
+    },
+    {
+      "source": "authentication",
+      "target": "jwt",
+      "type": "prerequisite_of",
+      "reason": "JWT can represent claims used in an authentication system."
+    },
+    {
+      "source": "cookies",
+      "target": "web-security",
+      "type": "prerequisite_of",
+      "reason": "Cookie attributes and browser behavior affect session security."
+    },
+    {
+      "source": "java",
+      "target": "java-collections",
+      "type": "prerequisite_of",
+      "reason": "The collections APIs use Java interfaces and generic types."
+    },
+    {
+      "source": "python",
+      "target": "python-collections",
+      "type": "prerequisite_of",
+      "reason": "Python collection operations use language expressions and iteration."
+    }
+  ]
+}

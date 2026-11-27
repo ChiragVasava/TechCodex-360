@@ -2,11 +2,14 @@ import { articles, relationships, sources, normalize } from "./knowledge";
 import { taxonomy } from "../content/taxonomy";
 import { roles, skillProfiles } from "../content/careers";
 import { software, devices, logs } from "../content/data";
+import studyIndex from "../content/study-index.json";
 import articleBodies from "../content/article-search.json";
 export type SearchItem={id:string;title:string;type:string;href:string;summary:string;terms:string[];domains:string[];relatedIds?:string[];body?:string};
 const bodyIndex:Record<string,string>=articleBodies;
 export const searchIndex:SearchItem[]=[
- ...articles.map(a=>({id:a.id,title:a.title,type:"Article",href:`/knowledge/${a.id}`,summary:a.summary,terms:a.aliases,domains:a.domains,body:[bodyIndex[a.id],...(a.searchTerms??[])].join(" ")})),
+ ...studyIndex.documents.flatMap(d=>d.chapters.map(c=>({id:`study-${d.id}-${c.id}`,title:c.title,type:"Study chapter",href:`/study/${d.id}/${c.id}`,summary:d.title,terms:[d.id],domains:[],relatedIds:c.articles}))),
+ {id:"array-lab",title:"Interactive array lab",type:"Practice",href:"/practice/arrays",summary:"Step through minimum, maximum, second-largest and reversal with example output",terms:["DSA practice","array visualization"],domains:["core-computing"]},
+ ...articles.map(a=>({id:a.id,title:a.title,type:"Article",href:`/knowledge/${a.id}`,summary:a.summary,terms:[a.id,...a.aliases],domains:a.domains,body:[bodyIndex[a.id],...(a.searchTerms??[])].join(" ")})),
  ...taxonomy.flatMap(d=>[{id:`domain-${d.id}`,title:d.title,type:"Domain",href:`/domains/${d.id}`,summary:d.description,terms:[],domains:[d.id]},...d.disciplines.map(b=>({id:`branch-${d.id}-${normalize(b.title)}`,title:b.title,type:"Discipline",href:`/domains/${d.id}`,summary:b.topics.join(" · "),terms:b.topics,domains:[d.id]}))]),
  ...roles.map(r=>({id:`role-${r.id}`,title:r.title,type:"Role",href:`/roles/${r.id}`,summary:r.summary,terms:r.alternativeTitles,domains:r.domains,relatedIds:r.concepts})),
  ...skillProfiles.map(s=>({id:`skill-${s.id}`,title:s.title,type:"Skill",href:`/skills/${s.id}`,summary:s.summary,terms:[],domains:s.domains,relatedIds:s.concepts})),

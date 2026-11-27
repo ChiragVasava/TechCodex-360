@@ -1,4 +1,5 @@
 /** A coverage map: listing a topic does not imply an article has been authored. */
+import catalog from "./catalog.json";
 export type Domain = { id: string; title: string; description: string; disciplines: { title: string; topics: string[] }[]; related: string[] };
 const branch = (title: string, topics: string) => ({ title, topics: topics.split("|") });
 export const taxonomy: Domain[] = [
@@ -55,3 +56,12 @@ export const taxonomy: Domain[] = [
     branch("People & systems", "Human-Computer Interaction|UI/UX Engineering|Accessibility Engineering|Technical Writing|Engineering Management|Product Management|Systems Engineering") ] }
 ];
 export const legacyDomainMap: Record<string, string[]> = { "software-web-app": ["software-engineering", "web-development", "mobile-development"], "cloud-devops": ["cloud-computing", "devops"], "iot-hardware": ["iot-embedded", "hardware-electronics"], "ai-ml-data": ["ai-ml", "data-analytics"] };
+
+// A documented article must be discoverable in every domain it belongs to.
+// Keep planned topics, and add only missing canonical identities to the coverage tree.
+const normalizeTopic = (value: string) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, " ").trim();
+for (const domain of taxonomy) {
+  const listed = new Set(domain.disciplines.flatMap(branch => branch.topics.map(normalizeTopic)));
+  const missing = catalog.articles.filter(article => article.domains.includes(domain.id) && ![article.id, article.title, ...article.aliases].some(name => listed.has(normalizeTopic(name))));
+  if (missing.length) domain.disciplines.push({ title: "Documented study topics", topics: missing.map(article => article.title) });
+}

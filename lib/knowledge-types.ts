@@ -5,6 +5,7 @@ export type Article = {
   id: string; slug: string; title: string; kind: "concept" | "technology" | "protocol" | "tool" | "technique";
   domains: string[]; discipline: string; level: Level; aliases: string[]; searchTerms?: string[]; summary: string;
   verification: { status: VerificationStatus; lastVerified?: string }; sources: string[]; research: { start: number; end: number }[];
+  materialRanges?: { document: string; start: number; end: number }[];
 };
 export const relationshipTypes = ["prerequisite_of", "depends_on", "part_of", "subtopic_of", "related_to", "used_by", "implemented_by", "built_with", "alternative_to", "specialization_of", "application_of", "contrasts_with", "replaced_by", "extends", "requires", "commonly_used_with", "tested_by", "secured_by"] as const;
 export type Relationship = { source: string; target: string; type: typeof relationshipTypes[number]; reason: string };

@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { BookOpen, Network, Layers, Briefcase, Route, GraduationCap, Bookmark, Folder, Cpu, Wrench, Library, Settings, Home, Menu, X, Sun, Moon, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { SearchBox } from "./search";
 const nav=[
- {href:"/",label:"Home",icon:Home},{href:"/domains",label:"Explore domains",icon:Layers},{href:"/knowledge",label:"Encyclopedia",icon:BookOpen},{href:"/graph",label:"Knowledge graph",icon:Network},
+ {href:"/",label:"Home",icon:Home},{href:"/domains",label:"Explore domains",icon:Layers},{href:"/knowledge",label:"Encyclopedia",icon:BookOpen},{href:"/graph",label:"Knowledge graph",icon:Network},{href:"/study",label:"Study library",icon:BookOpen},
  {href:"/roles",label:"Engineering roles",icon:Briefcase},{href:"/roadmaps",label:"Career roadmaps",icon:Route},{href:"/skills",label:"Skills & technologies",icon:GraduationCap},
  {href:"/workspace",label:"Learning workspace",icon:Bookmark},{href:"/projects",label:"Projects",icon:Folder},{href:"/iot",label:"IoT inventory",icon:Cpu},{href:"/logs",label:"Troubleshooting",icon:Wrench},
  {href:"/references",label:"References",icon:Library},{href:"/settings",label:"About & settings",icon:Settings}

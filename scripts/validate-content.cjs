@@ -6,6 +6,7 @@ const { taxonomy } = require("../content/taxonomy.ts");
 const { relationshipTypes, levels } = require("../lib/knowledge-types.ts");
 const { roles, skillProfiles } = require("../content/careers.ts");
 const research = require("../content/research-index.json");
+const materials = require("../content/study-index.json");
 function validateContent() {
   const errors=[]; const check=(ok,message)=>{if(!ok)errors.push(message);};
   const ids=new Set(articles.map(a=>a.id)), domainIds=new Set(taxonomy.map(d=>d.id)), sourceIds=new Set(sources.map(s=>s.id));
@@ -20,6 +21,7 @@ function validateContent() {
     check(a.sources.length>0,`${a.id}: source review candidates required`);
     for(const term of [a.id,a.title,...a.aliases]){const n=normalize(term);check(!aliases.has(n)||aliases.get(n)===a.id,`${a.id}: ambiguous alias ${term}`);aliases.set(n,a.id);}
     for(const r of a.research)check(Number.isInteger(r.start)&&Number.isInteger(r.end)&&r.start>=1&&r.end>=r.start&&r.end<=research.lineCount,`${a.id}: invalid provenance range`);
+    for(const r of a.materialRanges??[])check(Number.isInteger(r.start)&&Number.isInteger(r.end)&&r.start>=1&&r.end>=r.start&&r.end<=(materials.documents.find(d=>d.id===r.document)?.lineCount??0),`${a.id}: invalid study source range`);
     check(["Verified","Needs review","Outdated","Conflicting sources","Incomplete","Personal notes"].includes(a.verification.status),`${a.id}: invalid verification status`);
     if(a.verification.status==="Verified")check(/^\d{4}-\d{2}-\d{2}$/.test(a.verification.lastVerified??""),`${a.id}: verified article needs date`);
     const filename=path.join(__dirname,"../content/articles",a.id+".md");
@@ -35,7 +37,7 @@ function validateContent() {
   const adjacency=new Map(articles.map(a=>[a.id,[]]));
   for(const e of relationships){if(e.type==="prerequisite_of")adjacency.get(e.source)?.push(e.target);if(["depends_on","requires"].includes(e.type))adjacency.get(e.target)?.push(e.source);}
   const active=new Set(),done=new Set();function visit(id){if(active.has(id)){errors.push(`Prerequisite cycle at ${id}`);return;}if(done.has(id))return;active.add(id);for(const next of adjacency.get(id)??[])visit(next);active.delete(id);done.add(id);}for(const id of ids)visit(id);
-  for(const source of sources){try{check(new URL(source.url).protocol==="https:",`Non-HTTPS source ${source.id}`);}catch{errors.push(`Invalid source URL ${source.id}`);}check(source.claims.length>0,`No source claim scope ${source.id}`);}
+  for(const source of sources){if(!materials.documents.some(d=>source.url===`/research?document=${d.id}`)){try{check(new URL(source.url).protocol==="https:",`Non-HTTPS source ${source.id}`);}catch{errors.push(`Invalid source URL ${source.id}`);}}check(source.claims.length>0,`No source claim scope ${source.id}`);}
   for(const domain of taxonomy)for(const id of domain.related)check(domainIds.has(id),`Unknown related domain ${id}`);
   for(const item of [...roles,...skillProfiles])for(const id of item.concepts)check(ids.has(id),`${item.id}: missing concept ${id}`);
   return errors;
